@@ -1,0 +1,15 @@
+.svgContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .svgContainer svg {
+    height: 100%;
+    width: 100%;
+    transform: translate(52px, -27px);
+    scale: 1.62;
+  }
+  

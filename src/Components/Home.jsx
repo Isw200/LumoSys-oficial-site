@@ -1,5 +1,6 @@
 import React from "react";
 import SvgComponent from "./SubComponents/SvgComponent";
+import "../Styles/Home.css";
 
 function Home() {
   return (
