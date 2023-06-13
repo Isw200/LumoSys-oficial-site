@@ -3,6 +3,14 @@ import bgImg from "../Assets/Backgrounds/footerBackground.png";
 import logo from "../Assets/Logo/logo.png";
 import "../Styles/Footer.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedinIn,
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+
 function Footer() {
   return (
     <div className="Footer">
@@ -28,16 +36,73 @@ function Footer() {
               </div>
               <div className="columns">
                 <h3>About</h3>
+                <ul>
+                  <li>
+                    <a href="#">About LumoSys</a>
+                  </li>
+                  <li>
+                    <a href="#">News</a>
+                  </li>
+                  <li>
+                    <a href="#">Feedbacks</a>
+                  </li>
+                  <li>
+                    <a href="#">Leadership</a>
+                  </li>
+                </ul>
               </div>
               <div className="columns">
                 <h3>Resources</h3>
+                <ul>
+                  <li>
+                    <a href="#">Our Services</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact Us</a>
+                  </li>
+                </ul>
               </div>
               <div className="columns">
                 <h3>Connect with us</h3>
+                <div className="socialMedia">
+                  <a href="">
+                    <FontAwesomeIcon
+                      icon={faLinkedinIn}
+                      style={{ color: "#cbcbcb" }}
+                    />
+                  </a>
+                  <a href="">
+                    <FontAwesomeIcon
+                      icon={faFacebookF}
+                      style={{ color: "#cbcbcb" }}
+                      className="iconHover"
+                    />
+                  </a>
+
+                  <a href="">
+                    <FontAwesomeIcon
+                      icon={faTwitter}
+                      style={{ color: "#cbcbcb" }}
+                    />
+                  </a>
+
+                  <a href="">
+                    <FontAwesomeIcon
+                      icon={faInstagram}
+                      style={{ color: "#cbcbcb" }}
+                    />
+                  </a>
+                </div>
               </div>
             </div>
             <div className="bar"></div>
-            <div className="bottomMain"></div>
+            <div className="bottomMain">
+              <h6>© 2023 LomoSys All Rights Reserved</h6>
+              <h6>Terms of service | Privacy Policy</h6>
+            </div>
           </div>
         </div>
       </div>

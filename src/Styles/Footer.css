@@ -38,7 +38,7 @@
 
 .Footer .columns {
   /* background-color: yellowgreen; */
-  width: 250px;
+  width: 270px;
   height: 100%;
   margin: 10px;
 }
@@ -56,10 +56,43 @@
   justify-content: space-around;
   text-align: left;
   color: white;
+  font-weight: 300;
+}
+
+.Footer ul {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.Footer ul li {
+  margin-top: 20px;
+}
+
+.Footer ul li a {
+  text-decoration: none;
+  color: rgb(203, 203, 203);
+}
+
+.Footer ul li a:hover {
+  color: white;
+}
+
+.Footer .socialMedia {
+  margin-left: 50px;
+  width: 120px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.iconHover {
+  color: white;
 }
 
 .Footer .bar {
-  width: 100%;
+  width: 98%;
   height: 1px;
   margin-top: 40px;
   background-color: white;
@@ -69,4 +102,9 @@
   height: 40%;
   width: 100%;
   /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  margin-top: 20px;
 }
