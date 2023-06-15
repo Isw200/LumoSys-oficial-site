@@ -1,0 +1,23 @@
+.OurServices {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  background-color: royalblue;
+}
+
+.OurServices .mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+  background-color: rgb(255, 0, 4);
+  flex-direction: column;
+}
+
+.OurServices .descContainer {
+  width: 80%;
+  height: inherit;
+  background-color: rgb(0, 0, 0);
+}

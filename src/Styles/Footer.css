@@ -2,6 +2,8 @@
   width: 100%;
   /* background-color: blue; */
   height: 400px;
+  position: absolute;
+  top: 400vh;
 }
 
 .Footer .mainContainer {
@@ -55,8 +57,10 @@
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  color: white;
-  font-weight: 300;
+  color: rgb(203, 203, 203);
+  /* color: pink; */
+  font-weight: 200;
+  line-height: 25px;
 }
 
 .Footer ul {
@@ -70,7 +74,8 @@
 
 .Footer ul li a {
   text-decoration: none;
-  color: rgb(203, 203, 203);
+  /* color: rgb(203, 203, 203); */
+  color: pink;
 }
 
 .Footer ul li a:hover {
@@ -87,7 +92,11 @@
   margin-top: 20px;
 }
 
-.iconHover {
+.Footer .iconProp {
+  color: pink;
+}
+
+.Footer .iconProp:hover {
   color: white;
 }
 

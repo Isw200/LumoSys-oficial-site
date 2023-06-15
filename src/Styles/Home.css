@@ -1,0 +1,138 @@
+.Home {
+  width: 100%;
+  height: 100%;
+}
+
+.Home .mainContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.Home .bgImgContainer {
+  height: 800px;
+  width: 100%;
+  /* margin-bottom: 200px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home h1 {
+  font-size: 6rem;
+  color: white;
+  margin: 20px;
+}
+
+.Home p {
+  font-size: 1.5rem;
+  color: white;
+  margin: 20px;
+}
+
+.intro {
+  height: 800px;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.Home .buttonContainer {
+  /* border: solid 1px red; */
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.Home .btnSubContainer {
+  /* border: solid 1px red; */
+}
+
+.Home #ourWorkBtn {
+  padding: 10px 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+  background-color: #e70f77;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.Home .arrow {
+  /* margin-top: 8px; */
+}
+
+.Home #ourWorkBtn:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+}
+
+.Home #chatBtn {
+  padding: 14px 40px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: solid 1px #e70f77;
+  cursor: pointer;
+  color: white;
+}
+
+.Home #chatBtn:hover {
+  background-color: white;
+  border: solid 1px white;
+  color: #e70f77;
+  transition: 500ms ease-in-out;
+}
+
+.Home .techImgContainer {
+  height: 150px;
+  width: 100%;
+  /* display: flex; */
+}
+
+.Home #techBg {
+  width: 100%;
+  z-index: -1;
+}
+
+.Home .techImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home .techImgContainer h4 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.Home .techImgContainer h3 {
+  font-size: 2rem;
+  color: #e70f77;
+}
+
+.Home .techImageDesc {
+  position: absolute;
+}
+
+.Home .techStackContainer {
+  width: 100%;
+  height: fit-content;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: solid 1px red; */
+}
+
+.Home .techStackContainer img {
+  margin: 0 30px;
+}
+
+.Home .techStackContainer img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}

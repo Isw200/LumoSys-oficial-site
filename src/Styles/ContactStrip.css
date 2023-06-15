@@ -1,0 +1,94 @@
+.ContactStrip {
+  display: flex;
+  background-color: #fcf8ff;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactStrip .mainContainer {
+  width: 80%;
+  height: inherit;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+}
+
+.ContactStrip .mainContainer .imageContainer {
+  width: 35%;
+  height: inherit;
+  /* background-color: red; */
+}
+
+.ContactStrip .mainContainer .descContainer {
+  width: 65%;
+  height: inherit;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.ContactStrip .mainContainer .descContainer h5 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.ContactStrip .mainContainer .descContainer h4 {
+  font-size: 1.5rem;
+}
+
+.ContactStrip .mainContainer .descContainer h3 {
+  font-size: 2rem;
+  color: #e70f77;
+  margin-bottom: 20px;
+}
+
+.ContactStrip #para {
+  text-align: right;
+  font-size: 16px;
+  margin: 0;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 20px;
+  width: 85%;
+}
+
+.ContactStrip .buttonContainer {
+  width: fit-content;
+  height: fit-content;
+  /* border: solid 1px red; */
+  margin-top: 10px;
+}
+
+.ContactStrip #helloBtn {
+  padding: 12px 35px;
+  margin-right: 20px;
+  border-radius: 20px;
+  border: solid 2px #e70f77;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.ContactStrip #helloBtn:hover {
+  background-color: #e70f77;
+  color: white;
+  transition: 0.3s ease-in;
+}
+
+.ContactStrip #numBtn {
+  padding: 12px 40px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: solid 2px #e70f77;
+  cursor: pointer;
+}
+
+.ContactStrip #numBtn:hover {
+  background-color: #e70f77;
+  color: white;
+  transition: 0.3s ease-in;
+}

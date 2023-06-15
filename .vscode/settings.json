@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/c45be282-210b-4e0f-9ce2-9152f4e24143/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/lumosys",
+  "appService.deploySubpath": "."
+}

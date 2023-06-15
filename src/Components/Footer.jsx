@@ -1,6 +1,6 @@
 import React from "react";
 import bgImg from "../Assets/Backgrounds/footerBackground.png";
-import logo from "../Assets/Logo/logo.png";
+import logo from "../Assets/Logo/white_logo.png";
 import "../Styles/Footer.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -69,31 +69,18 @@ function Footer() {
                 <h3>Connect with us</h3>
                 <div className="socialMedia">
                   <a href="">
-                    <FontAwesomeIcon
-                      icon={faLinkedinIn}
-                      style={{ color: "#cbcbcb" }}
-                    />
+                    <FontAwesomeIcon icon={faLinkedinIn} className="iconProp" />
                   </a>
                   <a href="">
-                    <FontAwesomeIcon
-                      icon={faFacebookF}
-                      style={{ color: "#cbcbcb" }}
-                      className="iconHover"
-                    />
+                    <FontAwesomeIcon icon={faFacebookF} className="iconProp" />
                   </a>
 
                   <a href="">
-                    <FontAwesomeIcon
-                      icon={faTwitter}
-                      style={{ color: "#cbcbcb" }}
-                    />
+                    <FontAwesomeIcon icon={faTwitter} className="iconProp" />
                   </a>
 
                   <a href="">
-                    <FontAwesomeIcon
-                      icon={faInstagram}
-                      style={{ color: "#cbcbcb" }}
-                    />
+                    <FontAwesomeIcon icon={faInstagram} className="iconProp" />
                   </a>
                 </div>
               </div>
