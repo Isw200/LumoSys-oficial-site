@@ -1,6 +1,5 @@
 .Footer {
   width: 100%;
-  /* background-color: blue; */
   height: 400px;
 }
 
@@ -8,24 +7,22 @@
   display: flex;
   height: fit-content;
   width: 100%;
-  height: inherit;
 }
 
 .Footer .bgImgContainer {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 
 .Footer .main {
   width: 80%;
   height: 75%;
-  /* background-color: #98d9ffcc; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -33,14 +30,15 @@
   display: flex;
   flex-direction: row;
   height: 100%;
-  margin: 0;
+  justify-content: space-between;
 }
 
 .Footer .columns {
-  /* background-color: yellowgreen; */
-  width: 270px;
   height: 100%;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .columns h3 {
@@ -48,7 +46,6 @@
 }
 
 .Footer .columns:nth-child(1) {
-  /* background-color: yellow; */
   flex-basis: 500px;
   display: flex;
   align-items: flex-start;
@@ -56,7 +53,6 @@
   justify-content: space-around;
   text-align: left;
   color: rgb(203, 203, 203);
-  /* color: pink; */
   font-weight: 200;
   line-height: 25px;
 }
@@ -72,8 +68,7 @@
 
 .Footer ul li a {
   text-decoration: none;
-  /* color: rgb(203, 203, 203); */
-  color: pink;
+  color: rgb(255, 255, 255);
 }
 
 .Footer ul li a:hover {
@@ -81,37 +76,86 @@
 }
 
 .Footer .socialMedia {
-  margin-left: 50px;
-  width: 120px;
   height: 100px;
-  display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: start;
+  align-items: start;
   margin-top: 20px;
+}
+.Footer .socialMedia a {
+  margin-right: 10px;
 }
 
 .Footer .iconProp {
-  color: pink;
+  width: 30px;
+  height: 30px;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
 }
 
 .Footer .iconProp:hover {
-  color: white;
-}
-
-.Footer .bar {
-  width: 98%;
-  height: 1px;
-  margin-top: 40px;
-  background-color: white;
+  transform: scale(1.2);
 }
 
 .Footer .bottomMain {
+  border-top: 1px solid #fff;
   height: 40%;
   width: 100%;
-  /* background-color: blueviolet; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   color: white;
-  margin-top: 20px;
+  margin-top: 30px;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.Footer .bottomMain h6 {
+  font-size: 15px;
+  color: rgb(203, 203, 203);
+  font-weight: 400;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer .main {
+    width: 90%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Footer .topMain {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    justify-content: space-between;
+  }
+  .Footer .columns {
+    height: wrap-content;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .Footer .columns:nth-child(1) {
+    flex-basis: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    color: rgb(203, 203, 203);
+    font-weight: 400;
+    line-height: 25px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .Footer .bottomMain h6 {
+    font-size: 10px;
+    color: rgb(203, 203, 203);
+    font-weight: 400;
+    line-height: 25px;
+  }
 }
