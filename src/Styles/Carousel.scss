@@ -8,26 +8,46 @@ $color-black: #1f2937;
   padding: 3em 0;
   font-family: "Montserrat", sans-serif;
 
+  @media screen and (max-width: 768px) {
+    padding: 2em 0;
+  }
+
   .titles {
     width: 80%;
     margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
 
     h6 {
       font-size: 26px;
       font-weight: bold;
       color: #b5b5b5;
       margin-bottom: 0.5em;
+
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
     }
     h4 {
       font-size: 2.4rem;
       font-weight: bold;
       color: #000;
       margin-bottom: 0.1em;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.8rem;
+      }
     }
     h5 {
       font-size: 2.4rem;
       font-weight: bold;
       color: #e70f77;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.8rem;
+      }
     }
   }
 }
@@ -40,6 +60,10 @@ $color-black: #1f2937;
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
   padding: 5em 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 2em 0;
+  }
 }
 
 * {
@@ -52,6 +76,11 @@ $color-black: #1f2937;
   height: 30em;
   perspective: 500px;
   transform-style: preserve-3d;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 30em;
+  }
 }
 
 .card-container {
@@ -64,6 +93,15 @@ $color-black: #1f2937;
     translateX(calc(var(--direction) * -5rem));
   filter: blur(calc(var(--abs-offset) * 1rem));
   transition: all 0.3s ease-out;
+
+  @media screen and (max-width: 768px) {
+    transform: rotateY(calc(var(--offset) * 50deg))
+      scaleY(calc(1 + var(--abs-offset) * -0.4))
+      translateZ(calc(var(--abs-offset) * -30rem))
+      translateX(calc(var(--direction) * -5rem));
+    filter: blur(calc(var(--abs-offset) * 1rem));
+    transition: all 0.3s ease-out;
+  }
 }
 
 .card {
@@ -78,6 +116,12 @@ $color-black: #1f2937;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   padding: 3em;
 
+  @media screen and (max-width: 768px) {
+    padding: 2em;
+    width: 80%;
+    margin: 0 auto;
+  }
+
   p {
     font-size: 1.4rem;
     transition: all 0.3s ease-out;
@@ -85,6 +129,10 @@ $color-black: #1f2937;
     color: #565656;
     margin: 0;
     line-height: 1.3;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.1rem;
+    }
   }
   h2 {
     transition: all 0.3s ease-out;
@@ -93,6 +141,10 @@ $color-black: #1f2937;
     font-weight: bold;
     margin-bottom: 1em;
     color: #000;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.8rem;
+    }
   }
   .card-bottom {
     display: flex;
@@ -111,6 +163,11 @@ $color-black: #1f2937;
       font-size: 1rem;
       border-radius: 50px;
       cursor: pointer;
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+        padding: 0.8em 2em;
+      }
     }
     button:hover {
       background: #e70f77;
@@ -121,6 +178,10 @@ $color-black: #1f2937;
       opacity: var(--active);
       color: $color-gray;
       width: 100px;
+      
+      @media screen and (max-width: 768px) {
+        width: 80px;
+      }
     }
   }
 }
@@ -139,12 +200,24 @@ $color-black: #1f2937;
   background: unset;
   border: unset;
 
+  @media screen and (max-width: 768px) {
+    font-size: 3rem;
+  }
+
   &.left {
     transform: translateX(-100%) translatey(-50%);
+
+    @media screen and (max-width: 768px) {
+      transform: translateX(0%) translatey(-50%);
+    }
   }
 
   &.right {
     right: 0;
     transform: translateX(100%) translatey(-50%);
+
+    @media screen and (max-width: 768px) {
+      transform: translateX(0%) translatey(-50%);
+    }
   }
 }
