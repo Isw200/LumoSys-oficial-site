@@ -15,7 +15,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 
 .Footer .main {
@@ -115,6 +114,7 @@
   font-weight: 400;
   line-height: 25px;
 }
+
 
 @media screen and (max-width: 768px) {
   .Footer .main {

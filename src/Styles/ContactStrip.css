@@ -88,6 +88,7 @@
   font-size: var(--big-title);
   color: var(--primary-pink);
   margin-bottom: 20px;
+  text-align: end;
 }
 
 .ContactStrip #para {
