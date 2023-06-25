@@ -30,7 +30,7 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a className="nav_titles" href="/services">
+            <a className="nav_titles" href="/services-web">
               Services
             </a>
           </li>
