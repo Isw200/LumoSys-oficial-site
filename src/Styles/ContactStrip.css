@@ -1,24 +1,66 @@
+@import "./valuse.css";
+
 .ContactStrip {
   display: flex;
   background-color: #fcf8ff;
   width: 100%;
-  height: 300px;
+  height: 100%;
   justify-content: center;
   align-items: center;
+  padding: 3em 0;
 }
 
 .ContactStrip .mainContainer {
   width: 80%;
   height: inherit;
-  /* background-color: blue; */
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .ContactStrip .mainContainer .imageContainer {
   width: 35%;
-  height: inherit;
-  /* background-color: red; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactStrip .mainContainer .imageContainer img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.ContactStrip .mainContainer .imageContainer img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.ContactStrip .mainContainer .imageContainer :nth-child(1) {
+  width: 140px;
+  height: 140px;
+  top: 0;
+  left: 120px;
+}
+.ContactStrip .mainContainer .imageContainer :nth-child(2) {
+  width: 160px;
+  height: 160px;
+  top: 100px;
+  left: 50px;
+}
+.ContactStrip .mainContainer .imageContainer :nth-child(3) {
+  width: 180px;
+  height: 180px;
+  top: 200px;
+  left: 80px;
+  z-index: 2;
+}
+.ContactStrip .mainContainer .imageContainer :nth-child(4) {
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  left: 200px;
+  z-index: 1;
 }
 
 .ContactStrip .mainContainer .descContainer {
@@ -33,62 +75,175 @@
 
 .ContactStrip .mainContainer .descContainer h5 {
   margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: 300;
+  font-size: var(--small-title);
+  font-weight: 600;
+  color: var(--title-gray);
 }
 
 .ContactStrip .mainContainer .descContainer h4 {
-  font-size: 1.5rem;
+  font-size: var(--big-title);
 }
 
 .ContactStrip .mainContainer .descContainer h3 {
-  font-size: 2rem;
-  color: #e70f77;
+  font-size: var(--big-title);
+  color: var(--primary-pink);
   margin-bottom: 20px;
+  text-align: end;
 }
 
 .ContactStrip #para {
   text-align: right;
-  font-size: 16px;
+  font-size: var(--description);
   margin: 0;
   color: black;
   font-weight: 400;
   margin-bottom: 20px;
   width: 85%;
+  line-height: 1.5;
 }
 
 .ContactStrip .buttonContainer {
   width: fit-content;
   height: fit-content;
-  /* border: solid 1px red; */
   margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
 }
-
-.ContactStrip #helloBtn {
+.ContactStrip .buttonContainer button {
+  font-size: 1.3rem;
   padding: 12px 35px;
-  margin-right: 20px;
-  border-radius: 20px;
-  border: solid 2px #e70f77;
+  border-radius: 50px;
+  border: solid 2px var(--primary-pink);
   background-color: transparent;
   cursor: pointer;
+  transition: all 0.2s ease-in;
 }
 
-.ContactStrip #helloBtn:hover {
-  background-color: #e70f77;
+.ContactStrip button:hover {
+  background-color: var(--primary-pink);
   color: white;
-  transition: 0.3s ease-in;
 }
 
-.ContactStrip #numBtn {
-  padding: 12px 40px;
-  border-radius: 20px;
-  background-color: transparent;
-  border: solid 2px #e70f77;
-  cursor: pointer;
+@media screen and (max-width: 1400px) {
+  .ContactStrip .mainContainer .descContainer h5 {
+    font-size: var(--small-title-s);
+  }
+
+  .ContactStrip .mainContainer .descContainer h4 {
+    font-size: var(--big-title-s);
+  }
+
+  .ContactStrip .mainContainer .descContainer h3 {
+    font-size: var(--big-title-s);
+  }
+  .ContactStrip #para {
+    text-align: right;
+    font-size: var(--description-s);
+  }
+  .ContactStrip .mainContainer .imageContainer img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+  }
+  .ContactStrip .mainContainer .imageContainer :nth-child(1) {
+    width: 120px;
+    height: 120px;
+    top: 0px;
+    left: 50px;
+  }
+  .ContactStrip .mainContainer .imageContainer :nth-child(2) {
+    width: 140px;
+    height: 140px;
+    top: 80px;
+    left: 0px;
+  }
+  .ContactStrip .mainContainer .imageContainer :nth-child(3) {
+    width: 160px;
+    height: 160px;
+    top: 160px;
+    left: 40px;
+    z-index: 2;
+  }
+  .ContactStrip .mainContainer .imageContainer :nth-child(4) {
+    width: 180px;
+    height: 180px;
+    top: 70px;
+    left: 100px;
+    z-index: 1;
+  }
 }
 
-.ContactStrip #numBtn:hover {
-  background-color: #e70f77;
-  color: white;
-  transition: 0.3s ease-in;
+@media screen and (max-width: 768px) {
+  .ContactStrip .mainContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ContactStrip .mainContainer .imageContainer {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+  }
+  .ContactStrip .mainContainer .imageContainer img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+  }
+  .ContactStrip .mainContainer .imageContainer img {
+    display: block;
+    position: static;
+  }
+  .ContactStrip .mainContainer .imageContainer :nth-child(1) {
+    width: 100px;
+    height: 100px;
+  }
+  .ContactStrip .mainContainer .imageContainer :nth-child(2) {
+    width: 100px;
+    height: 100px;
+  }
+  .ContactStrip .mainContainer .imageContainer :nth-child(3) {
+    width: 100px;
+    height: 100px;
+  }
+  .ContactStrip .mainContainer .imageContainer :nth-child(4) {
+    width: 100px;
+    height: 100px;
+  }
+  .ContactStrip .mainContainer .descContainer {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e5e5;
+  }
+  .ContactStrip #para {
+    text-align: center;
+    font-size: var(--description-xs);
+  }
+  .ContactStrip .mainContainer .descContainer h5 {
+    margin-bottom: 20px;
+    font-size: var(--small-title-xs);
+    font-weight: 600;
+    color: var(--title-gray);
+    text-align: center;
+  }
+  .ContactStrip .mainContainer .descContainer h4 {
+    font-size: var(--big-title-xs);
+  }
+  .ContactStrip .mainContainer .descContainer h3 {
+    font-size: var(--big-title-xs);
+    color: var(--primary-pink);
+    margin-bottom: 20px;
+  }
+  .ContactStrip .mainContainer .buttonContainer button {
+    font-size: var(--button-xs);
+  }
 }

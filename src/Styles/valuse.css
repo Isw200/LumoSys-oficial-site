@@ -1,0 +1,25 @@
+:root {
+  /* colors */
+  --primary-pink: #e70f77;
+  --primary-purple: #9302f0;
+  --background-pink: #fcf8ff;
+  --title-gray: #b5b5b5;
+
+  /* Font Sizes */
+  --small-title: 26px;
+  --big-title: 2.4rem;
+  --description: 1.3rem;
+  --button: 1.3rem;
+
+  /* For small screens */
+  --small-title-s: 20px;
+  --big-title-s: 2rem;
+  --description-s: 1rem;
+  --button-s: 1rem;
+
+  /* for mobile screens */
+  --small-title-xs: 18px;
+  --big-title-xs: 1.8rem;
+  --description-xs: 0.8rem;
+  --button-xs: 0.8rem;
+}
