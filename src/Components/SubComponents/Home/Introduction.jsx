@@ -10,17 +10,24 @@ function Introduction() {
     "Our mission at Lumosys Solutions is to empower businesses with innovative software solutions that drive growth, efficiency, and customer satisfaction."
   );
 
+  const [vision, setVision] = useState(true);
+  const [mission, setMission] = useState(false);
+
   // bttn click handlers
   const missionBtnClick = () => {
     setStatement(
       "Our mission at Lumosys Solutions is to empower businesses with innovative software solutions that drive growth, efficiency, and customer satisfaction."
     );
+    setVision(false);
+    setMission(true);
   };
 
   const visionBtnClick = () => {
     setStatement(
       "Our vision at Lumosys Solutions is to become a leading global provider of software development, web designing, and security solutions."
     );
+    setVision(true);
+    setMission(false);
   };
 
   return (
@@ -44,15 +51,25 @@ function Introduction() {
             organization towards unprecedented growth and prosperity.
           </p>
           <div className="selectionContainer">
-            <button id="missionBtn" onClick={missionBtnClick}>
+            <button
+              id="missionBtn"
+              className={mission ? "" : "not_selected"}
+              onClick={missionBtnClick}
+            >
               Mission
+              <div className={mission ? "underline active" : "underline"}></div>
             </button>
-            <button id="visionBtn" onClick={visionBtnClick}>
+            <button
+              id="visionBtn"
+              onClick={visionBtnClick}
+              className={vision ? "" : "not_selected"}
+            >
               Vision
+              <div className={vision ? "underline active" : "underline"}></div>
             </button>
           </div>
           <div className="selectedText">
-            <span>{statement}</span>
+            <span id="mv_statement">{statement}</span>
           </div>
           <button id="aboutUsBtn">About Us</button>
         </div>

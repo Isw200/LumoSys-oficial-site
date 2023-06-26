@@ -2,7 +2,7 @@
   height: 80%;
   width: 100%;
   display: flex;
-  background-color: rgb(122, 185, 240);
+  /* background-color: rgb(122, 185, 240); */
   justify-content: center;
 }
 
@@ -10,7 +10,7 @@
   padding: 40px 0px;
   height: 100%;
   width: 80%;
-  background-color: rgb(134, 251, 84);
+  /* background-color: rgb(134, 251, 84); */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,6 +23,7 @@
   height: 350px;
   color: black;
   background-color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .CardSlider .main_container .card img {

@@ -3,7 +3,7 @@
   height: fit-content;
   display: flex;
   justify-content: center;
-  background-color: royalblue;
+  background-color: #fcf8ff;
 }
 
 .OurServices .mainContainer {
@@ -12,12 +12,30 @@
   align-items: center;
   width: 100%;
   height: inherit;
-  background-color: rgb(255, 0, 4);
+  /* background-color: rgb(255, 0, 4); */
   flex-direction: column;
 }
 
 .OurServices .descContainer {
   width: 80%;
   height: inherit;
-  background-color: rgb(0, 0, 0);
+  margin-top: 60px;
+  /* background-color: rgb(0, 0, 0); */
+}
+
+.OurServices #topic {
+  color: #6c6c6c;
+  font-size: 1rem;
+}
+
+.OurServices #it_services_1 {
+  color: #e70f77;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.OurServices #it_services_2 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
 }

@@ -6,7 +6,9 @@ function OurServices() {
     <div className="OurServices">
       <div className="mainContainer">
         <div className="descContainer">
-          <h1>Our Services</h1>
+          <span id="topic">Our Services</span>
+          <h1 id="it_services_1">Specialized IT Services Designed</h1>
+          <h2 id="it_services_2">for Your Industry's Demands</h2>
         </div>
         <CardSlider />
       </div>

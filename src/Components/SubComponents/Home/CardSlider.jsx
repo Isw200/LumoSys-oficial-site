@@ -34,7 +34,6 @@ function CardSlider() {
           style={{ color: "#680684", cursor: "pointer" }}
         />
         {slides.map((slide) => {
-          console.log(slide);
           return (
             <div className="card">
               <img className="image" src={slide.image} alt="slide" />
