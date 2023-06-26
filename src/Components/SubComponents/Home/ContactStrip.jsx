@@ -1,10 +1,17 @@
 import "../../../Styles/ContactStrip.css";
 
+import UserProfile1 from "../../../Assets/Images/team-profile.png";
+
 function ContactStrip() {
   return (
     <div className="ContactStrip">
       <div className="mainContainer">
-        <div className="imageContainer"></div>
+        <div className="imageContainer">
+          <img src={UserProfile1} alt="" />
+          <img src={UserProfile1} alt="" />
+          <img src={UserProfile1} alt="" />
+          <img src={UserProfile1} alt="" />
+        </div>
         <div className="descContainer">
           <h5>Contact Us</h5>
           <h4>Let's Dive into Your Product </h4>

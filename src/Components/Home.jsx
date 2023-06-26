@@ -18,6 +18,7 @@ import pythonLogo from "../Assets/Logo/python.png";
 import azureLogo from "../Assets/Logo/azure.png";
 import ContactStrip from "./SubComponents/Home/ContactStrip";
 import OurServices from "./SubComponents/Home/OurServices";
+import Referances from "./SubComponents/Home/Carousel";
 
 function Home() {
   return (
@@ -73,6 +74,7 @@ function Home() {
           </div>
         </div>
         <OurServices />
+        <Referances />
         <ContactStrip />
       </div>
     </div>
