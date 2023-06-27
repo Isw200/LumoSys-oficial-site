@@ -5,7 +5,7 @@ import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import ContactUs from "./Components/ContactUs";
-import ServicesWeb from "./Components/ServicesWeb";
+import ServicesFullStack from "./Components/ServicesFullStack";
 import ServicesMobile from "./Components/ServicesMobile";
 import ServicesCloud from "./Components/ServicesCloud";
 import ServicesUiUx from "./Components/ServicesUiUx";
@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services-web" element={<ServicesWeb />} />
+          <Route path="/services-fullstack" element={<ServicesFullStack />} />
           <Route path="/services-mobile" element={<ServicesMobile />} />
           <Route path="/services-cloud" element={<ServicesCloud />} />
           <Route path="/services-uiux" element={<ServicesUiUx />} />
