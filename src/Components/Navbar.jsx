@@ -95,7 +95,7 @@ function Navbar() {
                 <a href="/about">About</a>
               </li>
               <li>
-                <a href="/services-web">Services</a>
+                <a>Services</a>
               </li>
               <li>
                 <a href="/products">Our Products</a>
