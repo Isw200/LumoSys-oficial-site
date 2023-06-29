@@ -57,7 +57,6 @@ const items=[
 
 
 function OurServices() {
-
   return (
     <div className="OurServices">
       <div className="titles">
