@@ -43,6 +43,7 @@
     background-color: #FCF8FF;
     padding-bottom: 4rem;
     padding-top: 4rem;
+    text-align: center;
 }
 
 .servicescloud .pallet2 .pallet2_container > p {
@@ -130,6 +131,7 @@
     flex-direction: column;
     width: 80%;
     margin: 6rem auto;
+    text-align: center;
 }
 
 .servicescloud .pallet3 .bottomHeading{
@@ -246,6 +248,7 @@
     flex-direction: column;
     width: 80%;
     margin: 6rem auto 4rem auto;
+    align-items: center;
 }
 
 .servicescloud .pallet4 .bottomHeading{
