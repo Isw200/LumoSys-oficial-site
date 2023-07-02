@@ -23,7 +23,6 @@ import Referances from "./SubComponents/Home/Carousel";
 function Home() {
   return (
     <div className="Home">
-      <div className="mainContainer">
         <div
           className="bgImgContainer"
           style={{
@@ -37,7 +36,6 @@ function Home() {
             Illuminating your business with our cutting-edge software solutions
           </p>
           <div className="buttonContainer">
-            <div className="btnSubContainer">
               <button id="ourWorkBtn">
                 <span>See our work </span>
 
@@ -50,13 +48,17 @@ function Home() {
                 />
               </button>
               <button id="chatBtn">Let's chat </button>
-            </div>
           </div>
         </div>
         <Introduction />
-        <div className="techImgContainer">
-          <img id="techBg" src={techBg} alt="" />
-          <div className="techImageDesc">
+        <div className="techImgContainer"
+          style={{
+            backgroundImage: `url(${techBg})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
+            <div className="techImageDesc">
             <h4>We are with</h4>
             <h3>Latest Technologies</h3>
           </div>
@@ -76,7 +78,6 @@ function Home() {
         <OurServices />
         <Referances />
         <ContactStrip />
-      </div>
     </div>
   );
 }

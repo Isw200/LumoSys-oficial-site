@@ -4,8 +4,8 @@ import Footer from "./Components/Footer";
 
 import Home from "./Components/Home";
 import About from "./Components/About";
-import ContactUs from "./Components/ContactUs";
-import ServicesFullStack from "./Components/ServicesFullStack";
+import ContactUs from "./Components/Contactus";
+import ServicesWeb from "./Components/ServicesWeb";
 import ServicesMobile from "./Components/ServicesMobile";
 import ServicesCloud from "./Components/ServicesCloud";
 import ServicesUiUx from "./Components/ServicesUiUx";

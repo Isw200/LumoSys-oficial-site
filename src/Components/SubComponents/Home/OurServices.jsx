@@ -1,9 +1,9 @@
 import "../../../Styles/OurServices.css";
 import Carousel from "react-elastic-carousel";
-import Item from "./Item";
 import React, { useState } from "react";
 import UiImg from "../../../Assets/Images/UiImg.png";
 import ArrowPathServices from "../../../Assets/Images/ArrowPathServices.png";
+
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -54,6 +54,7 @@ const items=[
     link:"/services-uiux"
   },
 ];
+
 
 
 function OurServices() {
