@@ -1,4 +1,5 @@
 import React from "react";
+import SvgComponent from "./SubComponents/SvgComponent";
 import "../Styles/Home.css";
 import mainBgImg from "../Assets/Backgrounds/homeMainBackground.png";
 import Introduction from "./SubComponents/Home/Introduction";
@@ -22,7 +23,6 @@ import Referances from "./SubComponents/Home/Carousel";
 function Home() {
   return (
     <div className="Home">
-      <div className="mainContainer">
         <div
           className="bgImgContainer"
           style={{
@@ -36,7 +36,6 @@ function Home() {
             Illuminating your business with our cutting-edge software solutions
           </p>
           <div className="buttonContainer">
-            <div className="btnSubContainer">
               <button id="ourWorkBtn">
                 <span>See our work </span>
 
@@ -49,7 +48,6 @@ function Home() {
                 />
               </button>
               <button id="chatBtn">Let's chat </button>
-            </div>
           </div>
         </div>
         {/* <Introduction /> */}
@@ -75,7 +73,6 @@ function Home() {
         <OurServices />
         <Referances />
         <ContactStrip />
-      </div>
     </div>
   );
 }
