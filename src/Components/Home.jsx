@@ -1,5 +1,4 @@
 import React from "react";
-import SvgComponent from "./SubComponents/SvgComponent";
 import "../Styles/Home.css";
 import mainBgImg from "../Assets/Backgrounds/homeMainBackground.png";
 import Introduction from "./SubComponents/Home/Introduction";
@@ -53,7 +52,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <Introduction />
+        {/* <Introduction /> */}
         <div className="techImgContainer">
           <img id="techBg" src={techBg} alt="" />
           <div className="techImageDesc">

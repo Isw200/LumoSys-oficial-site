@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { AlignRightOutlined } from "@ant-design/icons";
 
 import "../Styles/Navbar.css";
 import Logo from "../Assets/Logo/white_logo.png";
