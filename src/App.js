@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services-web" element={<ServicesWeb />} />
+          <Route path="/services-fullstack" element={<ServicesFullStack />} />
           <Route path="/services-mobile" element={<ServicesMobile />} />
           <Route path="/services-cloud" element={<ServicesCloud />} />
           <Route path="/services-uiux" element={<ServicesUiUx />} />

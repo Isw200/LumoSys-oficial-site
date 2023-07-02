@@ -1,7 +1,9 @@
 import "../../../Styles/OurServices.css";
 import Carousel from "react-elastic-carousel";
 import React, { useState } from "react";
-import ItemImage from "../../../Assets/Logo/item-image.png"
+import UiImg from "../../../Assets/Images/UiImg.png";
+import ArrowPathServices from "../../../Assets/Images/ArrowPathServices.png";
+
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -10,47 +12,52 @@ const breakPoints = [
   { width: 1200, itemsToShow: 4 },
 ];
 
-function OurServices() {
-  const [items, setItems] = useState([
-    {
-      title: "Item Title",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
-    },
-    {
-      title: "Item Title",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
-    },
-    {
-      title: "Item Title",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
-    },
-    {
-      title: "Item Title",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
-    },
-    {
-      title: "Item Title",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
-    },
-    {
-      title: "Item Title",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
-    },
-    {
-      title: "Item Title",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
-    },
-    {
-      title: "Item Title",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
-    },
-    {
-      title: "Item Title",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
-    },
-    
-  ]);
+const items=[
+  {
+    key:1,
+    title:"Mobile Development",
+    disc:"Lorem ipsum dolor sit amet consectetur. Nunc in in odio morbi. Sodales elementum congue elementum amet sed luctus iaculis. Aliquam faucibus convallis orci morbi massa nulla massa.",
+    img:UiImg,
+    imgarrow:ArrowPathServices,
+    link:"/services-mobile"
+  },
+  {
+    key:2,
+    title: "Full Stack Development",
+    disc:"Lorem ipsum dolor sit amet consectetur. Nunc in in odio morbi. Sodales elementum congue elementum amet sed luctus iaculis. Aliquam faucibus convallis orci morbi massa nulla massa.",
+    img:UiImg,
+    imgarrow:ArrowPathServices,
+    link:"/services-fullstack"
+  },
+  {
+    key:3,
+    title: "Cloud Services",
+    disc:"Lorem ipsum dolor sit amet consectetur. Nunc in in odio morbi. Sodales elementum congue elementum amet sed luctus iaculis. Aliquam faucibus convallis orci morbi massa nulla massa.",
+    img:UiImg,
+    imgarrow:ArrowPathServices,
+    link:"/services-cloud"
+  },
+  {
+    key:4,
+    title: "Ui/Ux Design",
+    disc:"Lorem ipsum dolor sit amet consectetur. Nunc in in odio morbi. Sodales elementum congue elementum amet sed luctus iaculis. Aliquam faucibus convallis orci morbi massa nulla massa.",
+    img:UiImg,
+    imgarrow:ArrowPathServices,
+    link:"/services-uiux"
+  },
+  {
+    key:5,
+    title: "Ui/Ux Design",
+    disc:"Lorem ipsum dolor sit amet consectetur. Nunc in in odio morbi. Sodales elementum congue elementum amet sed luctus iaculis. Aliquam faucibus convallis orci morbi massa nulla massa.",
+    img:UiImg,
+    imgarrow:ArrowPathServices,
+    link:"/services-uiux"
+  },
+];
 
+
+
+function OurServices() {
   return (
     <div className="OurServices">
       <div className="titles">
@@ -61,13 +68,12 @@ function OurServices() {
       <div className="carousel-wrapper">
         <Carousel breakPoints={breakPoints}>
           {items.map((item) => (
-            <div key={item} className="item">
-              <div className="item-image">
-                <img src={ItemImage} alt="" />
-              </div>
-              <div className="item-texts">
-                <h1>{item.title}</h1>
-                <p>{item.description}</p>
+            <div className="card_item" key={item.key}>
+              <div className="card_info">
+              <img className="img" src={item.img} alt="img"/>  
+              <h2>{item.title}</h2>
+              <p>{item.disc}</p>
+              <a href={item.link}><img className="imgarrow" src={item.imgarrow} alt="img"/></a>
               </div>
             </div>
           ))}

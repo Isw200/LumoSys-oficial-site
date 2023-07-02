@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { AlignRightOutlined } from "@ant-design/icons";
+import { MenuProps } from 'antd';
+import { Dropdown, Space } from 'antd';
+
 
 import "../Styles/Navbar.css";
 import Logo from "../Assets/Logo/white_logo.png";
@@ -13,6 +17,41 @@ function Navbar() {
       setColor(false);
     }
   };
+
+  const items: MenuProps['items'] = [
+    {
+      key: '1',
+      label: (
+        <a rel="noopener noreferrer" href="/services-mobile">
+          Mobile Development
+        </a>
+      ),
+    },
+    {
+      key: '2',
+      label: (
+        <a rel="noopener noreferrer" href="/services-fullstack">
+          Full Stack
+        </a>
+      ),
+    },
+    {
+      key: '3',
+      label: (
+        <a rel="noopener noreferrer" href="/services-uiux">
+          Ui/Ux
+        </a>
+      ),
+    },
+    {
+      key: '4',
+      label: (
+        <a rel="noopener noreferrer" href="/services-cloud">
+          Cloud Services
+        </a>
+      ),
+    },
+  ];
 
   const showMobileMenu = () => {
     const mobileMenu = document.querySelector(".mobile-nav");
@@ -56,7 +95,7 @@ function Navbar() {
                 <a href="/about">About</a>
               </li>
               <li>
-                <a href="/services-web">Services</a>
+                <a>Services</a>
               </li>
               <li>
                 <a href="/products">Our Products</a>
@@ -81,9 +120,13 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a className="nav_titles" href="/services-web">
-                Services
-              </a>
+              <Dropdown menu={{ items }}>
+                <a className="nav_titles" onClick={(e) => e.preventDefault()}>
+                  <Space>
+                    Services
+                  </Space>
+                </a>
+              </Dropdown>
             </li>
             <li>
               <a className="nav_titles" href="/products">
