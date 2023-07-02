@@ -119,6 +119,7 @@
   border: solid 2px var(--primary-pink);
   background-color: transparent;
   cursor: pointer;
+  color: var(--primary-pink);
   transition: all 0.2s ease-in;
 }
 

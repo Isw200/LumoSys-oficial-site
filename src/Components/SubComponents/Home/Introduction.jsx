@@ -25,10 +25,9 @@ function Introduction() {
 
   return (
     <div className="Introduction">
-      <div className="mainContainer">
         <div className="leftContainer">
-          <span id="black_topic">Your Gateway to</span>
-          <span id="pink_topic">Exceptional Software Services</span>
+          <h1 id="black_topic">Your Gateway to</h1>
+          <h1 id="pink_topic">Exceptional Software Services</h1>
           <p className="para">
             Established in 2023, Lumosys Solutions shines as a dynamic startup
             company specializing in comprehensive software development,
@@ -36,35 +35,22 @@ function Introduction() {
             ourselves on prioritizing our clients' needs, providing them with
             unparalleled service and support that consistently surpasses their
             expectations.
-          </p>
-          <p className="para">
+          <br />
             Choose Lumosys Solutions as your trusted partner, and let us
             illuminate the path to a brighter future for your business.
             Together, we'll harness the power of technology and drive your
             organization towards unprecedented growth and prosperity.
           </p>
-          <div className="selectionContainer">
-            <button id="missionBtn" onClick={missionBtnClick}>
-              Mission
-            </button>
-            <button id="visionBtn" onClick={visionBtnClick}>
-              Vision
-            </button>
-          </div>
-          <div className="selectedText">
-            <span>{statement}</span>
-          </div>
-          <button id="aboutUsBtn">About Us</button>
+          
         </div>
         <div className="rightContainer">
           <div className="bgContainer">
-            <img src={dotGrid} alt="dot grid image" />
+            <img src={dotGrid} alt="dotgridimage" />
           </div>
           <div className="imgContainer">
             <img src={laptopDesk} alt="" />
           </div>
         </div>
-      </div>
     </div>
   );
 }

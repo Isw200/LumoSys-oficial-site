@@ -110,6 +110,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+/*********************************** 
+Tech Stack 
+************************************/
+
 .intro {
   height: 800px;
   width: 100%;
@@ -118,18 +132,16 @@
 .Home .techImgContainer {
   height: 150px;
   width: 100%;
-  /* display: flex; */
-}
-
-.Home #techBg {
-  width: 100%;
-  z-index: -1;
-}
-
-.Home .techImgContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .Home .techImgContainer{
+    margin-top: 2em;
+    height: 100px;
+  }
 }
 
 .Home .techImgContainer h4 {
@@ -149,16 +161,29 @@
 
 .Home .techStackContainer {
   width: 100%;
-  height: fit-content;
   margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: solid 1px red; */
 }
 
 .Home .techStackContainer img {
   margin: 0 30px;
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .Home .techStackContainer {
+  width: 80%;
+  margin: 20px auto;
+  justify-content: normal;
+  align-items: normal;
+}
+
+  .Home .techStackContainer img {
+    margin: 0 10px;
+    width: 50px;
+  }
 }
 
 .Home .techStackContainer img:hover {

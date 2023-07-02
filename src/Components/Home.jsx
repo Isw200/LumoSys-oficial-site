@@ -50,10 +50,15 @@ function Home() {
               <button id="chatBtn">Let's chat </button>
           </div>
         </div>
-        {/* <Introduction /> */}
-        <div className="techImgContainer">
-          <img id="techBg" src={techBg} alt="" />
-          <div className="techImageDesc">
+        <Introduction />
+        <div className="techImgContainer"
+          style={{
+            backgroundImage: `url(${techBg})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
+            <div className="techImageDesc">
             <h4>We are with</h4>
             <h3>Latest Technologies</h3>
           </div>

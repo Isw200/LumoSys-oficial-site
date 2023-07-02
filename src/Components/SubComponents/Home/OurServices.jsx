@@ -1,7 +1,7 @@
 import "../../../Styles/OurServices.css";
 import Carousel from "react-elastic-carousel";
-import Item from "./Item";
 import React, { useState } from "react";
+import ItemImage from "../../../Assets/Logo/item-image.png"
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -11,7 +11,45 @@ const breakPoints = [
 ];
 
 function OurServices() {
-  const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
+  const [items, setItems] = useState([
+    {
+      title: "Item Title",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
+    },
+    {
+      title: "Item Title",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
+    },
+    {
+      title: "Item Title",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
+    },
+    {
+      title: "Item Title",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
+    },
+    {
+      title: "Item Title",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
+    },
+    {
+      title: "Item Title",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
+    },
+    {
+      title: "Item Title",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
+    },
+    {
+      title: "Item Title",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
+    },
+    {
+      title: "Item Title",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore laborum, totam consectetur voluptatibus voluptatem delectus nisi doloribus ratione autem ipsa."
+    },
+    
+  ]);
 
   return (
     <div className="OurServices">
@@ -23,7 +61,15 @@ function OurServices() {
       <div className="carousel-wrapper">
         <Carousel breakPoints={breakPoints}>
           {items.map((item) => (
-            <Item key={item}>{item}</Item>
+            <div key={item} className="item">
+              <div className="item-image">
+                <img src={ItemImage} alt="" />
+              </div>
+              <div className="item-texts">
+                <h1>{item.title}</h1>
+                <p>{item.description}</p>
+              </div>
+            </div>
           ))}
         </Carousel>
       </div>
