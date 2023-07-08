@@ -1,106 +1,147 @@
+@import "./valuse.css";
+
 .Home {
   width: 100%;
-  height: 100%;
 }
-
-.Home .mainContainer {
-  height: 100%;
-  width: 100%;
-}
-
 .Home .bgImgContainer {
-  height: 800px;
   width: 100%;
-  /* margin-bottom: 200px; */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .Home h1 {
   font-size: 6rem;
   color: white;
   margin: 20px;
 }
-
 .Home p {
   font-size: 1.5rem;
   color: white;
   margin: 20px;
 }
+.Home .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+}
+.Home .buttonContainer button{
+  font-size: 1.5rem;
+  color: white;
+  margin: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 500ms;
+  border-radius: 50px;
+  width: 300px;
+}
+.Home .buttonContainer #ourWorkBtn{
+  padding: 20px 30px;
+  background-color: var(--primary-pink);
+  border: solid 1px var(--primary-pink);
+}
+.Home .buttonContainer #ourWorkBtn:hover{
+  background-color: transparent;
+  border: solid 1px #fff;
+  transition: 500ms;
+}
+.Home .buttonContainer #chatBtn{
+  padding: 20px 30px;
+  background-color: transparent;
+  border: solid 1px white;
+}
+.Home .buttonContainer #chatBtn:hover{
+  background-color: white;
+  border: solid 1px white;
+  color: var(--primary-pink);
+  transition: 500ms;
+}
+
+
+@media screen and (max-width: 768px) {
+  .Home .bgImgContainer {
+    height: 600px;
+    text-align: center;
+  }
+  .Home h1 {
+    font-size: 3rem;
+  }
+  .Home p {
+    font-size: 1rem;
+  }
+  .Home .buttonContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .Home .buttonContainer button{
+    font-size: 1rem;
+    color: white;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 500ms;
+    border-radius: 50px;
+    width: 200px;
+  }
+  .Home .buttonContainer #ourWorkBtn{
+    padding: 20px 30px;
+    background-color: var(--primary-pink);
+    border: solid 1px var(--primary-pink);
+  }
+  .Home .buttonContainer #ourWorkBtn:hover{
+    background-color: transparent;
+    border: solid 1px #fff;
+    transition: 500ms;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************** 
+Tech Stack 
+************************************/
 
 .intro {
   height: 800px;
   width: 100%;
   margin-bottom: 200px;
 }
-
-.Home .buttonContainer {
-  /* border: solid 1px red; */
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.Home .btnSubContainer {
-  /* border: solid 1px red; */
-}
-
-.Home #ourWorkBtn {
-  padding: 10px 20px;
-  margin-right: 20px;
-  border-radius: 30px;
-  background-color: #e70f77;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.Home .arrow {
-  /* margin-top: 8px; */
-}
-
-.Home #ourWorkBtn:hover {
-  transform: scale(1.1);
-  transition: 500ms;
-}
-
-.Home #chatBtn {
-  padding: 14px 40px;
-  border-radius: 30px;
-  background-color: transparent;
-  border: solid 1px #e70f77;
-  cursor: pointer;
-  color: white;
-}
-
-.Home #chatBtn:hover {
-  background-color: white;
-  border: solid 1px white;
-  color: #e70f77;
-  transition: 500ms ease-in-out;
-}
-
 .Home .techImgContainer {
   height: 150px;
   width: 100%;
-  /* display: flex; */
-}
-
-.Home #techBg {
-  width: 100%;
-  z-index: -1;
-}
-
-.Home .techImgContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .Home .techImgContainer{
+    margin-top: 2em;
+    height: 100px;
+  }
 }
 
 .Home .techImgContainer h4 {
@@ -120,19 +161,37 @@
 
 .Home .techStackContainer {
   width: 100%;
-  height: fit-content;
   margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: solid 1px red; */
 }
 
 .Home .techStackContainer img {
   margin: 0 30px;
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .Home .techStackContainer {
+  width: 80%;
+  margin: 20px auto;
+  justify-content: normal;
+  align-items: normal;
+}
+
+  .Home .techStackContainer img {
+    margin: 0 10px;
+    width: 50px;
+  }
 }
 
 .Home .techStackContainer img:hover {
   transform: scale(1.2);
   transition: 0.5s;
+}
+
+
+@media (max-width: 768px) {
+  
 }

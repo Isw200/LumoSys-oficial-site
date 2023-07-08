@@ -1,0 +1,269 @@
+@import url('https://fonts.cdnfonts.com/css/share-tech');
+.servicescloud .pallet1{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    width: 80%;
+    margin: 8rem auto 6rem auto;
+}
+
+.servicescloud .pallet1 .mainHeading{
+   color: #E70F77;
+   font-size: 2.5rem;
+}
+
+.servicescloud .pallet1 >p{
+    color: #000000;
+    padding-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.servicescloud .pallet1 >button{
+    color: #9302F0;
+    text-align: center;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5rem;
+    border: 3px solid #E70F77;
+    font-size: 1rem;
+    background-color: white;
+}
+
+/* Methodology CSS start*/
+.servicescloud .pallet2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0rem auto;
+    background-color: #FCF8FF;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.servicescloud .pallet2 .pallet2_container > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E70F77;
+}
+
+.servicescloud .pallet2 .pallet2_container  {
+    width: 80%;
+}
+
+.servicescloud .pallet2 .pallet2_container .card_pallet1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.servicescloud .pallet2 .pallet2_container .card_pallet1 .box1,.box2,.box3{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    height: 19rem;
+    width: 20rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    line-height: 1.3rem;
+    padding-top: 2rem;
+}
+
+.servicescloud .pallet2 .pallet2_container .card_pallet1 .box1 h2,
+.servicescloud .pallet2 .pallet2_container .card_pallet1 .box2 h2,
+.servicescloud .pallet2 .pallet2_container .card_pallet1 .box3 h2 {
+    margin-top: 2rem;
+}
+
+.servicescloud .pallet2 .pallet2_container .card_pallet1 .box1 h1,
+.servicescloud .pallet2 .pallet2_container .card_pallet1 .box2 h1,
+.servicescloud .pallet2 .pallet2_container .card_pallet1 .box3 h1 {
+    color: #E70F77;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 3rem;
+}
+
+.servicescloud .pallet2 .pallet2_container .card_pallet2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicescloud .pallet2 .pallet2_container .card_pallet2 .box1,.box2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    height: 19rem;
+    width: 20rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    line-height: 1.3rem;
+    padding-top: 2rem;
+}
+
+.servicescloud .pallet2 .pallet2_container .card_pallet2 .box1 h2,
+.servicescloud .pallet2 .pallet2_container .card_pallet2 .box2 h2{
+    margin-top: 2rem;
+}
+
+.servicescloud .pallet2 .pallet2_container .card_pallet2 .box1 h1,
+.servicescloud .pallet2 .pallet2_container .card_pallet2 .box2 h1{
+    color: #E70F77;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 3rem;
+}
+/* Methodology CSS end*/
+
+.servicescloud .pallet3 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 6rem auto;
+    text-align: center;
+}
+
+.servicescloud .pallet3 .bottomHeading{
+    color: #E70F77;
+    text-align: center;
+}
+
+.servicescloud .pallet3 .container1 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+}
+
+.servicescloud .pallet3 .container1 .infoText{
+    color: #000000;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: left;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.servicescloud .pallet3 .container1 > img{
+    display: -webkit-box;
+    margin-left: auto;
+}
+
+.servicescloud .pallet3 .container2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+}
+
+.servicescloud .pallet3 .container2 .infoText{
+    color: #000000;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: right;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.servicescloud .pallet3 .container2 > img{
+    display: -webkit-box;
+    margin-right: auto;
+}
+
+.servicescloud .pallet3 .container3 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+}
+
+.servicescloud .pallet3 .container3 .infoText{
+    color: #000000;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: left;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.servicescloud .pallet3 .container3 > img{
+    display: -webkit-box;
+    margin-left: auto;
+}
+
+.servicescloud .pallet3 .container4 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+}
+
+.servicescloud .pallet3 .container4 .infoText{
+    color: #000000;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: right;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.servicescloud .pallet3 .container4 > img{
+    display: -webkit-box;
+    margin-right: auto;
+    height: 271px;
+    width: 368px;
+}
+
+.servicescloud .pallet3 .container5 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+}
+
+.servicescloud .pallet3 .container5 .infoText{
+    color: #000000;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: left;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.servicescloud .pallet3 .container5 > img{
+    display: -webkit-box;
+    margin-left: auto;
+    height: 271px;
+    width: 368px;
+}
+
+.servicescloud .pallet4 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 6rem auto 4rem auto;
+    align-items: center;
+}
+
+.servicescloud .pallet4 .bottomHeading{
+    color: #E70F77;
+    text-align: center;
+}
+
+.servicescloud .pallet4 .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.servicescloud .pallet4 .container > img {
+    padding: 2rem;
+}

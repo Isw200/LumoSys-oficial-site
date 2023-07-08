@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CaretLeftOutlined, CaretRightOutlined } from "@ant-design/icons";
 
 import coderDojoLogo from "../../../Assets/Images/coderdojo.png";
-
+ 
 import "../../../Styles/Carousel.scss";
 
 const CARDS = 10;

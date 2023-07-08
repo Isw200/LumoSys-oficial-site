@@ -119,6 +119,7 @@
   border: solid 2px var(--primary-pink);
   background-color: transparent;
   cursor: pointer;
+  color: var(--primary-pink);
   transition: all 0.2s ease-in;
 }
 
@@ -182,13 +183,11 @@
     align-items: center;
   }
   .ContactStrip .mainContainer .imageContainer {
-    width: 100%;
-    height: 50%;
+    width: 90%;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
   }
   .ContactStrip .mainContainer .imageContainer img:hover {
     transform: scale(1.1);
@@ -197,6 +196,7 @@
   .ContactStrip .mainContainer .imageContainer img {
     display: block;
     position: static;
+    margin: auto;
   }
   .ContactStrip .mainContainer .imageContainer :nth-child(1) {
     width: 100px;
@@ -222,7 +222,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid #e5e5e5;
   }
   .ContactStrip #para {
     text-align: center;
@@ -234,15 +233,28 @@
     font-weight: 600;
     color: var(--title-gray);
     text-align: center;
+    transform: translateY(-270px);
   }
   .ContactStrip .mainContainer .descContainer h4 {
     font-size: var(--big-title-xs);
+    text-align: center;
   }
   .ContactStrip .mainContainer .descContainer h3 {
     font-size: var(--big-title-xs);
     color: var(--primary-pink);
     margin-bottom: 20px;
+    text-align: center;
   }
+  .ContactStrip .buttonContainer {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
   .ContactStrip .mainContainer .buttonContainer button {
     font-size: var(--button-xs);
   }
