@@ -61,6 +61,29 @@ const iconresponsive = {
     },
 };
 
+const reviewresponsive = {
+    superLargeDesktop: {
+        breakpoint: { max: 4000, min: 3000 },
+        items: 1,
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1450 },
+        items: 1,
+    },
+    desktopMini: {
+        breakpoint: { max: 1450, min: 1024 },
+        items: 1,
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 1,
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+    },
+}
+
 // Ant tab items
 const onChange = (key) => {
     console.log(key);
@@ -353,7 +376,7 @@ const Home = () => {
                     <div className='home-products-top-left'>
                         <h3 className='title-top'>Your Gateway to</h3>
                         <h2 className='title'>
-                            Our Latest Products
+                            Our Latest Projects
                         </h2>
                     </div>
                     <p className='para'>
@@ -380,6 +403,153 @@ const Home = () => {
                                 Read More ...
                             </a>
                         </div>
+                    </div>
+
+                    <div className='home-products-item'>
+                        <div className='home-products-item-img'
+                            style={{
+                                order: '2'
+                            }}
+                        >
+                            <img src={require('./Assets/products/2.png')} alt='1' />
+                        </div>
+                        <div className='home-products-item-content'
+                            style={{
+                                order: '1'
+                            }}
+                        >
+                            <h2>
+                                CoderDojo <p style={{ marginLeft: "10px" }}>Sri Lanka</p>
+                            </h2>
+
+                            <h4>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </h4>
+                            <p>
+                                Established in 2023, Lumosys Solutions shines as a dynamic startup company specializing in comprehensive software development, innovative web designing, and mobile application.
+                            </p>
+                            <a href='/'>
+                                Read More ...
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='home-products-btn'>
+                    <a href='/products' >
+                        View All Projects
+                    </a>
+                </div>
+            </div>
+
+            {/* 
+            /// Reviews Section
+            ______________________________________________////
+            ///
+            */}
+
+            <div className='home-reviews'>
+                <div className='home-reviews-up'>
+                    <h3 className='title-top'>
+                        What Our Clients Say
+                    </h3>
+                    <h2 className='title'>
+                        Client Reviews & Testimonials
+                    </h2>
+                </div>
+
+                <div className='home-reviews-bottum'>
+                    <div className="review-slider">
+                        <Carousel
+                            responsive={reviewresponsive}
+                            infinite={true}
+                            autoPlay={true}
+                            showDots={true}
+                            autoPlaySpeed={3000}
+                            containerClass="carousel-container"
+                            removeArrowOnDeviceType={[
+                                "tablet",
+                                "mobile",
+                                "desktop",
+                                "superLargeDesktop",
+                                "desktopMini",
+                            ]}
+                            dotListClass="custom-dot-list-style"
+                            activeDotClass="custom-dot-active"
+                        >
+
+                            <div className="card">
+                                <div className='card-image'>
+                                    <img
+                                        src={require('./Assets/reviews/1.png')}
+                                        alt='1'
+                                    />
+                                </div>
+                                <div className='card-content'>
+                                    <h4>
+                                        User Name
+                                    </h4>
+                                    <h3>
+                                        CEO of Company
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
+                                        adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
+                                    </p>
+                                    <a href='/'>
+                                        Read More ...
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="card">
+                                <div className='card-image'>
+                                    <img
+                                        src={require('./Assets/reviews/1.png')}
+                                        alt='1'
+                                    />
+                                </div>
+                                <div className='card-content'>
+                                    <h4>
+                                        User Name
+                                    </h4>
+                                    <h3>
+                                        CEO of Company
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
+                                        adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
+                                    </p>
+                                    <a href='/'>
+                                        Read More ...
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="card">
+                                <div className='card-image'>
+                                    <img
+                                        src={require('./Assets/reviews/1.png')}
+                                        alt='1'
+                                    />
+                                </div>
+                                <div className='card-content'>
+                                    <h4>
+                                        User Name
+                                    </h4>
+                                    <h3>
+                                        CEO of Company
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
+                                        adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
+                                    </p>
+                                    <a href='/'>
+                                        Read More ...
+                                    </a>
+                                </div>
+                            </div>
+                        </Carousel>
                     </div>
                 </div>
             </div>
