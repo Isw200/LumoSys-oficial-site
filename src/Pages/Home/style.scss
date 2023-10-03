@@ -10,6 +10,10 @@ _____________________________________________________________________
     font-size: 2rem;
     font-weight: 700;
     margin: 0 0 10px 0;
+
+    @media (max-width: 1280px) {
+        font-size: 1.5rem;
+    }
 }
 
 .title {
@@ -17,6 +21,10 @@ _____________________________________________________________________
     font-weight: 700;
     margin: 0 0 20px 0;
     color: #E70F77;
+
+    @media (max-width: 1280px) {
+        font-size: 2rem;
+    }
 
     span {
         color: #000;
@@ -27,6 +35,10 @@ _____________________________________________________________________
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.5;
+
+    @media (max-width: 1280px) {
+        font-size: 1rem;
+    }
 }
 
 
@@ -37,6 +49,10 @@ Hero
 
 _____________________________________________________________________
  */
+
+.home-page {
+    width: 100%;
+}
 
 .home-page .hero {
     display: flex;
@@ -89,6 +105,18 @@ _____________________________________________________________________
     background-color: transparent;
 }
 
+@media (max-width: 768px) {
+    .home-page .hero h1 {
+        font-size: 3rem;
+        width: 80%;
+    }
+
+    .home-page .hero h4 {
+        font-size: 1rem;
+        width: 80%;
+    }
+}
+
 
 
 /* 
@@ -105,8 +133,47 @@ _____________________________________________________________________
         align-items: center;
         justify-content: space-between;
 
+        @media (max-width: 1280px) {
+            padding: 50px 100px;
+        }
+
+        @media (max-width: 979px) {
+            padding: 50px 50px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 30px;
+            flex-direction: column;
+        }
+
         .about-left {
             width: 50%;
+
+            @media (max-width: 979px) {
+                width: 70%;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        .about-right {
+            @media (max-width: 768px) {
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            img {
+                width: 100%;
+
+                @media (max-width: 768px) {
+                    width: 80%;
+                }
+            }
         }
     }
 }
@@ -123,6 +190,10 @@ _____________________________________________________________________
 .home-page {
     .services {
         padding: 50px 0;
+
+        @media screen and (max-width: 768px) {
+            padding: 30px 0;
+        }
 
         .services-inner {
             text-align: center;
@@ -179,6 +250,10 @@ _____________________________________________________________________
             justify-content: center;
             flex-direction: column;
 
+            @media screen and (max-width: 768px) {
+                padding: 30px 0;
+            }
+
             h3 {
                 color: #fff;
             }
@@ -204,18 +279,46 @@ _____________________________________________________________________
         background-color: #FCF8FF;
         padding: 50px 200px;
 
+        @media (max-width: 1280px) {
+            padding: 50px 100px;
+        }
+
+        @media (max-width: 979px) {
+            padding: 50px 50px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 30px;
+            flex-direction: column;
+        }
+
         .home-products-top {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 20px;
 
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
             .home-products-top-left {
                 width: 60%;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    text-align: center;
+                }
             }
 
             p {
                 width: 60%;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    text-align: center;
+                    margin: 0;
+                }
             }
         }
 
@@ -228,8 +331,16 @@ _____________________________________________________________________
                 background-color: #fff;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                }
+
                 .home-products-item-img {
                     width: 600px;
+
+                    @media (max-width: 1280px) {
+                        width: 100%;
+                    }
 
                     img {
                         width: 100%;
@@ -285,6 +396,80 @@ _____________________________________________________________________
                         text-decoration: none;
                         font-size: 1.2rem;
                     }
+
+                    @media (max-width: 1280px) {
+                        h2 {
+                            font-size: 2.5rem;
+
+                            span {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        h4 {
+                            font-size: 1.2rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                        }
+
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    @media (max-width: 979px) {
+                        padding: 10px 20px;
+                        width: 60%;
+
+                        h2 {
+                            font-size: 2rem;
+
+                            span {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        h4 {
+                            font-size: 1rem;
+                            width: 95%;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                        }
+
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+                        padding: 20px;
+                        width: 90%;
+
+                        h2 {
+                            font-size: 2rem;
+
+                            span {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        h4 {
+                            font-size: 1rem;
+                            width: 95%;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                        }
+
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
                 }
             }
         }
@@ -332,6 +517,19 @@ _____________________________________________________________________
     .home-reviews {
         padding: 100px 200px;
 
+        @media (max-width: 1280px) {
+            padding: 50px 100px;
+        }
+
+        @media (max-width: 979px) {
+            padding: 50px 50px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 30px;
+            flex-direction: column;
+        }
+
         .home-reviews-bottum {
             margin-top: 50px;
 
@@ -343,9 +541,36 @@ _____________________________________________________________________
                     margin: 0 auto;
                     padding: 30px;
 
+                    @media (max-width: 768px) {
+                        flex-direction: column;
+                    }
+
+                    .card-image {
+                        width: 800px;
+                        border-radius: 100%;
+                        margin-right: 20px;
+
+                        @media (max-width: 1280px) {
+                            width: 600px;
+                        }
+
+                        @media (max-width: 768px) {
+                            width: 160px;
+                            margin-right: 0px;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
 
                     .card-content {
-                        margin-left: 40px;
+                        margin-left: 30px;
+
+                        @media (max-width: 768px) {
+                            margin-left: 0px;
+                        }
 
                         h4 {
                             font-size: 2.4rem;
@@ -373,11 +598,324 @@ _____________________________________________________________________
                             text-decoration: none;
                             font-size: 1.2rem;
                         }
+
+                        @media (max-width: 1280px) {
+                            h4 {
+                                font-size: 2rem;
+                            }
+
+                            h3 {
+                                font-size: 1.2rem;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                            }
+
+                            a {
+                                font-size: 1rem;
+                            }
+                        }
                     }
                 }
 
                 .custom-dot-list-style button {
                     border: none;
+                }
+            }
+        }
+    }
+}
+
+/*
+////////////////////
+
+Reviews
+
+_____________________________________________________________________
+ */
+
+.home-page {
+    .home-team {
+        padding: 50px 200px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 1280px) {
+            padding: 50px 100px;
+        }
+
+        @media (max-width: 979px) {
+            padding: 50px 50px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 30px;
+            flex-direction: column;
+        }
+
+        .home-team-left {
+            width: 60%;
+
+            @media (max-width: 1280px) {
+                width: 50%;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+                text-align: center;
+            }
+
+            .home-team-cards {
+                display: flex;
+
+                @media (max-width: 768px) {
+                    margin-left: 40px;
+                }
+
+                .home-team-cards-item {
+                    border-radius: 100%;
+                    overflow: hidden;
+                    transition: all 0.3s ease;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+                    @media (max-width: 768px) {
+                        margin: 0 auto;
+                        margin-bottom: 20px;
+                    }
+
+                    .card-details {
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+
+                        h2 {
+                            font-size: 1rem;
+                            margin: 0;
+                            margin-bottom: 10px;
+                        }
+
+                        div {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 10px;
+
+                            a {
+                                color: #fff;
+                                text-decoration: none;
+                                font-size: 1.2rem;
+                                transition: all 0.3s ease;
+
+                                &:hover {
+                                    color: #E70F77;
+                                    transform: scale(1.1);
+                                    transition: all 0.3s ease;
+                                    z-index: 1000;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        z-index: 1000;
+                    }
+                }
+
+                // chnage position of cards
+                .home-team-cards-item:nth-child(1) {
+                    transform: scale(1) translate(0px, 0px);
+
+                    &:hover {
+                        transform: scale(1.2) translate(0px, 0px);
+                    }
+                }
+
+                .home-team-cards-item:nth-child(2) {
+                    transform: scale(1) translate(-20px, 0px);
+
+                    &:hover {
+                        transform: scale(1.2) translate(-20px, 0px);
+                    }
+                }
+
+                .home-team-cards-item:nth-child(3) {
+                    transform: scale(1) translate(-40px, 0px);
+
+                    &:hover {
+                        transform: scale(1.2) translate(-40px, 0px);
+                    }
+                }
+
+                .home-team-cards-item:nth-child(4) {
+                    transform: scale(1) translate(-60px, 0px);
+
+                    &:hover {
+                        transform: scale(1.2) translate(-60px, 0px);
+                    }
+                }
+            }
+        }
+
+        .home-team-right {
+            margin-top: 10px;
+            width: 30%;
+
+            @media (max-width: 1280px) {
+                width: 50%;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+/*
+////////////////////
+
+Reviews
+
+_____________________________________________________________________
+ */
+
+.home-page {
+    .home-start {
+        padding: 50px 200px;
+
+        @media (max-width: 1280px) {
+            padding: 50px 100px;
+        }
+
+        @media (max-width: 979px) {
+            padding: 50px 50px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 30px;
+        }
+
+        .home-start-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(90deg, #9302F0 0%, #cd7cff 100%);
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            .home-start-inner-left {
+                width: 40%;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 50px;
+
+                @media (max-width: 1280px) {
+                    padding: 20px 0 20px 40px;
+                }
+
+                h3 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    margin: 0 0 10px 0;
+                    color: #fff;
+                }
+
+                p {
+                    margin: 30px 0;
+                    font-size: 1.2rem;
+                    color: #ffffff;
+                    line-height: 1.5;
+                }
+
+                @media (max-width: 979px) {
+                    width: 50%;
+
+                    h3 {
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    width: 90%;
+                    padding-left: 0;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    h3 {
+                        font-size: 2rem;
+                        margin: 0;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        margin: 20px 0;
+                    }
+                }
+
+                button {
+                    cursor: pointer;
+                    font-weight: 700;
+                    font-family: Helvetica, "sans-serif";
+                    transition: all .2s;
+                    padding: 10px 20px;
+                    border-radius: 100px;
+                    background: #E70F77;
+                    border: 1px solid transparent;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    color: #fff;
+                }
+
+                button:hover {
+                    background: #920348;
+                }
+
+                button>svg {
+                    width: 34px;
+                    margin-left: 10px;
+                    transition: transform .3s ease-in-out;
+                    color: #fff;
+                }
+
+                button:hover svg {
+                    transform: translateX(5px);
+                }
+
+                button:active {
+                    transform: scale(0.95);
+                }
+
+
+            }
+
+            .home-start-inner-right {
+                width: 60%;
+
+                @media (max-width: 768px) {
+                    width: 100%;
                 }
             }
         }
