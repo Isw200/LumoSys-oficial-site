@@ -15,6 +15,16 @@ const Navigator = () => {
         });
     }, []);
 
+    // add class to navbar based on route
+    useEffect(() => {
+        const path = window.location.pathname;
+        if (path === '/') {
+            document.querySelector('.navbar').classList.add('navbar--home');
+        } else {
+            document.querySelector('.navbar').classList.remove('navbar--home');
+        }
+    }, []);
+
     return (
         <>
             <div className='navbar'>
@@ -29,7 +39,7 @@ const Navigator = () => {
                 </div>
                 <div className='nav-contact'>
                     <a
-                        href="/"
+                        href="/contact-us"
                         className='btn'
                     >
                         Contact Us
@@ -69,7 +79,7 @@ const Navigator = () => {
                     </div>
                     <div className='mobile-nav-contact'>
                         <a
-                            href="/"
+                            href="/contact-us"
                             className='btn'
                         >
                             Contact Us
