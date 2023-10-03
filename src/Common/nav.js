@@ -7,7 +7,7 @@ const Navigator = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
+            if (window.scrollY > 50) {
                 document.querySelector('.navbar').classList.add('navbar--scroll');
             } else {
                 document.querySelector('.navbar').classList.remove('navbar--scroll');
