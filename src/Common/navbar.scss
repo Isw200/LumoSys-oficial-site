@@ -70,7 +70,7 @@
 .navbar a {
   text-decoration: none;
   font-size: 18px;
-  color: #fff;
+  color: #000;
   transition: all 0.3s ease;
 }
 
@@ -78,6 +78,9 @@
   transform: scale(1.1);
 }
 
+.navbar--home a {
+  color: #fff;
+}
 
 
 .navbar--scroll a {
@@ -91,6 +94,10 @@
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.nav-contact a {
+  color: #fff;
 }
 
 .navbar--scroll .nav-contact a {
