@@ -1,0 +1,208 @@
+@import url('https://fonts.cdnfonts.com/css/share-tech');
+
+.servicesfs .pallet1{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    width: 80%;
+    margin: 8rem auto 4rem auto;
+}
+.servicesfs  .pallet1 .mainHeading{
+   color: #E70F77;
+   font-size: 2.5rem;
+}
+.servicesfs  .pallet1 >p{
+    color: #000000;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.servicesfs  .pallet1 >button{
+    color: #9302F0;
+    text-align: center;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5rem;
+    border: 3px solid #E70F77;
+    font-size: 1rem;
+    background-color: white;
+}
+
+/* Methodology CSS start*/
+.servicesfs .pallet2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0rem auto;
+    background-color: #FCF8FF;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.servicesfs .pallet2 .pallet2_container > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E70F77;
+}
+
+.servicesfs .pallet2 .pallet2_container  {
+    width: 80%;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.CodingIcon{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 16.3rem;
+    position: relative;
+    top: 1rem;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box1,.box2,.box3{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: RGB(255, 255, 255);
+    height: 19rem;
+    width: 20rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    box-shadow: 0 3px 10px RGB(0 0 0 / 0.2);
+    line-height: 1.3rem;
+    padding-top: 2rem;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box1 h2,
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box2 h2,
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box3 h2 {
+    margin-top: 2rem;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box1 h1,
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box2 h1,
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box3 h1 {
+    color: #E70F77;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 3rem;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet2 .box1,.box2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: RGB(255, 255, 255);
+    height: 19rem;
+    width: 20rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    box-shadow: 0 3px 10px RGB(0 0 0 / 0.2);
+    line-height: 1.3rem;
+    padding-top: 2rem;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet2 .box1 h2,
+.servicesfs .pallet2 .pallet2_container .card_pallet2 .box2 h2{
+    margin-top: 2rem;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet2 .box1 h1,
+.servicesfs .pallet2 .pallet2_container .card_pallet2 .box2 h1{
+    color: #E70F77;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 3rem;
+}
+/* Methodology CSS end*/
+
+.servicesfs .pallet3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0rem auto;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.servicesfs .pallet3 > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E70F77;
+}
+
+.servicesfs .pallet3 .container1 > img {
+    flex-direction: row;
+    display: inline-block;
+    margin: 3rem;
+    height: 8rem;
+    width: 8rem;
+}
+
+.servicesfs .pallet3 .container2 > img {
+    flex-direction: row;
+    display: inline-block;
+    margin: 3rem;
+    height: 8rem;
+    width: 8rem;
+}
+
+.servicesfs .pallet3 .container3 > img {
+    flex-direction: row;
+    display: inline-block;
+    margin: 3rem;
+    height: 8rem;
+    width: 8rem;
+}
+
+.servicesfs .pallet3 .container1 .icon{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.servicesfs .pallet3 .container1 .icon:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.servicesfs .pallet3 .container2 .icon{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.servicesfs .pallet3 .container2 .icon:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.servicesfs .pallet3 .container3 .icon{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.servicesfs .pallet3 .container3 .icon:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
