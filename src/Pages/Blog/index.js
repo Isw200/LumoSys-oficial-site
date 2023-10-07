@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 // Antd
-import { Segmented, AutoComplete, Input, Spin, Tag, Skeleton } from 'antd';
+import { Segmented, AutoComplete, Input, Tag } from 'antd';
 
 // Lottie
 import Lottie from 'react-lottie';

@@ -18,7 +18,7 @@ const Navigator = () => {
     // add class to navbar based on route
     useEffect(() => {
         const path = window.location.pathname;
-        if (path === '/') {
+        if (path === '/' || path === '/products/lumolearn') {
             document.querySelector('.navbar').classList.add('navbar--home');
         } else {
             document.querySelector('.navbar').classList.remove('navbar--home');

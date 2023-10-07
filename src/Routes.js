@@ -10,6 +10,7 @@ import ContactUs from './Pages/Contact'
 import Admin from './Pages/Admin'
 import Login from './Pages/Admin/login'
 import BlogPage from './Pages/Blog/BlogPage'
+import LumoLearn from './Pages/Products/ProductItems'
 
 const RoutesJs = () => {
     return (
@@ -23,6 +24,7 @@ const RoutesJs = () => {
                 <Route path='/admin' element={<Admin />} />
                 <Route path='/admin/login' element={<Login />} />
                 <Route path='/blog/:blogId' element={<BlogPage />} />
+                <Route path='/products/lumolearn' element={<LumoLearn />} />
             </Routes>
         </BrowserRouter>
     )
