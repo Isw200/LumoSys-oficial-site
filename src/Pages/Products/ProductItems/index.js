@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 // Carousel
 import Carousel from "react-multi-carousel";
@@ -30,6 +30,18 @@ const reviewresponsive = {
 }
 
 const LumoLearn = () => {
+
+    useEffect(() => {
+        const activeTab = document.querySelector(".activenav");
+        if (activeTab) {
+            activeTab.classList.remove("activenav");
+        }
+        const currentTab = document.getElementById("navproducts");
+        if (currentTab) {
+            currentTab.classList.add("activenav");
+        }
+    }, []);
+
     return (
         <div className='lumo-learn'>
             <div className='lumo-learn-top'>
@@ -38,10 +50,10 @@ const LumoLearn = () => {
                         Lumo<span>Learn</span>
                     </h1>
                     <h2>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Your Path to Teaching Excellence Starts Here.
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eu lorem et ultricies.
+                        Elevate education with our feature-packed LMS, designed to simplify teaching, enhance learning, and empower educators and students alike.
                     </p>
                     <button>
                         Learn More
@@ -388,7 +400,7 @@ const LumoLearn = () => {
                         Get Started with LumoLearn
                     </h1>
                     <h2>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Unleash your teaching potential with LumoLearn.
                     </h2>
                     <button>
                         Get Started
