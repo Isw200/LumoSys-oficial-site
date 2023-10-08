@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 // Antd
 import { Image, Tabs } from 'antd';
@@ -98,12 +98,12 @@ const items = [
     {
         key: '1',
         label: 'Mission',
-        children: 'Our mission at Lumosys Solutions is to empower businesses with innovative software solutions that drive growth, efficiency, and customer satisfaction. ',
+        children: 'We provide tailored, high-quality software, web design, and mobile app solutions, fostering innovation and exceeding customer expectations. We enable businesses to thrive in the digital age.',
     },
     {
         key: '2',
         label: 'Vision',
-        children: 'Our mission at Lumosys Solutions is to empower businesses with innovative software solutions that drive growth, efficiency, and customer satisfaction. ',
+        children: 'To become a global leader in transformative technology solutions, empowering businesses through cutting-edge software, web design, and mobile apps, fostering growth and prosperity.',
     },
 ];
 
@@ -128,6 +128,17 @@ AOS.init({
 });
 
 const Home = () => {
+    // Active link
+    useEffect(() => {
+        const activeTab = document.querySelector(".activenav");
+        if (activeTab) {
+            activeTab.classList.remove("activenav");
+        }
+        const currentTab = document.getElementById("navhome");
+        if (currentTab) {
+            currentTab.classList.add("activenav");
+        }
+    }, []);
 
     const lottieOptions = {
         loop: true,
@@ -150,7 +161,7 @@ const Home = () => {
                     Illuminating Tomorrow's Technology.
                 </h1>
                 <h4 data-aos="fade-up">
-                    Empowering innovation, one line of code at a time. Empowering innovation, one line of code at a time. Empowering innovation, one line of code at a time.
+                    Pioneering Innovation, Shaping the Future. Explore cutting-edge solutions that illuminate tomorrow's technology landscape.
                 </h4>
                 <div className='hero-buttons'>
                     <a href='/products' data-aos="fade-up"> Products </a>
@@ -171,10 +182,11 @@ const Home = () => {
                     <h2 data-aos="fade-up" className='title'>Exceptional Software Services</h2>
 
                     <p className='para' data-aos="fade-up">
-                        Established in 2023, Lumosys Solutions shines as a dynamic startup company specializing in comprehensive software development, innovative web designing, and mobile application solutions. We pride ourselves on prioritizing our clients' needs, providing them with unparalleled service and support that consistently surpasses their expectations.
+                        Established in 2023, Lumosys Technologies is a leading startup company specializing in custom software development, innovative web design, and mobile application solutions. Our dedicated team prioritizes client needs, ensuring unparalleled service and support. We shine a light on your path to business success, harnessing technology's power to drive growth and prosperity.
                         <br />
                         <br />
-                        Choose Lumosys Solutions as your trusted partner, and let us illuminate the path to a brighter future for your business. Together, we'll harness the power of technology and drive your organization towards unprecedented growth and prosperity.
+
+                        As a trusted partner, Lumosys Technologies delivers tailored software solutions across diverse industries. Our commitment to quality and innovation has earned us a reputation for excellence. Explore our comprehensive services to discover how we can illuminate your business's future.
                     </p>
                     <Tabs data-aos="fade-up" defaultActiveKey="1" items={items} onChange={onChange} />
                 </div>
@@ -395,7 +407,7 @@ const Home = () => {
                         </h2>
                     </div>
                     <p className='para' data-aos="fade-up">
-                        Established in 2023, Lumosys Solutions shines as a dynamic startup company specializing in comprehensive software development, innovative web designing, and mobile application solutions. We pride ourselves on prioritizing our clients' needs, providing them with unparalleled service and support that consistently surpasses their expectations.
+                        Explore our latest projects at Lumosys Technologies, where innovation meets excellence. Our dedicated team has crafted cutting-edge solutions to address real-world challenges, delivering tangible results and driving business success.
                     </p>
                 </div>
                 <div className='home-products-bottom' data-aos="zoom-in">
@@ -409,12 +421,15 @@ const Home = () => {
                             </h2>
 
                             <h4>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Your Path to Teaching Excellence Starts Here.
                             </h4>
                             <p>
-                                Established in 2023, Lumosys Solutions shines as a dynamic startup company specializing in comprehensive software development, innovative web designing, and mobile application.
+                                Elevate education with our feature-packed LMS, designed to simplify teaching, enhance learning, and empower educators and students alike.
                             </p>
-                            <a href='/'>
+                            <a
+                                target='_blank'
+                                href='/products/lumolearn'
+                            >
                                 Read More ...
                             </a>
                         </div>
@@ -438,12 +453,16 @@ const Home = () => {
                             </h2>
 
                             <h4>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Empowering Youth Through Code: The Dojo Initiative
                             </h4>
                             <p>
-                                Established in 2023, Lumosys Solutions shines as a dynamic startup company specializing in comprehensive software development, innovative web designing, and mobile application.
+                                CoderDojo Sri Lanka, under STEMUP Educational Foundation, is the official Sri Lankan network of CoderDojo. We've established 30+ rural IT Centers and lead Dojos in libraries and SLT-Mobitel Training Centers.
                             </p>
-                            <a href='/'>
+                            <a
+                                target='_blank'
+                                href='https://coderdojo.lk/'
+                                rel="noreferrer"
+                            >
                                 Read More ...
                             </a>
                         </div>
@@ -451,7 +470,9 @@ const Home = () => {
                 </div>
 
                 <div className='home-products-btn' data-aos="fade-up">
-                    <a href='/products' >
+                    <a
+                        href='/portfolio'
+                    >
                         View All Projects
                     </a>
                 </div>
@@ -579,34 +600,48 @@ const Home = () => {
             <div className='home-team'>
                 <div className='home-team-left'>
                     <h3 className='title-top' data-aos="fade-up">
-                        What Our Clients Say
+                        Our Team
                     </h3>
                     <h2 className='title' data-aos="fade-up">
-                        Client Reviews & Testimonials
+                        Meet Our Wizards of Innovation
                     </h2>
                     <p className='para' data-aos="fade-up">
-                        Established in 2023, Lumosys Solutions shines as a dynamic startup company specializing in comprehensive software development, innovative web designing, and mobile application solutions.
+                        Our skilled team of software engineers, web designers, and mobile app developers is dedicated to exceeding expectations with cutting-edge technology, unparalleled service, and unwavering commitment.
                     </p>
                     <div className='home-team-cards' data-aos="zoom-in">
                         <div className='home-team-cards-item'>
                             <Image
-                                src={require('./Assets/team/1.jpeg')}
+                                src={require('./Assets/team/isuru.png')}
                                 preview={{
                                     visible: false,
                                     mask: <div className='card-details'>
                                         <h2>Isuru Ariyarathna</h2>
-                                        <p>CEO</p>
-                                        <div>
-                                            <a href='/'>
-                                                <FacebookFilled />
-                                            </a>
-                                            <a href='/'>
-                                                <TwitterCircleFilled />
-                                            </a>
-                                            <a href='/'>
-                                                <LinkedinFilled />
-                                            </a>
-                                        </div>
+                                        {
+                                            window.innerWidth > 768 &&
+                                            <>
+                                                <p>CEO</p>
+                                                <div>
+                                                    <a
+                                                        target='_blank'
+                                                        rel='noopener noreferrer'
+                                                        href='https://www.facebook.com/profile.php?id=100080369274605'>
+                                                        <FacebookFilled />
+                                                    </a>
+                                                    <a
+                                                        target='_blank'
+                                                        rel='noopener noreferrer'
+                                                        href='https://twitter.com/'>
+                                                        <TwitterCircleFilled />
+                                                    </a>
+                                                    <a
+                                                        target='_blank'
+                                                        rel='noopener noreferrer'
+                                                        href='https://www.linkedin.com/in/isuru-ariyarathna-8a5404222/'>
+                                                        <LinkedinFilled />
+                                                    </a>
+                                                </div>
+                                            </>
+                                        }
                                     </div>
                                 }}
                             />
@@ -614,23 +649,39 @@ const Home = () => {
 
                         <div className='home-team-cards-item' data-aos="zoom-in">
                             <Image
-                                src={require('./Assets/team/1.jpeg')}
+                                src={require('./Assets/team/senal.png')}
                                 preview={{
                                     visible: false,
                                     mask: <div className='card-details'>
-                                        <h2>Isuru Ariyarathna</h2>
-                                        <p>CEO</p>
-                                        <div>
-                                            <a href='/'>
-                                                <FacebookFilled />
-                                            </a>
-                                            <a href='/'>
-                                                <TwitterCircleFilled />
-                                            </a>
-                                            <a href='/'>
-                                                <LinkedinFilled />
-                                            </a>
-                                        </div>
+                                        <h2>
+                                            Senal Fernando
+                                        </h2>
+                                        {
+                                            window.innerWidth > 768 &&
+                                            <>
+                                                <p>CEO</p>
+                                                <div>
+                                                    <a
+                                                        target='_blank'
+                                                        rel='noopener noreferrer'
+                                                        href='https://www.facebook.com/manoj.fernando.3766'>
+                                                        <FacebookFilled />
+                                                    </a>
+                                                    <a
+                                                        target='_blank'
+                                                        rel='noopener noreferrer'
+                                                        href='https://twitter.com/'>
+                                                        <TwitterCircleFilled />
+                                                    </a>
+                                                    <a
+                                                        target='_blank'
+                                                        rel='noopener noreferrer'
+                                                        href='https://www.linkedin.com/in/senal-fernando/'>
+                                                        <LinkedinFilled />
+                                                    </a>
+                                                </div>
+                                            </>
+                                        }
                                     </div>
                                 }}
                             />
@@ -638,23 +689,39 @@ const Home = () => {
 
                         <div className='home-team-cards-item' data-aos="zoom-in">
                             <Image
-                                src={require('./Assets/team/1.jpeg')}
+                                src={require('./Assets/team/dinith.png')}
                                 preview={{
                                     visible: false,
                                     mask: <div className='card-details'>
-                                        <h2>Isuru Ariyarathna</h2>
-                                        <p>CEO</p>
-                                        <div>
-                                            <a href='/'>
-                                                <FacebookFilled />
-                                            </a>
-                                            <a href='/'>
-                                                <TwitterCircleFilled />
-                                            </a>
-                                            <a href='/'>
-                                                <LinkedinFilled />
-                                            </a>
-                                        </div>
+                                        <h2>
+                                            Dinith Fernando
+                                        </h2>
+                                        {
+                                            window.innerWidth > 768 &&
+                                            <>
+                                                <p>CEO</p>
+                                                <div>
+                                                    <a
+                                                        target='_blank'
+                                                        rel='noopener noreferrer'
+                                                        href='https://www.facebook.com/profile.php?id=100007565476175'>
+                                                        <FacebookFilled />
+                                                    </a>
+                                                    <a
+                                                        target='_blank'
+                                                        rel='noopener noreferrer'
+                                                        href='https://twitter.com/'>
+                                                        <TwitterCircleFilled />
+                                                    </a>
+                                                    <a
+                                                        target='_blank'
+                                                        rel='noopener noreferrer'
+                                                        href='https://www.linkedin.com/in/dinith-fernando-09ab89222/'>
+                                                        <LinkedinFilled />
+                                                    </a>
+                                                </div>
+                                            </>
+                                        }
                                     </div>
                                 }}
                             />
@@ -662,23 +729,39 @@ const Home = () => {
 
                         <div className='home-team-cards-item' data-aos="zoom-in">
                             <Image
-                                src={require('./Assets/team/1.jpeg')}
+                                src={require('./Assets/team/maheshi.png')}
                                 preview={{
                                     visible: false,
                                     mask: <div className='card-details'>
-                                        <h2>Isuru Ariyarathna</h2>
-                                        <p>CEO</p>
-                                        <div>
-                                            <a href='/'>
-                                                <FacebookFilled />
-                                            </a>
-                                            <a href='/'>
-                                                <TwitterCircleFilled />
-                                            </a>
-                                            <a href='/'>
-                                                <LinkedinFilled />
-                                            </a>
-                                        </div>
+                                        <h2>
+                                            Maheshi Anuradha
+                                        </h2>
+                                        {
+                                            window.innerWidth > 768 &&
+                                            <>
+                                                <p>CEO</p>
+                                                <div>
+                                                    <a
+                                                        target='_blank'
+                                                        rel='noopener noreferrer'
+                                                        href='https://www.facebook.com/profile.php?id=100068407172532'>
+                                                        <FacebookFilled />
+                                                    </a>
+                                                    <a
+                                                        target='_blank'
+                                                        rel='noopener noreferrer'
+                                                        href='https://twitter.com/'>
+                                                        <TwitterCircleFilled />
+                                                    </a>
+                                                    <a
+                                                        target='_blank'
+                                                        rel='noopener noreferrer'
+                                                        href='https://www.linkedin.com/in/maheshi-anuradha-6812b5222/'>
+                                                        <LinkedinFilled />
+                                                    </a>
+                                                </div>
+                                            </>
+                                        }
                                     </div>
                                 }}
                             />
@@ -763,9 +846,13 @@ const Home = () => {
                             Let's Create an Amazing Project Together!
                         </h3>
                         <p>
-                            Web design app development for Android & iOS. We have over 5 years of experience in helping companies.
+                            Web design app development for Android & iOS. We have over 2 years of experience in helping companies.
                         </p>
-                        <button>
+                        <button
+                            onClick={() => {
+                                window.location.href = '/contact-us'
+                            }}
+                        >
                             <span>
                                 Get Started
                             </span>

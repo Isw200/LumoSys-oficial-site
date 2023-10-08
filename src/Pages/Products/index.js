@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import './style.scss'
 
 const Products = () => {
+    useEffect(() => {
+        const activeTab = document.querySelector(".activenav");
+        if (activeTab) {
+            activeTab.classList.remove("activenav");
+        }
+        const currentTab = document.getElementById("navproducts");
+        if (currentTab) {
+            currentTab.classList.add("activenav");
+        }
+    }, []);
+
     return (
         <div className='our-products'>
             <div className='products-top'>
@@ -34,10 +45,10 @@ const Products = () => {
                     <div className='products-bottom-product-info'>
                         <h3>Lumo<span>Learn</span></h3>
                         <h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Your Path to Teaching Excellence Starts Here.
                         </h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eu lorem et ultricies. In porta lorem at dui semper porttitor. Nullam quis cursus dui.
+                            Elevate education with our feature-packed LMS, designed to simplify teaching, enhance learning, and empower educators and students alike.
                         </p>
                         <a href='/products/lumolearn'>
                             Learn More

@@ -25,6 +25,7 @@ const Navigator = () => {
         }
     }, []);
 
+
     return (
         <>
             <div className='navbar'>
@@ -32,10 +33,11 @@ const Navigator = () => {
                     <img src={Logo} alt='Logo' />
                 </div>
                 <div className='nav-links'>
-                    <a href='/'>Home</a>
-                    <a href='/services'>Services</a>
-                    <a href='/products'>Our Products</a>
-                    <a href='/blog'>Blog</a>
+                    <a id='navhome' href='/'>Home</a>
+                    <a id='navservice' href='/services'>Services</a>
+                    <a id='navportfolio' href='/portfolio'>Portfolio</a>
+                    <a id='navproducts' href='/products'>Our Products</a>
+                    <a id='navblog' href='/blog'>Blog</a>
                 </div>
                 <div className='nav-contact'>
                     <a
@@ -74,6 +76,7 @@ const Navigator = () => {
                     <div className='mobile-nav-links'>
                         <a href='/'>Home</a>
                         <a href='/services'>Services</a>
+                        <a href='/portfolio'>Portfolio</a>
                         <a href='/products'>Our Products</a>
                         <a href='/blog'>Blog</a>
                     </div>

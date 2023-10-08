@@ -13,28 +13,28 @@ const Footer = () => {
                         <img src={require('../Assets/Logo/Lumosys-logo.png')} alt='logo' />
                     </div>
                     <p>
-                        Lumosys is a company that provides a platform for the development of various applications.
+                        Pioneering Innovation, Shaping the Future. Explore cutting-edge solutions that illuminate tomorrow's technology landscape.
                     </p>
                     <div className='footer-social'>
                         <h3>Follow Us</h3>
                         <div className='footer-social__icons'>
-                            <a href='https://www.facebook.com/lumosys.id/' target='_blank' rel='noopener noreferrer'>
+                            <a href='https://www.facebook.com/profile.php?id=61552100934643' target='_blank' rel='noopener noreferrer'>
                                 <FacebookFilled />
                             </a>
 
-                            <a href='https://www.instagram.com/lumosys.id/' target='_blank' rel='noopener noreferrer'>
+                            <a href='https://www.instagram.com/lumosystechnologies/' target='_blank' rel='noopener noreferrer'>
                                 <InstagramFilled />
                             </a>
 
-                            <a href='https://www.linkedin.com/company/lumosys/' target='_blank' rel='noopener noreferrer'>
+                            <a href='https://www.linkedin.com/company/lumosys-technologies/' target='_blank' rel='noopener noreferrer'>
                                 <LinkedinFilled />
                             </a>
 
-                            <a href='https://www.youtube.com/ ' target='_blank' rel='noopener noreferrer'>
+                            <a href='https://www.youtube.com/@LumosysTechnologies ' target='_blank' rel='noopener noreferrer'>
                                 <YoutubeFilled />
                             </a>
 
-                            <a href='https://www.youtube.com/ ' target='_blank' rel='noopener noreferrer'>
+                            <a href='https://twitter.com/ ' target='_blank' rel='noopener noreferrer'>
                                 <TwitterCircleFilled />
                             </a>
                         </div>
@@ -46,9 +46,8 @@ const Footer = () => {
                     <ul>
                         <li><a href='/'>Home</a></li>
                         <li><a href='/'>About Us</a></li>
-                        <li><a href='/'>Contact Us</a></li>
-                        <li><a href='/'>Terms & Conditions</a></li>
-                        <li><a href='/'>Privacy Policy</a></li>
+                        <li><a href='/contact-us'>Contact Us</a></li>
+                        <li><a href='/privacypolicy'>Privacy Policy</a></li>
                     </ul>
                 </div>
 
@@ -64,8 +63,7 @@ const Footer = () => {
                         <li><a href='/'>Digital Marketing</a></li>
                         <li><a href='/'>IT Consultant</a></li>
                         <li><a href='/'>IT Training</a></li>
-                        <li><a href='/'>IT Consultant</a></li>
-                        <li><a href='/'>IT Training</a></li>
+                        <li><a href='/'>IOT</a></li>
                     </ul>
                 </div>
             </div>
@@ -76,7 +74,7 @@ const Footer = () => {
                 </p>
 
                 <p>
-                    Designed by Lumosys | <a href='/'>Terms & Conditions</a> | <a href='/'>Privacy Policy</a>
+                    Designed by Lumosys | <a href='/'>Privacy Policy</a>
                 </p>
             </div>
         </div>

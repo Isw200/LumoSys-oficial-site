@@ -50,6 +50,18 @@ const Blog = () => {
     const [allBlogs, setAllBlogs] = useState([])
     const [seletedBlogs, setSelectedBlogs] = useState([])
 
+    // Active link
+    useEffect(() => {
+        const activeTab = document.querySelector(".activenav");
+        if (activeTab) {
+            activeTab.classList.remove("activenav");
+        }
+        const currentTab = document.getElementById("navblog");
+        if (currentTab) {
+            currentTab.classList.add("activenav");
+        }
+    }, []);
+
     useEffect(() => {
         const getBlogs = async () => {
             setLoading(true)
