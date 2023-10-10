@@ -86,6 +86,11 @@
   color: #9d00ff;
 }
 
+.navbar .activenav #lightnav {
+  color: #eed2ff;
+}
+
+
 .navbar--scroll a {
   color: #333;
 }
@@ -375,6 +380,10 @@
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease;
+
+    @media screen and (max-height: 768px) {
+      height: 70vh;
+    }
 
     .mobile-nav-links {
       display: flex;
