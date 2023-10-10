@@ -517,23 +517,27 @@ const Home = () => {
                             <div className="card">
                                 <div className='card-image'>
                                     <img
-                                        src={require('./Assets/reviews/1.png')}
+                                        src={require('./Assets/reviews/visal.png')}
                                         alt='1'
                                     />
                                 </div>
                                 <div className='card-content'>
                                     <h4>
-                                        User Name
+                                        Visal Jayarathna
                                     </h4>
                                     <h3>
-                                        CEO of Company
+                                        Founder & CEO of Yasalanka Educational Institute
                                     </h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
-                                        adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
+                                        The LMS you created was highly useful and convenient for me as well as for my students as it came in handy and really helped to organise my work which is a redemption within my work life and mind.
+                                        Even my students have given many positive feedback upon this about it being highly convenient. The LMS is actually priceless given the efficiency of the system and the price is very affordable. This is a treasure for me and my students.
                                     </p>
-                                    <a href='/'>
-                                        Read More ...
+                                    <a
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        href='https://www.yasalankaphysics.lk/'
+                                    >
+                                        Visit work...
                                     </a>
                                 </div>
                             </div>
@@ -541,50 +545,31 @@ const Home = () => {
                             <div className="card">
                                 <div className='card-image'>
                                     <img
-                                        src={require('./Assets/reviews/1.png')}
+                                        src={require('./Assets/reviews/visal.png')}
                                         alt='1'
                                     />
                                 </div>
                                 <div className='card-content'>
                                     <h4>
-                                        User Name
+                                        Visal Jayarathna
                                     </h4>
                                     <h3>
-                                        CEO of Company
+                                        Founder & CEO of Yasalanka Educational Institute
                                     </h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
-                                        adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
+                                        The LMS you created was highly useful and convenient for me as well as for my students as it came in handy and really helped to organise my work which is a redemption within my work life and mind.
+                                        Even my students have given many positive feedback upon this about it being highly convenient. The LMS is actually priceless given the efficiency of the system and the price is very affordable. This is a treasure for me and my students.
                                     </p>
-                                    <a href='/'>
-                                        Read More ...
+                                    <a
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        href='https://www.yasalankaphysics.lk/'
+                                    >
+                                        Visit work...
                                     </a>
                                 </div>
                             </div>
 
-                            <div className="card">
-                                <div className='card-image'>
-                                    <img
-                                        src={require('./Assets/reviews/1.png')}
-                                        alt='1'
-                                    />
-                                </div>
-                                <div className='card-content'>
-                                    <h4>
-                                        User Name
-                                    </h4>
-                                    <h3>
-                                        CEO of Company
-                                    </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
-                                        adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
-                                    </p>
-                                    <a href='/'>
-                                        Read More ...
-                                    </a>
-                                </div>
-                            </div>
                         </Carousel>
                     </div>
                 </div>

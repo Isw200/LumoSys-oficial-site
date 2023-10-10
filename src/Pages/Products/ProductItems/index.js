@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react'
 
+import { PlayCircleOutlined } from '@ant-design/icons';
+
 // Carousel
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import './style.scss'
+import { Tooltip } from 'antd';
 
 const reviewresponsive = {
     superLargeDesktop: {
@@ -55,9 +58,27 @@ const LumoLearn = () => {
                     <p>
                         Elevate education with our feature-packed LMS, designed to simplify teaching, enhance learning, and empower educators and students alike.
                     </p>
-                    <button>
-                        Learn More
-                    </button>
+                    <div className='lumo-learn-top-left-btns'>
+                        <button
+                            onClick={() => {
+                                const section = document.getElementById('feat');
+                                section.scrollIntoView({ behavior: 'smooth' });
+                            }}
+                        >
+                            Learn More
+                        </button>
+                        <Tooltip
+                            title="Watch Video about LumoLearn"
+                        >
+                            <button
+                                onClick={() => {
+                                    window.open('https://youtu.be/kL5ELjUg_SQ?si=ORXZzTepuYb43-4S', '_blank');
+                                }}
+                            >
+                                <PlayCircleOutlined />
+                            </button>
+                        </Tooltip>
+                    </div>
                 </div>
                 <div className='lumo-learn-top-right'>
                     <img src={require('./Assets/lumolap.png')} alt=''></img>
@@ -65,7 +86,7 @@ const LumoLearn = () => {
             </div>
 
             <div className='lumo-learn-features'>
-                <div className='features-top'>
+                <div className='features-top' id='feat'>
                     <h1>
                         Main Features of LumoLearn
                     </h1>
@@ -214,7 +235,7 @@ const LumoLearn = () => {
                         What they say about us
                     </h1>
                     <h2>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        See what our customers have to say about LumoLearn.
                     </h2>
                 </div>
                 <div className="review-slider" data-aos="zoom-in">
@@ -239,20 +260,20 @@ const LumoLearn = () => {
                         <div className="card">
                             <div className='card-image'>
                                 <img
-                                    src={require('./Assets/reviews/1.png')}
+                                    src={require('./Assets/reviews/visal.png')}
                                     alt='1'
                                 />
                             </div>
                             <div className='card-content'>
                                 <h4>
-                                    User Name
+                                    Visal Jayarathna
                                 </h4>
                                 <h3>
-                                    CEO of Company
+                                    Founder & CEO of Yasalanka Educational Institute
                                 </h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
-                                    adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
+                                    The LMS you created was highly useful and convenient for me as well as for my students as it came in handy and really helped to organise my work which is a redemption within my work life and mind.
+                                    Even my students have given many positive feedback upon this about it being highly convenient. The LMS is actually priceless given the efficiency of the system and the price is very affordable. This is a treasure for me and my students.
                                 </p>
                             </div>
                         </div>
@@ -260,20 +281,20 @@ const LumoLearn = () => {
                         <div className="card">
                             <div className='card-image'>
                                 <img
-                                    src={require('./Assets/reviews/1.png')}
+                                    src={require('./Assets/reviews/visal.png')}
                                     alt='1'
                                 />
                             </div>
                             <div className='card-content'>
                                 <h4>
-                                    User Name
+                                    Visal Jayarathna
                                 </h4>
                                 <h3>
-                                    CEO of Company
+                                    Founder & CEO of Yasalanka Educational Institute
                                 </h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
-                                    adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
+                                    The LMS you created was highly useful and convenient for me as well as for my students as it came in handy and really helped to organise my work which is a redemption within my work life and mind.
+                                    Even my students have given many positive feedback upon this about it being highly convenient. The LMS is actually priceless given the efficiency of the system and the price is very affordable. This is a treasure for me and my students.
                                 </p>
                             </div>
                         </div>
@@ -281,20 +302,20 @@ const LumoLearn = () => {
                         <div className="card">
                             <div className='card-image'>
                                 <img
-                                    src={require('./Assets/reviews/1.png')}
+                                    src={require('./Assets/reviews/visal.png')}
                                     alt='1'
                                 />
                             </div>
                             <div className='card-content'>
                                 <h4>
-                                    User Name
+                                    Visal Jayarathna
                                 </h4>
                                 <h3>
-                                    CEO of Company
+                                    Founder & CEO of Yasalanka Educational Institute
                                 </h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
-                                    adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
+                                    The LMS you created was highly useful and convenient for me as well as for my students as it came in handy and really helped to organise my work which is a redemption within my work life and mind.
+                                    Even my students have given many positive feedback upon this about it being highly convenient. The LMS is actually priceless given the efficiency of the system and the price is very affordable. This is a treasure for me and my students.
                                 </p>
                             </div>
                         </div>
