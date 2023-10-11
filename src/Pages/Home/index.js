@@ -417,7 +417,7 @@ const Home = () => {
                         </div>
                         <div className='home-products-item-content'>
                             <h2>
-                                Lumo<p>Lerarn</p><span>lite</span>
+                                Lumo<p>Learn</p><span>lite</span>
                             </h2>
 
                             <h4>
@@ -604,7 +604,7 @@ const Home = () => {
                                         {
                                             window.innerWidth > 768 &&
                                             <>
-                                                <p>CEO</p>
+                                                {/* <p>CEO</p> */}
                                                 <div>
                                                     <a
                                                         target='_blank'
@@ -644,7 +644,7 @@ const Home = () => {
                                         {
                                             window.innerWidth > 768 &&
                                             <>
-                                                <p>CEO</p>
+                                                {/* <p>CEO</p> */}
                                                 <div>
                                                     <a
                                                         target='_blank'
@@ -684,7 +684,7 @@ const Home = () => {
                                         {
                                             window.innerWidth > 768 &&
                                             <>
-                                                <p>CEO</p>
+                                                {/* <p>CEO</p> */}
                                                 <div>
                                                     <a
                                                         target='_blank'
@@ -724,7 +724,7 @@ const Home = () => {
                                         {
                                             window.innerWidth > 768 &&
                                             <>
-                                                <p>CEO</p>
+                                                {/* <p>CEO</p> */}
                                                 <div>
                                                     <a
                                                         target='_blank'
