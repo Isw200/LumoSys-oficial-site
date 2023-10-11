@@ -7,6 +7,7 @@ import Products from './Pages/Products'
 import CloudServices from './Pages/Services/CloudServices'
 import FullStackServices from './Pages/Services/FullStackServices'
 import MobileServices from './Pages/Services/MobileServices'
+import UiUx from './Pages/Services/Ui/Ux'
 import Blog from './Pages/Blog'
 import ContactUs from './Pages/Contact'
 import Admin from './Pages/Admin'
@@ -22,6 +23,7 @@ const RoutesJs = () => {
                 <Route path='/CloudServices' element={<CloudServices />} />
                 <Route path='/FullStackServices' element={<FullStackServices />} />
                 <Route path='/MobileServices' element={<MobileServices />} />
+                <Route path='/UiUx' element={<UiUx />} />
                 <Route path='/blog' element={<Blog />} />
                 <Route path='/contact-us' element={<ContactUs />} />
                 <Route path='/admin' element={<Admin />} />

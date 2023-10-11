@@ -1,6 +1,9 @@
 import React from "react";
 import "./style.scss"
-// import GetStarted from './SubComponents/GetStarted/GetStarted';
+
+import GetStarted from '../../Services/GetStarted/index.js';
+import ServiceCard from "../../../Common/ServiceCards/index.js";
+
 
 import ReactImg from "../../../Assets/Images/React.png";
 import Angular from "../../../Assets/Images/Angular.png";
@@ -18,11 +21,44 @@ import Django from "../../../Assets/Images/Django.png";
 import Azure from "../../../Assets/Images/Azure.png";
 import CodingIcon from "../../../Assets/Images/CodingIcon.png"
 
+const details = [
+  {
+    id: "01",
+    topic: "Discovery",
+    content: "We kick-start the project by gaining insights into your business goals, target users, and desired features. This helps us define a clear roadmap and identify the best strategies for your mobile app.",
+  }
+  ,
+  {
+    id: "02",
+    topic: "Design",
+    content: "Our talented designers create visually appealing and intuitive interfaces that enhance user engagement. We focus on creating seamless user experiences while maintaining a consistent brand identity throughout the app.",
+  }
+  ,
+  {
+    id: "03",
+    topic: "Development",
+    content: "Our skilled development team brings your app to life using the latest technologies and frameworks. We follow agile development methodologies, allowing for iterative feedback and efficient project management.",
+  }
+  ,
+  {
+    id: "04",
+    topic: "Testing and QA",
+    content: "To ensure a flawless user experience, we conduct rigorous testing across multiple devices and operating systems. We identify and fix any bugs or performance issues, making sure your app is reliable and responsive.",
+  }
+  ,
+  {
+    id: "05",
+    topic: "Deployment and Support",
+    content: "Once your app is ready, we guide you through the deployment process and help you launch it on the relevant app stores. We provide ongoing maintenance and support services, ensuring your app remains up-to-date and functions optimally.",
+  }
+]
+
+
 function ServicesFullStack() {
   return (
     <div className='servicesfs'>
     <div className='pallet1'>
-      <h4>Empowering Your business for Success</h4>
+      <h4 className='title-top'>Empowering Your business for Success</h4>
       <h1 className='mainHeading'>Full Stack<br></br>Development</h1>
       <br></br>
       <p>At LumoSys, we specialize in creating exceptional mobile applications that<br></br>
@@ -36,65 +72,17 @@ function ServicesFullStack() {
 
     <div className='pallet2'>
       <div className='pallet2_container'>
-        <h2>Our Methodology</h2>
-        <p>Crafting Full Stack Applications with <br></br>Precision and Care</p>
+        <h2 className='title-top'>Our Methodology</h2>
+        <h2 className='title'>Crafting Full Stack Applications with <br></br>Precision and Care</h2>
 
-        <div className='card_pallet1'>
-          <div className='box1'>
-            <h1>01.</h1>
-            <h2>Discovery</h2>
-            <br></br>
-            <p>We kick-start the project by gaining insights into your business goals, target users, and desired features. 
-              This helps us define a clear roadmap and identify the best strategies for your mobile app.</p>
-              <br></br>
-            <img class="CodingIcon" src={CodingIcon} alt="codingicon"></img>
-          </div>
-
-          <div className='box2'>
-            <h1>02.</h1>
-            <h2>Design</h2>
-            <br></br>
-            <p>Our talented designers create visually appealing and intuitive interfaces that enhance user engagement. 
-              We focus on creating seamless user experiences while maintaining a consistent brand identity throughout the app.</p>
-            <img class="CodingIcon" src={CodingIcon} alt="codingicon"></img>
-          </div>
-
-          <div className='box3'>
-            <h1>03.</h1>
-            <h2>Development</h2>
-            <br></br>
-            <p>Our skilled development team brings your app to life using the latest technologies and frameworks. 
-              We follow agile development methodologies, allowing for iterative feedback and efficient project management.</p>
-              <img class="CodingIcon" src={CodingIcon} alt="codingicon"></img>
-          </div>
-        </div>
-
-        <div className='card_pallet2'>
-          <div className='box1'>
-            <h1>04.</h1>
-            <h2>Testing and QA</h2>
-            <br></br>
-            <p>To ensure a flawless user experience, we conduct rigorous testing across multiple devices and operating systems. 
-              We identify and fix any bugs or performance issues, making sure your app is reliable and responsive.</p>
-            <img class="CodingIcon" src={CodingIcon} alt="codingicon"></img>
-          </div>
-
-          <div className='box2'>
-            <h1>05.</h1>
-            <h2>Deployment and Support</h2>
-            <br></br>
-            <p>Once your app is ready, we guide you through the deployment process and help you launch it on the relevant app stores. 
-              We provide ongoing maintenance and support services, ensuring your app remains.</p>
-            <img class="CodingIcon" src={CodingIcon} alt="codingicon"></img>
-          </div>
-        </div>
+        <ServiceCard details={details} />
 
       </div>
     </div>
 
     <div className='pallet3'>
-        <h2>Powering Innovation</h2>
-        <p>The Technologies Behind Our <br></br> Full Stack Development</p>
+        <h2  className='title-top'>Powering Innovation</h2>
+        <h2 className='title'> The Technologies Behind Our <br></br> Full Stack Development</h2>
 
         <div className='container1'>
           <img className="icon" src={ReactImg} alt='React'/>
@@ -120,7 +108,7 @@ function ServicesFullStack() {
         </div>
 
     </div>
-    {/* < GetStarted /> */}
+    < GetStarted />
     </div>
   )
 }
