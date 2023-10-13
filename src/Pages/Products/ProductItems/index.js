@@ -81,7 +81,7 @@ const LumoLearn = () => {
                     </div>
                 </div>
                 <div className='lumo-learn-top-right'>
-                    <img src={require('./Assets/lumolap.png')} alt=''></img>
+                    <img src={require('./Assets/lumolap.webp')} alt=''></img>
                 </div>
             </div>
 
@@ -99,7 +99,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/dashboard.png')} alt='card-img ' />
+                            <img src={require('./Assets/Features/dashboard.webp')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -113,7 +113,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/rec.png')} alt='card-img ' />
+                            <img src={require('./Assets/Features/rec.webp')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -127,7 +127,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/folder.png')} alt='card-img ' />
+                            <img src={require('./Assets/Features/folder.webp')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -141,7 +141,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/exam.png')} alt='card-img ' />
+                            <img src={require('./Assets/Features/exam.webp')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -155,7 +155,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/payments.png')} alt='card-img ' />
+                            <img src={require('./Assets/Features/payments.webp')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -169,7 +169,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/calendar.png')} alt='card-img ' />
+                            <img src={require('./Assets/Features/calendar.webp')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -183,7 +183,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/goal.png')} alt='card-img ' />
+                            <img src={require('./Assets/Features/goal.webp')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -197,7 +197,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/report.png')} alt='card-img ' />
+                            <img src={require('./Assets/Features/report.webp')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -220,12 +220,16 @@ const LumoLearn = () => {
                     <h2>
                         Elevate education with our feature-packed LMS, designed to simplify teaching, enhance learning, and empower educators and students alike.
                     </h2>
-                    <button>
+                    <button
+                        onClick={() => {
+                            window.open('https://api.whatsapp.com/send?phone=+94710338328&text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20LumoLearn', '_blank');
+                        }}
+                    >
                         Get Started
                     </button>
                 </div>
                 <div className='why-lumolearn-right'>
-                    <img src={require('./Assets/pic1.png')} alt=''></img>
+                    <img src={require('./Assets/pic1.webp')} alt=''></img>
                 </div>
             </div>
 
@@ -260,7 +264,7 @@ const LumoLearn = () => {
                         <div className="card">
                             <div className='card-image'>
                                 <img
-                                    src={require('./Assets/reviews/visal.png')}
+                                    src={require('./Assets/reviews/visal.webp')}
                                     alt='1'
                                 />
                             </div>
@@ -281,7 +285,7 @@ const LumoLearn = () => {
                         <div className="card">
                             <div className='card-image'>
                                 <img
-                                    src={require('./Assets/reviews/visal.png')}
+                                    src={require('./Assets/reviews/visal.webp')}
                                     alt='1'
                                 />
                             </div>
@@ -302,7 +306,7 @@ const LumoLearn = () => {
                         <div className="card">
                             <div className='card-image'>
                                 <img
-                                    src={require('./Assets/reviews/visal.png')}
+                                    src={require('./Assets/reviews/visal.webp')}
                                     alt='1'
                                 />
                             </div>
@@ -347,7 +351,11 @@ const LumoLearn = () => {
                             <li>Overview Video</li>
                             <li>Overview Content</li>
                         </ul>
-                        <button>
+                        <button
+                            onClick={() => {
+                                window.open('https://api.whatsapp.com/send?phone=+94710338328&text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20LumoLearn', '_blank');
+                            }}
+                        >
                             Get Started
                         </button>
                     </div>
@@ -370,7 +378,11 @@ const LumoLearn = () => {
                                 <li>Class Payments</li>
                             </li>
                         </ul>
-                        <button>
+                        <button
+                            onClick={() => {
+                                window.open('https://api.whatsapp.com/send?phone=+94710338328&text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20LumoLearn', '_blank');
+                            }}
+                        >
                             Get Started
                         </button>
                     </div>
@@ -397,7 +409,11 @@ const LumoLearn = () => {
                                 <li>Class Reports to Parents</li>
                             </li>
                         </ul>
-                        <button>
+                        <button
+                            onClick={() => {
+                                window.open('https://api.whatsapp.com/send?phone=+94710338328&text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20LumoLearn', '_blank');
+                            }}
+                        >
                             Get Started
                         </button>
                     </div>
@@ -409,7 +425,11 @@ const LumoLearn = () => {
                     <h2>
                         Don't worry, we can customize a plan for you.
                     </h2>
-                    <button>
+                    <button
+                        onClick={() => {
+                            window.open('https://api.whatsapp.com/send?phone=+94710338328&text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20LumoLearn', '_blank');
+                        }}
+                    >
                         Contact Us
                     </button>
                 </div>
@@ -423,13 +443,17 @@ const LumoLearn = () => {
                     <h2>
                         Unleash your teaching potential with LumoLearn.
                     </h2>
-                    <button>
+                    <button
+                        onClick={() => {
+                            window.open('https://api.whatsapp.com/send?phone=+94710338328&text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20LumoLearn', '_blank');
+                        }}
+                    >
                         Get Started
                     </button>
                 </div>
                 <div className='lumolearn-getstated-right'>
                     <div>
-                        <img src={require('./Assets/getintouch.png')} alt=''></img>
+                        <img src={require('./Assets/getintouch.webp')} alt=''></img>
                     </div>
                 </div>
             </div>

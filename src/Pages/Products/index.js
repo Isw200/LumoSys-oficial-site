@@ -34,7 +34,7 @@ const Products = () => {
                     </div>
                 </div>
                 <div className='products-top-right'>
-                    <img src={require('./Assets/amico.png')} alt=''></img>
+                    <img src={require('./Assets/amico.webp')} alt=''></img>
                 </div>
             </div>
 
