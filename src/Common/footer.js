@@ -70,7 +70,7 @@ const Footer = () => {
 
             <div className='footer-terms'>
                 <p>
-                    © 2020 Lumosys. All Rights Reserved
+                    © 2023 Lumosys. All Rights Reserved
                 </p>
 
                 <p>

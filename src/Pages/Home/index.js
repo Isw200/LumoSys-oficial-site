@@ -27,11 +27,7 @@ const responsive = {
         items: 4,
     },
     desktop: {
-        breakpoint: { max: 3000, min: 1450 },
-        items: 3,
-    },
-    desktopMini: {
-        breakpoint: { max: 1450, min: 1024 },
+        breakpoint: { max: 3000, min: 1024 },
         items: 3,
     },
     tablet: {
@@ -191,7 +187,7 @@ const Home = () => {
                     <Tabs data-aos="fade-up" defaultActiveKey="1" items={items} onChange={onChange} />
                 </div>
                 <div className='about-right' data-aos="zoom-in">
-                    <img src={require('./Assets/services.png')} alt='Services' />
+                    <img src={require('./Assets/services.webp')} alt='Services' />
                 </div>
             </div>
 
@@ -232,7 +228,7 @@ const Home = () => {
                                 <h4>Full stack  development</h4>
                                 <div className='card-content'>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur. Nunc in in odio morbi. Sodales elementum congue elementum amet sed luctus iaculis. Aliquam faucibus convallis orci morbi massa nulla massa.massa nulla massa.
+                                        Explore Full-Stack Development with us. From front-end aesthetics to back-end functionality, we build web applications that are responsive, scalable, and high-performing. Our expertise ensures a seamless online presence for your business.
                                     </p>
                                     <a href='/'>
                                         Explore More
@@ -241,10 +237,12 @@ const Home = () => {
                             </div>
 
                             <div className="card">
-                                <h4>Full stack  development</h4>
+                                <h4>
+                                    Mobile App Development
+                                </h4>
                                 <div className='card-content'>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur. Nunc in in odio morbi. Sodales elementum congue elementum amet sed luctus iaculis. Aliquam faucibus convallis orci morbi massa nulla massa.massa nulla massa.
+                                        Our Mobile App Development team excels in creating user-focused iOS and Android apps. We blend creativity and functionality to deliver mobile solutions that elevate your brand, enhance user experiences, and achieve your business goals.
                                     </p>
                                     <a href='/'>
                                         Explore More
@@ -253,10 +251,12 @@ const Home = () => {
                             </div>
 
                             <div className="card">
-                                <h4>Full stack  development</h4>
+                                <h4>Cloud
+                                    <br />
+                                    Solutions</h4>
                                 <div className='card-content'>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur. Nunc in in odio morbi. Sodales elementum congue elementum amet sed luctus iaculis. Aliquam faucibus convallis orci morbi massa nulla massa.massa nulla massa.
+                                        Unlock the potential of the cloud with our expert Cloud Solutions. We manage cloud migration, optimization, and maintenance, using leading platforms like AWS and Azure. Our solutions guarantee secure, flexible, and cost-efficient operations.
                                     </p>
                                     <a href='/'>
                                         Explore More
@@ -265,10 +265,12 @@ const Home = () => {
                             </div>
 
                             <div className="card">
-                                <h4>Full stack  development</h4>
+                                <h4>UX/UI
+                                    <br />
+                                    Engineering</h4>
                                 <div className='card-content'>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur. Nunc in in odio morbi. Sodales elementum congue elementum amet sed luctus iaculis. Aliquam faucibus convallis orci morbi massa nulla massa.massa nulla massa.
+                                        Elevate user engagement with our UX/UI Engineering. We create captivating and intuitive interfaces that enhance user satisfaction. Our data-driven designs ensure seamless experiences, better conversions, and a competitive edge for your brand.
                                     </p>
                                     <a href='/'>
                                         Explore More
@@ -323,42 +325,36 @@ const Home = () => {
                                     alt='1'
                                 />
                             </div>
-
                             <div className="card">
                                 <img
                                     src={require('./Assets/technologies/2.png')}
                                     alt='1'
                                 />
                             </div>
-
                             <div className="card">
                                 <img
                                     src={require('./Assets/technologies/3.png')}
                                     alt='1'
                                 />
                             </div>
-
                             <div className="card">
                                 <img
                                     src={require('./Assets/technologies/4.png')}
                                     alt='1'
                                 />
                             </div>
-
                             <div className="card">
                                 <img
                                     src={require('./Assets/technologies/5.png')}
                                     alt='1'
                                 />
                             </div>
-
                             <div className="card">
                                 <img
                                     src={require('./Assets/technologies/6.png')}
                                     alt='1'
                                 />
                             </div>
-
                             <div className="card">
                                 <img
                                     src={require('./Assets/technologies/7.png')}
@@ -371,21 +367,84 @@ const Home = () => {
                                     alt='1'
                                 />
                             </div>
-
                             <div className="card">
                                 <img
                                     src={require('./Assets/technologies/9.png')}
                                     alt='1'
                                 />
                             </div>
-
                             <div className="card">
                                 <img
-                                    src={require('./Assets/technologies/1.png')}
+                                    src={require('./Assets/technologies/10.png')}
                                     alt='1'
                                 />
                             </div>
-
+                            <div className="card">
+                                <img
+                                    src={require('./Assets/technologies/11.png')}
+                                    alt='1'
+                                />
+                            </div>
+                            <div className="card">
+                                <img
+                                    src={require('./Assets/technologies/12.png')}
+                                    alt='1'
+                                />
+                            </div>
+                            <div className="card">
+                                <img
+                                    src={require('./Assets/technologies/13.png')}
+                                    alt='1'
+                                />
+                            </div>
+                            <div className="card">
+                                <img
+                                    src={require('./Assets/technologies/14.png')}
+                                    alt='1'
+                                />
+                            </div>
+                            <div className="card">
+                                <img
+                                    src={require('./Assets/technologies/15.png')}
+                                    alt='1'
+                                />
+                            </div>
+                            <div className="card">
+                                <img
+                                    src={require('./Assets/technologies/16.png')}
+                                    alt='1'
+                                />
+                            </div>
+                            <div className="card">
+                                <img
+                                    src={require('./Assets/technologies/17.png')}
+                                    alt='1'
+                                />
+                            </div>
+                            <div className="card">
+                                <img
+                                    src={require('./Assets/technologies/18.png')}
+                                    alt='1'
+                                />
+                            </div>
+                            <div className="card">
+                                <img
+                                    src={require('./Assets/technologies/19.png')}
+                                    alt='1'
+                                />
+                            </div>
+                            <div className="card">
+                                <img
+                                    src={require('./Assets/technologies/20.png')}
+                                    alt='1'
+                                />
+                            </div>
+                            <div className="card">
+                                <img
+                                    src={require('./Assets/technologies/21.png')}
+                                    alt='1'
+                                />
+                            </div>
                         </Carousel>
                     </div>
                 </div>
@@ -413,7 +472,7 @@ const Home = () => {
                 <div className='home-products-bottom' data-aos="zoom-in">
                     <div className='home-products-item'>
                         <div className='home-products-item-img'>
-                            <img src={require('./Assets/products/1.png')} alt='1' />
+                            <img src={require('./Assets/products/1.webp')} alt='1' />
                         </div>
                         <div className='home-products-item-content'>
                             <h2>
@@ -441,7 +500,7 @@ const Home = () => {
                                 order: '2'
                             }}
                         >
-                            <img src={require('./Assets/products/2.png')} alt='1' />
+                            <img src={require('./Assets/products/2.webp')} alt='1' />
                         </div>
                         <div className='home-products-item-content'
                             style={{
@@ -516,10 +575,12 @@ const Home = () => {
 
                             <div className="card">
                                 <div className='card-image'>
-                                    <img
-                                        src={require('./Assets/reviews/visal.png')}
-                                        alt='1'
-                                    />
+                                    <div className='image'>
+                                        <img
+                                            src={require('./Assets/reviews/visal.webp')}
+                                            alt='1'
+                                        />
+                                    </div>
                                 </div>
                                 <div className='card-content'>
                                     <h4>
@@ -544,10 +605,12 @@ const Home = () => {
 
                             <div className="card">
                                 <div className='card-image'>
-                                    <img
-                                        src={require('./Assets/reviews/visal.png')}
-                                        alt='1'
-                                    />
+                                    <div className='image'>
+                                        <img
+                                            src={require('./Assets/reviews/visal.webp')}
+                                            alt='1'
+                                        />
+                                    </div>
                                 </div>
                                 <div className='card-content'>
                                     <h4>
@@ -596,7 +659,7 @@ const Home = () => {
                     <div className='home-team-cards' data-aos="zoom-in">
                         <div className='home-team-cards-item'>
                             <Image
-                                src={require('./Assets/team/isuru.png')}
+                                src={require('./Assets/team/isuru.webp')}
                                 preview={{
                                     visible: false,
                                     mask: <div className='card-details'>
@@ -634,7 +697,7 @@ const Home = () => {
 
                         <div className='home-team-cards-item' data-aos="zoom-in">
                             <Image
-                                src={require('./Assets/team/senal.png')}
+                                src={require('./Assets/team/senal.webp')}
                                 preview={{
                                     visible: false,
                                     mask: <div className='card-details'>
@@ -674,7 +737,7 @@ const Home = () => {
 
                         <div className='home-team-cards-item' data-aos="zoom-in">
                             <Image
-                                src={require('./Assets/team/dinith.png')}
+                                src={require('./Assets/team/dinith.webp')}
                                 preview={{
                                     visible: false,
                                     mask: <div className='card-details'>
@@ -714,7 +777,7 @@ const Home = () => {
 
                         <div className='home-team-cards-item' data-aos="zoom-in">
                             <Image
-                                src={require('./Assets/team/maheshi.png')}
+                                src={require('./Assets/team/maheshi.webp')}
                                 preview={{
                                     visible: false,
                                     mask: <div className='card-details'>
