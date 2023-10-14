@@ -5,7 +5,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
 import Products from './Pages/Products'
 import Portfolio from './Pages/Portfolio'
-import Services from './Pages/Services'
+import CloudServices from './Pages/Services/CloudServices'
+import FullStackServices from './Pages/Services/FullStackServices'
+import MobileServices from './Pages/Services/MobileServices'
+import UiUx from './Pages/Services/UIUX'
 import Blog from './Pages/Blog'
 import ContactUs from './Pages/Contact'
 import Admin from './Pages/Admin'
@@ -21,7 +24,10 @@ const RoutesJs = () => {
                 <Route path='/' element={<Home />} />
                 <Route path='/products' element={<Products />} />
                 <Route path='/portfolio' element={<Portfolio />} />
-                <Route path='/services' element={<Services />} />
+                <Route path='/CloudServices' element={<CloudServices />} />
+                <Route path='/FullStackServices' element={<FullStackServices />} />
+                <Route path='/MobileServices' element={<MobileServices />} />
+                <Route path='/UiUx' element={<UiUx />} />
                 <Route path='/blog' element={<Blog />} />
                 <Route path='/contact-us' element={<ContactUs />} />
                 <Route path='/admin' element={<Admin />} />
