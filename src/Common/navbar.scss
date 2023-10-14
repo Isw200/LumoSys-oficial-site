@@ -150,7 +150,6 @@
     display: flex;
   }
 
-
   .logo {
     width: 140px;
 
@@ -347,6 +346,14 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+
+    .mobile-nav-links {
+      display: none;
+    }
+
+    .mobile-nav-contact {
+      display: none;
+    }
   }
 }
 
@@ -381,8 +388,8 @@
     visibility: visible;
     transition: all 0.3s ease;
 
-    @media screen and (max-height: 768px) {
-      height: 70vh;
+    @media screen and (max-height: 850px) {
+      height: 75vh;
     }
 
     .mobile-nav-links {
