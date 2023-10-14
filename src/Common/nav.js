@@ -18,24 +18,28 @@ const Navigator = () => {
     // add class to navbar based on route
     useEffect(() => {
         const path = window.location.pathname;
-        if (path === '/') {
+        if (path === '/' || path === '/products/lumolearn') {
             document.querySelector('.navbar').classList.add('navbar--home');
         } else {
             document.querySelector('.navbar').classList.remove('navbar--home');
         }
     }, []);
 
+
     return (
         <>
             <div className='navbar'>
                 <div className='logo'>
-                    <img src={Logo} alt='Logo' />
+                    <a href='/'>
+                        <img src={Logo} alt='Logo' />
+                    </a>
                 </div>
                 <div className='nav-links'>
-                    <a href='/'>Home</a>
-                    <a href='/services'>Services</a>
-                    <a href='/products'>Our Products</a>
-                    <a href='/blog'>Blog</a>
+                    <a id='navhome' href='/'>Home</a>
+                    <a id='navservice' href='/services'>Services</a>
+                    <a id='navportfolio' href='/portfolio'>Portfolio</a>
+                    <a id='navproducts' href='/products'>Our Products</a>
+                    <a id='navblog' href='/blog'>Blog</a>
                 </div>
                 <div className='nav-contact'>
                     <a
@@ -74,6 +78,7 @@ const Navigator = () => {
                     <div className='mobile-nav-links'>
                         <a href='/'>Home</a>
                         <a href='/services'>Services</a>
+                        <a href='/portfolio'>Portfolio</a>
                         <a href='/products'>Our Products</a>
                         <a href='/blog'>Blog</a>
                     </div>

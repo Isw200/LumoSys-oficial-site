@@ -58,7 +58,7 @@ function App() {
       />
       <div className='chat-button'
         onClick={() => {
-          window.open('https://api.whatsapp.com/send?phone=+919999999999&text=Hi%20I%20am%20interested%20in%20your%20product', '_blank');
+          window.open('https://api.whatsapp.com/send?phone=+94710338328&text=Hi%2C%20I%20am%20interested%20in%20Lumosys%20technologies.%20Please%20contact%20me.');
         }}
       >
         <div

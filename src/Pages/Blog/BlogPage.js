@@ -59,6 +59,17 @@ const BlogPage = () => {
     const blogId = useParams()
     const [messageApi, contextHolder] = message.useMessage();
 
+    useEffect(() => {
+        const activeTab = document.querySelector(".activenav");
+        if (activeTab) {
+            activeTab.classList.remove("activenav");
+        }
+        const currentTab = document.getElementById("navblog");
+        if (currentTab) {
+            currentTab.classList.add("activenav");
+        }
+    }, []);
+
     const coppied = () => {
         messageApi.open({
             type: 'success',
@@ -158,7 +169,7 @@ const BlogPage = () => {
                                     }}
                                     type='primary'
                                     onClick={() => {
-                                        window.open(`https://twitter.com/intent/tweet?text=${blogData.title}&url=https://blog-5d3b5.web.app/blog/${blogData.blogId}&hashtags=blog`)
+                                        window.open(`https://twitter.com/intent/tweet?text=${blogData.title}&url=https://www.lumosystechnologies.com/blog/${blogData.blogId}&hashtags=blog`)
                                     }}
                                 >
                                     Twitter
@@ -169,7 +180,7 @@ const BlogPage = () => {
                                     }}
                                     type='primary'
                                     onClick={() => {
-                                        window.open(`https://www.facebook.com/sharer/sharer.php?u=https://blog-5d3b5.web.app/blog/${blogData.blogId}`)
+                                        window.open(`https://www.facebook.com/sharer/sharer.php?u=https://www.lumosystechnologies.com/blog/${blogData.blogId}`)
                                     }}
                                 >
                                     Facebook
@@ -180,7 +191,7 @@ const BlogPage = () => {
                                     }}
                                     type='primary'
                                     onClick={() => {
-                                        window.open(`https://www.linkedin.com/shareArticle?mini=true&url=https://blog-5d3b5.web.app/blog/${blogData.blogId}&title=${blogData.title}&summary=${blogData.discription}&source=https://blog-5d3b5.web.app/blog/${blogData.blogId}`)
+                                        window.open(`https://www.linkedin.com/shareArticle?mini=true&url=https://www.lumosystechnologies.com/blog/${blogData.blogId}&title=${blogData.title}&summary=${blogData.discription}&source=https://www.lumosystechnologies.com/blog/${blogData.blogId}`)
                                     }}
                                 >
                                     LinkedIn
@@ -191,7 +202,7 @@ const BlogPage = () => {
                                     }}
                                     type='primary'
                                     onClick={() => {
-                                        navigator.clipboard.writeText(`https://blog-5d3b5.web.app/blog/${blogData.blogId}`)
+                                        navigator.clipboard.writeText(`https://www.lumosystechnologies.com/blog/${blogData.blogId}`)
                                         coppied()
                                     }}
                                 >

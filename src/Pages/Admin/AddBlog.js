@@ -12,10 +12,14 @@ import { doc, setDoc } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 // Quill
-import ReactQuill from 'react-quill';
+import ReactQuill, { Quill } from 'react-quill';
 import 'react-quill/dist/quill.snow.css'
 import 'react-quill/dist/quill.bubble.css';
 import TextArea from 'antd/es/input/TextArea';
+import ImageResize from 'quill-image-resize-module-react';
+
+Quill.register('modules/imageResize', ImageResize);
+
 
 const modules = {
     toolbar: [
@@ -32,6 +36,14 @@ const modules = {
         ["formula"],
         [{ size: ["small", false, "large", "huge"] }],
     ],
+    clipboard: {
+        // toggle to add extra line breaks when pasting HTML:
+        matchVisual: false
+    },
+    imageResize: {
+        parchment: Quill.import('parchment'),
+        modules: ['Resize', 'DisplaySize']
+    }
 };
 
 const props = {

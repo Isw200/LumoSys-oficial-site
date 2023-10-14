@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 // Antd
-import { Segmented, AutoComplete, Input, Spin, Tag, Skeleton } from 'antd';
+import { Segmented, AutoComplete, Input, Tag } from 'antd';
 
 // Lottie
 import Lottie from 'react-lottie';
@@ -50,6 +50,18 @@ const Blog = () => {
     const [allBlogs, setAllBlogs] = useState([])
     const [seletedBlogs, setSelectedBlogs] = useState([])
 
+    // Active link
+    useEffect(() => {
+        const activeTab = document.querySelector(".activenav");
+        if (activeTab) {
+            activeTab.classList.remove("activenav");
+        }
+        const currentTab = document.getElementById("navblog");
+        if (currentTab) {
+            currentTab.classList.add("activenav");
+        }
+    }, []);
+
     useEffect(() => {
         const getBlogs = async () => {
             setLoading(true)
@@ -60,6 +72,10 @@ const Blog = () => {
                 blogsArray.push(doc.data())
             })
             setAllBlogs(blogsArray)
+            // sort 
+            blogsArray.sort((a, b) => {
+                return new Date(b.createdAt) - new Date(a.createdAt);
+            });
             setSelectedBlogs(blogsArray)
             setOptions(blogsArray.map(blog => {
                 return {
@@ -80,11 +96,19 @@ const Blog = () => {
     };
     const onSelect = (value) => {
         const selectedBlog = allBlogs.filter(blog => blog.title === value)
+        // sort 
+        selectedBlog.sort((a, b) => {
+            return new Date(b.createdAt) - new Date(a.createdAt);
+        });
         setSelectedBlogs(selectedBlog)
     };
 
     const onCategoryChange = (value) => {
         if (value === 'All') {
+            // sort
+            allBlogs.sort((a, b) => {
+                return new Date(b.createdAt) - new Date(a.createdAt);
+            });
             setSelectedBlogs(allBlogs)
             setOptions(allBlogs.map(blog => {
                 return {
@@ -93,6 +117,10 @@ const Blog = () => {
             }))
         } else {
             const filteredBlogs = allBlogs.filter(blog => blog.category.includes(value))
+            // sort
+            filteredBlogs.sort((a, b) => {
+                return new Date(b.createdAt) - new Date(a.createdAt);
+            });
             setSelectedBlogs(filteredBlogs)
             setOptions(filteredBlogs.map(blog => {
                 return {
@@ -244,7 +272,7 @@ const Blog = () => {
                                                                 target='_blank'
                                                                 rel="noreferrer"
                                                             >
-                                                                Read More...
+                                                                &nbsp;Read More...
                                                             </a>
                                                         </p>
                                                     </div>

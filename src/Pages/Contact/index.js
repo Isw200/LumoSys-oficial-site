@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { PhoneFilled, MailFilled, QuestionCircleOutlined, WhatsAppOutlined, SmileOutlined } from '@ant-design/icons';
 
@@ -19,17 +19,28 @@ const ContactUs = () => {
     const [api, contextHolder] = notification.useNotification();
     const [loading, setLoading] = useState(false);
 
+    useEffect(() => {
+        const activeTab = document.querySelector(".activenav");
+        if (activeTab) {
+            activeTab.classList.remove("activenav");
+        }
+    }, []);
+
     const sendEmail = (e) => {
-        setLoading(true)
         e.preventDefault();
-        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
-            .then((result) => {
-                openNotification()
-                setLoading(false)
-            }, (error) => {
-                openErrorNotification()
-                setLoading(false)
-            });
+        if (e.target.user_name.value === '' || e.target.email_id.value === '' || e.target.message.value === '') {
+            openErrorNotification()
+        } else {
+            setLoading(true)
+            emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+                .then((result) => {
+                    openNotification()
+                    setLoading(false)
+                }, (error) => {
+                    openErrorNotification()
+                    setLoading(false)
+                });
+        }
     }
 
     const openNotification = () => {
@@ -79,14 +90,17 @@ const ContactUs = () => {
                         Fill up the form and our team will get back to you as soon as possible
                     </p>
                     <div className='contact-info'>
-                        <a href='tel:+91 1234567890'>
-                            <PhoneFilled /> +91 1234567890
+                        <a href='tel:+94702010059'>
+                            <PhoneFilled /> +94 702010059
+                        </a>
+                        <a href='tel:+94771523073'>
+                            <PhoneFilled /> +94 771523073
                         </a>
                         <a href='mailto:'>
                             <MailFilled /> lumosystechnologies@gmail.com
                         </a>
-                        <a href='https://api.whatsapp.com/send?phone=+94712345678'>
-                            <WhatsAppOutlined /> +91 1234567890
+                        <a href='https://api.whatsapp.com/send?phone=+94710338328'>
+                            <WhatsAppOutlined /> +94 710338328
                         </a>
                     </div>
                 </div>
