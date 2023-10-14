@@ -161,3 +161,23 @@
     font-size: 1rem;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .Slider {
+    width: 80%;
+  }
+
+  .Slider .card {
+    width: 16rem;
+    height: 22rem;
+  }
+
+  .Slider h4 {
+    margin: 10px 0;
+    font-size: 1.6rem;
+  }
+
+  .Slider p {
+    font-size: 1rem;
+  }
+}
