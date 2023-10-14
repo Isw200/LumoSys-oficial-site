@@ -19,7 +19,6 @@ import Dotnet from "../../../Assets/Images/Dotnet.png";
 import Laravel from "../../../Assets/Images/Laravel.png";
 import Django from "../../../Assets/Images/Django.png";
 import Azure from "../../../Assets/Images/Azure.png";
-import CodingIcon from "../../../Assets/Images/CodingIcon.png"
 
 const details = [
   {
@@ -61,13 +60,16 @@ function ServicesFullStack() {
       <h4 className='title-top'>Empowering Your business for Success</h4>
       <h1 className='mainHeading'>Full Stack<br></br>Development</h1>
       <br></br>
-      <p>At LumoSys, we specialize in creating exceptional mobile applications that<br></br>
-        empower businesses and individuals to succeed in the digital era.<br></br> 
-        Our experienced team of developers combines cutting-edge technologies with<br></br>
-        innovative design to deliver high-quality, user-friendly mobile apps tailored <br></br>
+      <p>At LumoSys, we specialize in creating exceptional mobile applications that
+        empower businesses and individuals to succeed in the digital era.
+        Our experienced team of developers combines cutting-edge technologies with
+        innovative design to deliver high-quality, user-friendly mobile apps tailored 
         to your unique requirements.</p>
 
-      <button>Read More</button>
+      <div className='services-btn' data-aos="fade-up">
+        <a href='/'> Read More </a>
+      </div>
+      
     </div>
 
     <div className='pallet2'>
