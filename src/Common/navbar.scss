@@ -392,6 +392,10 @@
       height: 75vh;
     }
 
+    @media screen and (max-height: 700px) {
+      height: 70vh;
+    }
+
     .mobile-nav-links {
       display: flex;
       flex-direction: column;
