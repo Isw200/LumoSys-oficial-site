@@ -21,6 +21,9 @@ import './slider.css'
 import './icon-slider.css'
 import './terminal.scss'
 
+// Images
+import HeroBg from './Assets/bg.webp'
+
 const responsive = {
     superLargeDesktop: {
         breakpoint: { max: 4000, min: 3000 },
@@ -152,7 +155,11 @@ const Home = () => {
                 ______________________________________________////
                 ///
              */}
-            <div className='hero'>
+            <div className='hero'
+                style={{
+                    backgroundImage: `url(${HeroBg})`
+                }}
+            >
                 <h1 data-aos="fade-up">
                     Illuminating Tomorrow's Technology.
                 </h1>
