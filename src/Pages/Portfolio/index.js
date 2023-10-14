@@ -74,7 +74,10 @@ const Portfolio = () => {
                             <Tag color='blue'>Node</Tag>
                             <Tag color='blue'>Firebase</Tag>
                         </div>
-                        <a href='/'>
+                        <a target='_blank'
+                            rel='noopener noreferrer'
+                            href='https://coderdojo.lk/'
+                        >
                             Learn More →
                         </a>
                     </div>
@@ -91,7 +94,7 @@ const Portfolio = () => {
                         <p>
                             A privacy protected Meeting Platform. This is my second year group project.
                             Technologies - Deep Learning (classification) - Python
-                            Media Pipe
+                            Media Pipe.
                         </p>
                         <div className='portfolio-bottom-item-info-stack'>
                             <Tag color='blue'>React</Tag>
@@ -99,9 +102,7 @@ const Portfolio = () => {
                             <Tag color='blue'>MongoDB</Tag>
                         </div>
                         <a
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            href='https://coderdojo.lk/'
+                            href='/contact-us'
                         >
                             Learn More →
                         </a>

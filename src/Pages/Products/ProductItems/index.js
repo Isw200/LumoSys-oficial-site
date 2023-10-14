@@ -427,7 +427,7 @@ const LumoLearn = () => {
                     </h2>
                     <button
                         onClick={() => {
-                            window.open('https://api.whatsapp.com/send?phone=+94710338328&text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20LumoLearn', '_blank');
+                            window.location.href = '/contact-us';
                         }}
                     >
                         Contact Us
