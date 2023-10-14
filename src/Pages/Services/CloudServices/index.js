@@ -3,16 +3,17 @@ import "./style.scss"
 
 import GetStarted from '../../Services/GetStarted/index.js';
 
-import iosImg from "../../../Assets/Images/iosImg.png";
-import androidImg from "../../../Assets/Images/androidImg.png";
-import cpImg from "../../../Assets/Images/cpImg.png";
-import CloudConsulting from "../../../Assets/Images/CloudConsulting.jpg"
-import Saas from "../../../Assets/Images/Saas.jpg"
 import Kubernetes from "../../../Assets/Images/Kubernetes.png";
 import Docker from "../../../Assets/Images/Docker.png";
 import Firebase from "../../../Assets/Images/Firebase.png";
 import Azure from "../../../Assets/Images/Azure.png";
 import AWS from "../../../Assets/Images/AWS.png"
+
+import img9 from "../Assets/9.png";
+import img10 from "../Assets/10.png";
+import img11 from "../Assets/11.png";
+import img12 from "../Assets/12.png";
+import img13 from "../Assets/13.png";
 
 import ServiceCard from "../../../Common/ServiceCards/index.js";
 
@@ -52,14 +53,17 @@ function ServicesCloud() {
       <h4 className='title-top'>Empowering Your business for Success</h4>
       <h1 className='mainHeading'>Cloud Services</h1>
       <br></br>
-      <p>Welcome to LumoSys, where we provide cutting-edge cloud solutions to help <br></br>
-        businesses thrive in the digital era. Our comprehensive suite of cloud services <br></br>
-        empowers organisations to streamline operations, enhance collaboration, and scale <br></br>
-        their business effortlessly. With our expertise and dedication to innovation, we deliver <br></br>
+      <p>Welcome to LumoSys, where we provide cutting-edge cloud solutions to help 
+        businesses thrive in the digital era. Our comprehensive suite of cloud services 
+        empowers organisations to streamline operations, enhance collaboration, and scale 
+        their business effortlessly. With our expertise and dedication to innovation, we deliver 
         tailored cloud solutions that align with your unique business needs.
       </p>
 
-      <button>Read More</button>
+      <div className='services-btn' data-aos="fade-up">
+          <a href='/'> Read More </a>
+      </div>
+
     </div>
 
     <div className='pallet2'>
@@ -78,24 +82,27 @@ function ServicesCloud() {
 
         <div className='container1'>
           <div className='infoText'>
-          <h2 className='title-top'>Cloud Infrastructure</h2>
-          <p>We offer a robust and reliable cloud infrastructure that enables<br></br> 
-            you to deploy and manage your applications and services<br></br>
-            seamlessly. Whether you need virtual machines, storage<br></br>
-            solutions, or networking capabilities, our cloud infrastructure <br></br>
+          <h2 >Cloud Infrastructure</h2>
+          <p>We offer a robust and reliable cloud infrastructure that enables 
+            seamlessly. Whether you need virtual machines, storage
+            solutions, or networking capabilities, our cloud infrastructure 
             provides the foundation for your digital operations.</p>
           </div>
 
-          <img src={iosImg} alt='iosImg' />
+          <div className='image'>
+            <img src={img9} alt='img9' />
+          </div>
         </div>
 
         <div className='container2'>
-          <img src={androidImg} alt='androidImg' />
+          <div className='image'>
+            <img src={img10} alt='img10' />
+          </div>
           <div className='infoText'>
-          <h2 className='title-top'>Cloud Storage</h2>
-          <p>With our secure cloud storage solutions, you can store, access, <br></br>
-            and share your data from anywhere, at any time. Say goodbye to physical <br></br>
-            storage limitations and embrace the scalability and accessibility <br></br>
+          <h2 >Cloud Storage</h2>
+          <p>With our secure cloud storage solutions, you can store, access, 
+            and share your data from anywhere, at any time. Say goodbye to physical 
+            storage limitations and embrace the scalability and accessibility 
             of the cloud, ensuring that your critical files are always within reach.</p>
           </div>
 
@@ -103,36 +110,40 @@ function ServicesCloud() {
 
         <div className='container3'>
           <div className='infoText'>
-          <h2 className='title-top'>Cloud Backup and <br></br>Disaster Recovery</h2>
-          <p>Our SaaS solutions provide cloud-based applications that cater<br></br> 
-            to specific business needs. From project management tools to customer<br></br>
-            relationship management systems, we offer a range of SaaS applications <br></br>
-            that are ready to use, eliminating the need for complex installations <br></br>
+          <h2>Cloud Backup and Disaster Recovery</h2>
+          <p>Our SaaS solutions provide cloud-based applications that cater
+            to specific business needs. From project management tools to customer
+            relationship management systems, we offer a range of SaaS applications 
+            that are ready to use, eliminating the need for complex installations 
             and maintenance.</p>
           </div>
-          <img src={cpImg} alt='iosImg' />
+          <div className='image'>
+            <img src={img11} alt='img11' />
+          </div>
         </div>
 
         <div className='container4'>
-        <img src={CloudConsulting} alt='CloudConsulting' />
+          <div className='image'>
+            <img src={img12} alt='img12' />
+          </div>
           <div className='infoText'>
-          <h2 className='title-top'>Cloud Consulting and Migration</h2>
-          <p>We understand the power of emotional connection in design.<br></br> 
-            By incorporating elements that evoke positive emotions, we create <br></br>
-            experiences that resonate with your users on a deeper level,<br></br> 
+          <h2>Cloud Consulting and Migration</h2>
+          <p>We understand the power of emotional connection in design.
+            By incorporating elements that evoke positive emotions, we create 
+            experiences that resonate with your users on a deeper level,
             forging a lasting connection between them and your brand.</p>
           </div>
         </div>
 
         <div className='container5'>
           <div className='infoText'>
-          <h2 className='title-top'>Software as a Service (SaaS)</h2>
-          <p>If you're looking to migrate your existing infrastructure to the cloud, <br></br>
-            our team of experts is here to guide you through the process. We provide <br></br> 
-            comprehensive cloud consulting services, assessing your requirements, <br></br>
-            designing a tailored cloud architecture, and managing the migration seamlessly.</p>
+          <h2 >Software as a Service (SaaS)</h2>
+          <p>Seeking to move to the cloud? Our expert team offers end-to-end cloud consulting, 
+            from assessing needs to designing solutions and managing the migration. Let us guide you.</p>
           </div>
-          <img src={Saas} alt='Saas' />
+          <div className='image'>
+            <img src={img13} alt='img13' />
+          </div>
         </div>
     </div>
 

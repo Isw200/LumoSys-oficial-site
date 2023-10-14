@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/share-tech');
 .servicesmobile .pallet1{
+    width: 40%;
     padding: 150px 200px;
          align-items: center;
          justify-content: space-between;
@@ -36,17 +37,32 @@
     line-height: 2rem;
 }
 
-.servicesmobile .pallet1 >button{
-    color: #9302F0;
-    text-align: center;
-    width: 10rem;
-    height: 3rem;
-    border-radius: 5rem;
-    border: 3px solid #E70F77;
-    font-size: 1rem;
-    background-color: white;
-}
+.servicesmobile .pallet1 .services-btn {
+    display: inline-flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0 auto;
 
+    a {
+        text-decoration: none;
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 50px;
+        border: 1px solid #E70F77;
+        background-color: #fff;
+        color: #E70F77;
+        transition: all 0.3s ease;
+        font-size: 1.2rem;
+        margin: 0 auto;
+    }
+
+    a:hover {
+        background-color: #E70F77;
+        border: 1px solid #E70F77;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+}
 /* Methodology CSS start*/
 .servicesmobile .pallet2{
     display: flex;
@@ -65,7 +81,6 @@
     width: 80%;
 }
 /* Methodology CSS end*/
-
 .servicesmobile .pallet3 {
     display: flex;
     flex-direction: column;
@@ -82,66 +97,173 @@
 .servicesmobile .pallet3 .container1 {
     display: flex;
     flex-direction: row;
-    padding-top: 4rem;
-    width: 70%;
+    width: 80%;
     margin: auto;
+    margin-top: 5rem;
 }
 
 .servicesmobile .pallet3 .container1 .infoText{
     color: #000000;
-    font-size: 1.5rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
     text-align: left;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 75%;
 }
 
-.servicesmobile .pallet3 .container1 > img{
-    display: -webkit-box;
-    margin-left: auto;
+.servicesmobile .pallet3 .container1 .image{
+    width: 25%;
+    height: 250px;
+    background-attachment: fixed;
+}
+
+.servicesmobile .pallet3 .container1 .image > img {
+    width: 100%;
+    height: 100%;
 }
 
 .servicesmobile .pallet3 .container2 {
     display: flex;
     flex-direction: row;
-    padding-top: 6rem;
-    width: 70%;
+    width: 80%;
     margin: auto;
+    margin-top: 5rem;
 }
 
 .servicesmobile .pallet3 .container2 .infoText{
     color: #000000;
-    font-size: 1.5rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
     text-align: right;
     flex-direction: column;
-    margin-top: 2rem;
+    width: 75%;
 }
 
-.servicesmobile .pallet3 .container2 > img{
-    display: -webkit-box;
-    margin-right: auto;
+.servicesmobile .pallet3 .container2 .image{
+    width: 25%;
+    height: 250px;
+    background-attachment: fixed;
+    margin-right: 2rem;
+}
+
+.servicesmobile .pallet3 .container2 .image > img {
+    width: 100%;
+    height: 100%;
 }
 
 .servicesmobile .pallet3 .container3 {
     display: flex;
     flex-direction: row;
-    padding-top: 6rem;
-    width: 70%;
+    width: 80%;
     margin: auto;
+    margin-top: 5rem;
+    margin-bottom: -5rem;
 }
 
 .servicesmobile .pallet3 .container3 .infoText{
     color: #000000;
-    font-size: 1.5rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
     text-align: left;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 75%;
 }
 
-.servicesmobile .pallet3 .container3 > img{
-    display: -webkit-box;
-    margin-left: auto;
+.servicesmobile .pallet3 .container3 .image{
+    width: 25%;
+    height: 250px;
+    background-attachment: fixed;
 }
 
+.servicesmobile .pallet3 .container3 .image > img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1280px){
+    .servicesmobile .pallet1{
+        width: 50% ;
+    }
+    .servicesmobile .pallet1 >h4{
+        padding-top: 5rem;
+    }
+
+    .servicesmobile .pallet3 .container1 .infoText{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .servicesmobile .pallet3 .container2 .infoText{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .servicesmobile .pallet3 .container3 .infoText{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    } 
+}
+
+@media (max-width: 979px) {
+    .servicesmobile .pallet1{
+        width: 60% ;
+    }
+    .servicesmobile .pallet1 >h4{
+        padding-top: 5rem;
+    }
+
+    .servicesmobile .pallet3{
+        width: 90%;
+    }
+
+    .servicesmobile .pallet3 .container1{
+        flex-direction: column-reverse;
+    }
+
+    .servicesmobile .pallet3 .container1 .infoText{
+        text-align: left;
+        width: 100%;
+    }
+
+    .servicesmobile .pallet3 .container1 .image{
+        width: 100%;
+    }
+
+    .servicesmobile .pallet3 .container2{
+        flex-direction: column;
+    }
+
+    .servicesmobile .pallet3 .container2 .infoText{
+        text-align: left;
+        width: 100%;
+    }
+
+    .servicesmobile .pallet3 .container2 .image{
+        width: 100%;
+    }
+
+    .servicesmobile .pallet3 .container3{
+        flex-direction: column-reverse;
+    }
+
+    .servicesmobile .pallet3 .container3 .infoText{
+        text-align: left;
+        width: 100%;
+    }
+
+    .servicesmobile .pallet3 .container3 .image{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicesmobile .pallet1{
+        width: 80% ;
+    }
+    .servicesmobile .pallet1 >h4{
+        padding-top: 5rem;
+    }
+
+}

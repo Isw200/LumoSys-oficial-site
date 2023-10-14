@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/share-tech');
 .servicescloud .pallet1{
+    width: 40%;
    padding: 150px 200px;
         align-items: center;
         justify-content: space-between;
@@ -35,15 +36,31 @@
     line-height: 2rem;
 }
 
-.servicescloud .pallet1 >button{
-    color: #9302F0;
-    text-align: center;
-    width: 10rem;
-    height: 3rem;
-    border-radius: 5rem;
-    border: 3px solid #E70F77;
-    font-size: 1rem;
-    background-color: white;
+.servicescloud .pallet1 .services-btn {
+    display: inline-flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0 auto;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 50px;
+        border: 1px solid #E70F77;
+        background-color: #fff;
+        color: #E70F77;
+        transition: all 0.3s ease;
+        font-size: 1.2rem;
+        margin: 0 auto;
+    }
+
+    a:hover {
+        background-color: #E70F77;
+        border: 1px solid #E70F77;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
 }
 
 /* Methodology CSS start*/
@@ -78,125 +95,162 @@
     text-align: center;
 }
 
-.servicescloud .pallet3 .container1 {
+.servicescloud  .pallet3 .container1 {
     display: flex;
     flex-direction: row;
-    padding-top: 4rem;
-    width: 70%;
+    width: 80%;
     margin: auto;
+    margin-top: 5rem;
 }
 
-.servicescloud .pallet3 .container1 .infoText{
+.servicescloud  .pallet3 .container1 .infoText{
     color: #000000;
-    font-size: 1.5rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
     text-align: left;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 75%;
 }
 
-.servicescloud .pallet3 .container1 > img{
-    display: -webkit-box;
-    margin-left: auto;
+.servicescloud  .pallet3 .container1 .image{
+    width: 25%;
+    height: 250px;
+    background-attachment: fixed;
 }
 
-.servicescloud .pallet3 .container2 {
+.servicescloud  .pallet3 .container1 .image > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.servicescloud  .pallet3 .container2 {
     display: flex;
     flex-direction: row;
-    padding-top: 6rem;
-    width: 70%;
+    width: 80%;
     margin: auto;
+    margin-top: 5rem;
 }
 
-.servicescloud .pallet3 .container2 .infoText{
+.servicescloud  .pallet3 .container2 .infoText{
     color: #000000;
-    font-size: 1.5rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
     text-align: right;
     flex-direction: column;
-    margin-top: 2rem;
+    width: 75%;
 }
 
-.servicescloud .pallet3 .container2 > img{
-    display: -webkit-box;
-    margin-right: auto;
+.servicescloud  .pallet3 .container2 .image{
+    width: 25%;
+    height: 250px;
+    background-attachment: fixed;
+    margin-right: 2rem;
 }
 
-.servicescloud .pallet3 .container3 {
+.servicescloud  .pallet3 .container2 .image > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.servicescloud  .pallet3 .container3 {
     display: flex;
     flex-direction: row;
-    padding-top: 6rem;
-    width: 70%;
+    width: 80%;
     margin: auto;
+    margin-top: 5rem;
 }
 
-.servicescloud .pallet3 .container3 .infoText{
+.servicescloud  .pallet3 .container3 .infoText{
     color: #000000;
-    font-size: 1.5rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
     text-align: left;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 75%;
 }
 
-.servicescloud .pallet3 .container3 > img{
-    display: -webkit-box;
-    margin-left: auto;
+.servicescloud  .pallet3 .container3 .image{
+    width: 25%;
+    height: 250px;
+    background-attachment: fixed;
 }
 
-.servicescloud .pallet3 .container4 {
+.servicescloud  .pallet3 .container3 .image > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.servicescloud  .pallet3 .container4 {
     display: flex;
     flex-direction: row;
-    padding-top: 6rem;
-    width: 70%;
+    width: 80%;
     margin: auto;
+    margin-top: 5rem;
 }
 
-.servicescloud .pallet3 .container4 .infoText{
+.servicescloud  .pallet3 .container4 .infoText{
     color: #000000;
-    font-size: 1.5rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
     text-align: right;
     flex-direction: column;
-    margin-top: 2rem;
+    width: 75%;
 }
 
-.servicescloud .pallet3 .container4 > img{
-    display: -webkit-box;
-    margin-right: auto;
-    height: 271px;
-    width: 368px;
+.servicescloud  .pallet3 .container4 .image {
+    width: 25%;
+    height: 250px;
+    background-attachment: fixed;
+    margin-right: 2rem;
 }
 
-.servicescloud .pallet3 .container5 {
+.servicescloud  .pallet3 .container4 .image > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.servicescloud  .pallet3 .container5 {
     display: flex;
     flex-direction: row;
-    padding-top: 6rem;
-    width: 70%;
+    width: 80%;
     margin: auto;
+    margin-top: 5rem;
+    margin-bottom: -5rem;
 }
 
-.servicescloud .pallet3 .container5 .infoText{
+.servicescloud  .pallet3 .container5 .infoText{
     color: #000000;
     font-size: 1.5rem;
     line-height: 2.4rem;
     text-align: left;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 75%;
 }
 
-.servicescloud .pallet3 .container5 > img{
-    display: -webkit-box;
-    margin-left: auto;
-    height: 271px;
-    width: 368px;
+.servicescloud  .pallet3 .container5 .image {
+    width: 25%;
+    height: 250px;
+    background-attachment: fixed;
+}
+
+.servicescloud  .pallet3 .container5 .image > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .servicescloud .pallet4 {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 6rem auto 4rem auto;
+    margin: 10rem auto 4rem auto;
     align-items: center;
 }
 
@@ -214,4 +268,143 @@
 
 .servicescloud .pallet4 .container > img {
     padding: 2rem;
+}
+
+@media screen and (max-width: 1280px){
+    .servicescloud .pallet1{
+        width: 50% ;
+    }
+    .servicescloud .pallet1 >h4{
+        padding-top: 5rem;
+    }
+
+    .servicescloud .pallet3 .container1 .infoText{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .servicescloud .pallet3 .container2 .infoText{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .servicescloud .pallet3 .container3 .infoText{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .servicescloud .pallet3 .container4 .infoText{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .servicescloud .pallet3 .container5 .infoText{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }   
+
+    .servicescloud .pallet4 .container > img {
+        padding: 1rem;
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 979px) {
+    .servicescloud .pallet1{
+        width: 60% ;
+    }
+    .servicescloud .pallet1 >h4{
+        padding-top: 5rem;
+    }
+
+    .servicescloud .pallet3{
+        width: 90%;
+    }
+
+    .servicescloud .pallet3 .container1{
+        flex-direction: column-reverse;
+    }
+
+    .servicescloud .pallet3 .container1 .infoText{
+        text-align: left;
+        width: 100%;
+    }
+
+    .servicescloud .pallet3 .container1 .image{
+        width: 100%;
+    }
+
+    .servicescloud .pallet3 .container2{
+        flex-direction: column;
+    }
+
+    .servicescloud .pallet3 .container2 .infoText{
+        text-align: left;
+        width: 100%;
+    }
+
+    .servicescloud .pallet3 .container2 .image{
+        width: 100%;
+    }
+
+    .servicescloud .pallet3 .container3{
+        flex-direction: column-reverse;
+    }
+
+    .servicescloud .pallet3 .container3 .infoText{
+        text-align: left;
+        width: 100%;
+    }
+
+    .servicescloud .pallet3 .container3 .image{
+        width: 100%;
+    }
+
+    .servicescloud .pallet3 .container4{
+        flex-direction: column;
+    }
+
+    .servicescloud .pallet3 .container4 .infoText{
+        text-align: left;
+        width: 100%;
+    }
+
+    .servicescloud .pallet3 .container4 .image{
+        width: 100%;
+    }
+
+    .servicescloud .pallet3 .container5{
+        flex-direction: column-reverse;
+    }
+
+    .servicescloud .pallet3 .container5 .infoText{
+        text-align: left;
+        width: 100%;
+    }
+
+    .servicescloud .pallet3 .container5 .image{
+        width: 100%;
+    }
+
+    .servicescloud .pallet4 .container  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicescloud .pallet4 .container > img {
+        padding: 1rem;
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .servicescloud .pallet1{
+        width: 80% ;
+    }
+    .servicescloud .pallet1 >h4{
+        padding-top: 5rem;
+    }
+
 }
