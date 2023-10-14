@@ -28,7 +28,7 @@ const Portfolio = () => {
             <div className='portfolio-bottom'>
                 <div className='portfolio-bottom-item'>
                     <div className='portfolio-bottom-item-image'>
-                        <img src={require('./Assets/1.webp')} alt='' />
+                        <img src={require('./Assets/1.jpg')} alt='' />
                     </div>
                     <div className='portfolio-bottom-item-info'>
                         <h3>
@@ -60,7 +60,7 @@ const Portfolio = () => {
 
                 <div className='portfolio-bottom-item'>
                     <div className='portfolio-bottom-item-image'>
-                        <img src={require('./Assets/2.webp')} alt='' />
+                        <img src={require('./Assets/2.jpg')} alt='' />
                     </div>
                     <div className='portfolio-bottom-item-info'>
                         <h3>
@@ -85,7 +85,7 @@ const Portfolio = () => {
 
                 <div className='portfolio-bottom-item'>
                     <div className='portfolio-bottom-item-image'>
-                        <img src={require('./Assets/3.webp')} alt='' />
+                        <img src={require('./Assets/3.jpg')} alt='' />
                     </div>
                     <div className='portfolio-bottom-item-info'>
                         <h3>
@@ -111,7 +111,7 @@ const Portfolio = () => {
 
                 <div className='portfolio-bottom-item'>
                     <div className='portfolio-bottom-item-image'>
-                        <img src={require('./Assets/4.webp')} alt='' />
+                        <img src={require('./Assets/4.jpg')} alt='' />
                     </div>
                     <div className='portfolio-bottom-item-info'>
                         <h3>

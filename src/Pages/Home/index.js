@@ -187,7 +187,7 @@ const Home = () => {
                     <Tabs data-aos="fade-up" defaultActiveKey="1" items={items} onChange={onChange} />
                 </div>
                 <div className='about-right' data-aos="zoom-in">
-                    <img src={require('./Assets/services.webp')} alt='Services' />
+                    <img src={require('./Assets/services.png')} alt='Services' />
                 </div>
             </div>
 
@@ -472,7 +472,7 @@ const Home = () => {
                 <div className='home-products-bottom' data-aos="zoom-in">
                     <div className='home-products-item'>
                         <div className='home-products-item-img'>
-                            <img src={require('./Assets/products/1.webp')} alt='1' />
+                            <img src={require('./Assets/products/1.jpg')} alt='1' />
                         </div>
                         <div className='home-products-item-content'>
                             <h2>
@@ -500,7 +500,7 @@ const Home = () => {
                                 order: '2'
                             }}
                         >
-                            <img src={require('./Assets/products/2.webp')} alt='1' />
+                            <img src={require('./Assets/products/2.jpg')} alt='1' />
                         </div>
                         <div className='home-products-item-content'
                             style={{
@@ -577,7 +577,7 @@ const Home = () => {
                                 <div className='card-image'>
                                     <div className='image'>
                                         <img
-                                            src={require('./Assets/reviews/visal.webp')}
+                                            src={require('./Assets/reviews/visal.jpg')}
                                             alt='1'
                                         />
                                     </div>
@@ -607,7 +607,7 @@ const Home = () => {
                                 <div className='card-image'>
                                     <div className='image'>
                                         <img
-                                            src={require('./Assets/reviews/visal.webp')}
+                                            src={require('./Assets/reviews/visal.jpg')}
                                             alt='1'
                                         />
                                     </div>
@@ -659,7 +659,7 @@ const Home = () => {
                     <div className='home-team-cards' data-aos="zoom-in">
                         <div className='home-team-cards-item'>
                             <Image
-                                src={require('./Assets/team/isuru.webp')}
+                                src={require('./Assets/team/isuru.jpg')}
                                 preview={{
                                     visible: false,
                                     mask: <div className='card-details'>
@@ -697,7 +697,7 @@ const Home = () => {
 
                         <div className='home-team-cards-item' data-aos="zoom-in">
                             <Image
-                                src={require('./Assets/team/senal.webp')}
+                                src={require('./Assets/team/senal.jpg')}
                                 preview={{
                                     visible: false,
                                     mask: <div className='card-details'>
@@ -737,7 +737,7 @@ const Home = () => {
 
                         <div className='home-team-cards-item' data-aos="zoom-in">
                             <Image
-                                src={require('./Assets/team/dinith.webp')}
+                                src={require('./Assets/team/dinith.jpg')}
                                 preview={{
                                     visible: false,
                                     mask: <div className='card-details'>
@@ -777,7 +777,7 @@ const Home = () => {
 
                         <div className='home-team-cards-item' data-aos="zoom-in">
                             <Image
-                                src={require('./Assets/team/maheshi.webp')}
+                                src={require('./Assets/team/maheshi.jpg')}
                                 preview={{
                                     visible: false,
                                     mask: <div className='card-details'>

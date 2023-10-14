@@ -81,7 +81,7 @@ const LumoLearn = () => {
                     </div>
                 </div>
                 <div className='lumo-learn-top-right'>
-                    <img src={require('./Assets/lumolap.webp')} alt=''></img>
+                    <img src={require('./Assets/lumolap.png')} alt=''></img>
                 </div>
             </div>
 
@@ -99,7 +99,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/dashboard.webp')} alt='card-img ' />
+                            <img src={require('./Assets/Features/dashboard.png')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -113,7 +113,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/rec.webp')} alt='card-img ' />
+                            <img src={require('./Assets/Features/rec.png')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -127,7 +127,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/folder.webp')} alt='card-img ' />
+                            <img src={require('./Assets/Features/folder.png')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -141,7 +141,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/exam.webp')} alt='card-img ' />
+                            <img src={require('./Assets/Features/exam.png')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -155,7 +155,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/payments.webp')} alt='card-img ' />
+                            <img src={require('./Assets/Features/payments.png')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -169,7 +169,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/calendar.webp')} alt='card-img ' />
+                            <img src={require('./Assets/Features/calendar.png')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -183,7 +183,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/goal.webp')} alt='card-img ' />
+                            <img src={require('./Assets/Features/goal.png')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -197,7 +197,7 @@ const LumoLearn = () => {
 
                     <div className='card' >
                         <div className='card-image img3'>
-                            <img src={require('./Assets/Features/report.webp')} alt='card-img ' />
+                            <img src={require('./Assets/Features/report.png')} alt='card-img ' />
                         </div>
                         <div className='card-content'>
                             <h1>
@@ -229,7 +229,7 @@ const LumoLearn = () => {
                     </button>
                 </div>
                 <div className='why-lumolearn-right'>
-                    <img src={require('./Assets/pic1.webp')} alt=''></img>
+                    <img src={require('./Assets/pic1.jpg')} alt=''></img>
                 </div>
             </div>
 
@@ -264,7 +264,7 @@ const LumoLearn = () => {
                         <div className="card">
                             <div className='card-image'>
                                 <img
-                                    src={require('./Assets/reviews/visal.webp')}
+                                    src={require('./Assets/reviews/visal.jpg')}
                                     alt='1'
                                 />
                             </div>
@@ -285,7 +285,7 @@ const LumoLearn = () => {
                         <div className="card">
                             <div className='card-image'>
                                 <img
-                                    src={require('./Assets/reviews/visal.webp')}
+                                    src={require('./Assets/reviews/visal.jpg')}
                                     alt='1'
                                 />
                             </div>
@@ -306,7 +306,7 @@ const LumoLearn = () => {
                         <div className="card">
                             <div className='card-image'>
                                 <img
-                                    src={require('./Assets/reviews/visal.webp')}
+                                    src={require('./Assets/reviews/visal.jpg')}
                                     alt='1'
                                 />
                             </div>
@@ -453,7 +453,7 @@ const LumoLearn = () => {
                 </div>
                 <div className='lumolearn-getstated-right'>
                     <div>
-                        <img src={require('./Assets/getintouch.webp')} alt=''></img>
+                        <img src={require('./Assets/getintouch.png')} alt=''></img>
                     </div>
                 </div>
             </div>
