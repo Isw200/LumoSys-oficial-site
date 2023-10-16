@@ -1,84 +1,183 @@
 .Slider {
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    margin: 0 auto 30px auto;
-  }
-  .Slider .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .Slider h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5em;
-  }
-  .Slider .bar {
-    width: 180px;
-    height: 0.3rem;
-    background-color: #cd68ff;
-    margin-bottom: 1rem;
-    border-radius: 50px;
-    margin-top: -0.5em;
-    padding-top: 0;
-  }
-  .Slider .card {
-    height: 22rem;
-    width: 20rem;
-    background-color: rgb(241, 245, 255);
-    border-radius: 10px;
-    padding: 1rem;
-    justify-content: Left;
-    margin: auto;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  }
-  .Slider .card:hover{
-    background-color: rgb(241, 245, 255);
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
-    transform: scale(1.05);
-  }
-  .Slider .card img{
-    width: 5em;
-    height: 5em;
-    border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto 30px auto;
+}
+
+.Slider .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Slider h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+.Slider .bar {
+  width: 180px;
+  height: 0.3rem;
+  background-color: #cd68ff;
+  margin-bottom: 1rem;
+  border-radius: 50px;
+  margin-top: -0.5em;
+  padding-top: 0;
+}
+
+.Slider .card {
+  height: 22rem;
+  width: 20rem;
+  background-color: rgb(241, 245, 255);
+  border-radius: 10px;
+  padding: 1rem;
+  justify-content: Left;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.Slider .card:hover {
+  background-color: rgb(241, 245, 255);
+  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+  transform: scale(1.05);
+}
+
+.Slider .card .card-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 240px;
+}
+
+.Slider h4 {
+  color: #000;
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.Slider p {
+  color: #6d6d6d;
+  font-size: 1rem;
+  line-height: 1.5;
+  height: 300px;
+}
+
+.Slider a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #E70F77;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.Slider .carousel-container {
+  height: 30em;
+}
+
+.Slider .custom-dot-list-style button {
+  border: none;
+}
+
+@media screen and (max-width: 1600px) {
+  .Slider {
+    width: 80%;
   }
 
-  .Slider .card .card-content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 240px
+  .Slider .card {
+    width: 20rem;
   }
 
   .Slider h4 {
-    color: #000;
     margin: 10px 0;
     font-size: 2rem;
   }
-  
+
   .Slider p {
-    color: #6d6d6d;
     font-size: 1rem;
-    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Slider {
+    width: 80%;
   }
 
-  .Slider a {
-    color: #fff;
-    font-size: 0.9rem;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #E70F77;
-    width: 100px;
-    text-align: center;
-    border-radius: 5px;
+  .Slider .card {
+    width: 16rem;
   }
-  
-  .Slider .carousel-container {
-    height: 30em;
+
+  .Slider h4 {
+    margin: 10px 0;
+    font-size: 1.7rem;
   }
-  
-  .Slider .custom-dot-list-style button {
-    border: none;
+
+  .Slider p {
+    font-size: 1rem;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .Slider {
+    width: 80%;
+  }
+
+  .Slider .card {
+    width: 22rem;
+    height: 20rem;
+  }
+
+  .Slider h4 {
+    margin: 10px 0;
+    font-size: 1.6rem;
+  }
+
+  .Slider p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .Slider {
+    width: 80%;
+  }
+
+  .Slider .card {
+    width: 18rem;
+    height: 20rem;
+  }
+
+  .Slider h4 {
+    margin: 10px 0;
+    font-size: 1.6rem;
+  }
+
+  .Slider p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Slider {
+    width: 80%;
+  }
+
+  .Slider .card {
+    width: 16rem;
+    height: 22rem;
+  }
+
+  .Slider h4 {
+    margin: 10px 0;
+    font-size: 1.6rem;
+  }
+
+  .Slider p {
+    font-size: 1rem;
+  }
+}
