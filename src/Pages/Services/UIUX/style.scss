@@ -20,40 +20,22 @@
  }
  
 .ServicesUiUx .pallet1 >h4{
-    margin:auto;
+    margin:auto auto 1rem auto;
 }
  
 .ServicesUiUx .pallet1 .mainHeading{
-    margin:auto auto -1rem auto;
+    margin:auto;
     color: #E70F77;
     font-size: 3rem;
 }
 
-.ServicesUiUx .pallet1 >p{
-    color: #000000;
-    padding-bottom: 1.5rem;
-    font-size: 1.4rem;
-    line-height: 2rem;
-}
-
-.ServicesUiUx .pallet1 >button{
-    color: #9302F0;
-    text-align: center;
-    width: 10rem;
-    height: 3rem;
-    border-radius: 5rem;
-    border: 3px solid #E70F77;
-    font-size: 1rem;
-    background-color: white;
-}
-
 .ServicesUiUx .pallet1 .services-btn {
-    display: in;
+    display: inline-flex;
     justify-content: left;
     align-items: left;
-    margin: 0 auto;
+    margin: 1rem auto;
 
-    a {
+    button {
         text-decoration: none;
         color: #fff;
         padding: 15px 30px;
@@ -66,7 +48,7 @@
         margin: 0 auto;
     }
 
-    a:hover {
+    button:hover {
         background-color: #E70F77;
         border: 1px solid #E70F77;
         color: #fff;
