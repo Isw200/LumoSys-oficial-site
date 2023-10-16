@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./style.scss"
 
 import GetStarted from '../../Services/GetStarted/index.js';
@@ -54,25 +54,45 @@ const details = [
 
 
 function ServicesFullStack() {
+  const scrollToElement = () => {
+    const target = document.querySelector("#methodology");
+    const padding = 60;
+    window.scrollTo({
+        top: target.offsetTop - padding,
+        behavior: "smooth"
+    });
+  }
+
+  useEffect(() => {
+    const activeTab = document.querySelector(".activenav");
+    if (activeTab) {
+        activeTab.classList.remove("activenav");
+    }
+    const currentTab = document.getElementById("navservice");
+    if (currentTab) {
+        currentTab.classList.add("activenav");
+    }
+  }, []);
+
   return (
     <div className='servicesfs'>
     <div className='pallet1'>
       <h4 className='title-top'>Empowering Your business for Success</h4>
       <h1 className='mainHeading'>Full Stack<br></br>Development</h1>
-      <br></br>
-      <p>At LumoSys, we specialize in creating exceptional mobile applications that
+   
+      <p className='para'>At LumoSys, we specialize in creating exceptional mobile applications that
         empower businesses and individuals to succeed in the digital era.
         Our experienced team of developers combines cutting-edge technologies with
         innovative design to deliver high-quality, user-friendly mobile apps tailored 
         to your unique requirements.</p>
 
-      <div className='services-btn' data-aos="fade-up">
-        <a href='/'> Read More </a>
+      <div onClick={scrollToElement} className='services-btn'>
+        <button> Read More </button>
       </div>
       
     </div>
 
-    <div className='pallet2'>
+    <div className='pallet2' id='methodology'>
       <div className='pallet2_container'>
         <h2 className='title-top'>Our Methodology</h2>
         <h2 className='title'>Crafting Full Stack Applications with <br></br>Precision and Care</h2>

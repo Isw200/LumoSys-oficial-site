@@ -172,7 +172,7 @@ const Home = () => {
                     ///
                 */
             }
-            <div className='about'>
+            <div className='about' id='about-us'>
                 <div className='about-left'>
                     <h3 className='title-top' data-aos="fade-up">Your Gateway to </h3>
                     <h2 data-aos="fade-up" className='title'>Exceptional Software Services</h2>
@@ -230,7 +230,7 @@ const Home = () => {
                                     <p>
                                         Explore Full-Stack Development with us. From front-end aesthetics to back-end functionality, we build web applications that are responsive, scalable, and high-performing. Our expertise ensures a seamless online presence for your business.
                                     </p>
-                                    <a href='/'>
+                                    <a href='/FullStackServices'>
                                         Explore More
                                     </a>
                                 </div>
@@ -244,7 +244,7 @@ const Home = () => {
                                     <p>
                                         Our Mobile App Development team excels in creating user-focused iOS and Android apps. We blend creativity and functionality to deliver mobile solutions that elevate your brand, enhance user experiences, and achieve your business goals.
                                     </p>
-                                    <a href='/'>
+                                    <a href='/MobileServices'>
                                         Explore More
                                     </a>
                                 </div>
@@ -258,21 +258,21 @@ const Home = () => {
                                     <p>
                                         Unlock the potential of the cloud with our expert Cloud Solutions. We manage cloud migration, optimization, and maintenance, using leading platforms like AWS and Azure. Our solutions guarantee secure, flexible, and cost-efficient operations.
                                     </p>
-                                    <a href='/'>
+                                    <a href='/CloudServices'>
                                         Explore More
                                     </a>
                                 </div>
                             </div>
 
                             <div className="card">
-                                <h4>UX/UI
+                                <h4>UI/UX
                                     <br />
                                     Engineering</h4>
                                 <div className='card-content'>
                                     <p>
-                                        Elevate user engagement with our UX/UI Engineering. We create captivating and intuitive interfaces that enhance user satisfaction. Our data-driven designs ensure seamless experiences, better conversions, and a competitive edge for your brand.
+                                        Elevate user engagement with our UI/UX Engineering. We create captivating and intuitive interfaces that enhance user satisfaction. Our data-driven designs ensure seamless experiences, better conversions, and a competitive edge for your brand.
                                     </p>
-                                    <a href='/'>
+                                    <a href='/UiUx'>
                                         Explore More
                                     </a>
                                 </div>

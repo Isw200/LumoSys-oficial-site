@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 import "./style.scss"
 
 import GetStarted from '../../Services/GetStarted/index.js';
@@ -47,26 +47,46 @@ const details = [
 
 
 function ServicesCloud() {
+  const scrollToElement = () => {
+    const target = document.querySelector("#methodology");
+    const padding = 60;
+    window.scrollTo({
+        top: target.offsetTop - padding,
+        behavior: "smooth"
+    });
+  }
+
+   // Active link
+  useEffect(() => {
+    const activeTab = document.querySelector(".activenav");
+    if (activeTab) {
+        activeTab.classList.remove("activenav");
+    }
+    const currentTab = document.getElementById("navservice");
+    if (currentTab) {
+        currentTab.classList.add("activenav");
+    }
+  }, []);
+
   return (
     <div className='servicescloud'>
     <div className='pallet1'>
       <h4 className='title-top'>Empowering Your business for Success</h4>
-      <h1 className='mainHeading'>Cloud Services</h1>
-      <br></br>
-      <p>Welcome to LumoSys, where we provide cutting-edge cloud solutions to help 
+      <h1 className='mainHeading'>Cloud Solutions</h1>
+      <p className='para'>Welcome to LumoSys, where we provide cutting-edge cloud solutions to help 
         businesses thrive in the digital era. Our comprehensive suite of cloud services 
         empowers organisations to streamline operations, enhance collaboration, and scale 
         their business effortlessly. With our expertise and dedication to innovation, we deliver 
         tailored cloud solutions that align with your unique business needs.
       </p>
 
-      <div className='services-btn' data-aos="fade-up">
-          <a href='/'> Read More </a>
+      <div onClick={scrollToElement} className='services-btn'>
+          <button> Read More </button>
       </div>
 
     </div>
 
-    <div className='pallet2'>
+    <div className='pallet2' id='methodology'>
       <div className='pallet2_container'>
         <h2 className='title-top'>Unparalleled Excellence</h2>
         <h2 className='title'>Why Our Crafted Cloud Solutions<br></br> Stand Out</h2>
@@ -83,7 +103,7 @@ function ServicesCloud() {
         <div className='container1'>
           <div className='infoText'>
           <h2 >Cloud Infrastructure</h2>
-          <p>We offer a robust and reliable cloud infrastructure that enables 
+          <p className='para'>We offer a robust and reliable cloud infrastructure that enables 
             seamlessly. Whether you need virtual machines, storage
             solutions, or networking capabilities, our cloud infrastructure 
             provides the foundation for your digital operations.</p>
@@ -100,7 +120,7 @@ function ServicesCloud() {
           </div>
           <div className='infoText'>
           <h2 >Cloud Storage</h2>
-          <p>With our secure cloud storage solutions, you can store, access, 
+          <p className='para'>With our secure cloud storage solutions, you can store, access, 
             and share your data from anywhere, at any time. Say goodbye to physical 
             storage limitations and embrace the scalability and accessibility 
             of the cloud, ensuring that your critical files are always within reach.</p>
@@ -111,7 +131,7 @@ function ServicesCloud() {
         <div className='container3'>
           <div className='infoText'>
           <h2>Cloud Backup and Disaster Recovery</h2>
-          <p>Our SaaS solutions provide cloud-based applications that cater
+          <p className='para'>Our SaaS solutions provide cloud-based applications that cater
             to specific business needs. From project management tools to customer
             relationship management systems, we offer a range of SaaS applications 
             that are ready to use, eliminating the need for complex installations 
@@ -128,7 +148,7 @@ function ServicesCloud() {
           </div>
           <div className='infoText'>
           <h2>Cloud Consulting and Migration</h2>
-          <p>We understand the power of emotional connection in design.
+          <p className='para'>We understand the power of emotional connection in design.
             By incorporating elements that evoke positive emotions, we create 
             experiences that resonate with your users on a deeper level,
             forging a lasting connection between them and your brand.</p>
@@ -138,7 +158,7 @@ function ServicesCloud() {
         <div className='container5'>
           <div className='infoText'>
           <h2 >Software as a Service (SaaS)</h2>
-          <p>Seeking to move to the cloud? Our expert team offers end-to-end cloud consulting, 
+          <p className='para'>Seeking to move to the cloud? Our expert team offers end-to-end cloud consulting, 
             from assessing needs to designing solutions and managing the migration. Let us guide you.</p>
           </div>
           <div className='image'>

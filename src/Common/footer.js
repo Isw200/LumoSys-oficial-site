@@ -3,8 +3,18 @@ import React from 'react'
 import { FacebookFilled, InstagramFilled, LinkedinFilled, TwitterCircleFilled, YoutubeFilled } from '@ant-design/icons'
 
 import './footer.scss'
+import { useEffect } from 'react';
 
 const Footer = () => {
+    useEffect(() => {
+        if (window.location.hash === '#about-us') {
+          const destinationElement = document.getElementById('about-us');
+          if (destinationElement) {
+            destinationElement.scrollIntoView();
+          }
+        }
+    }, []); 
+
     return (
         <div className='footer'>
             <div className='footer__container'>
@@ -45,7 +55,7 @@ const Footer = () => {
                     <h3>Company Links</h3>
                     <ul>
                         <li><a href='/'>Home</a></li>
-                        <li><a href='/'>About Us</a></li>
+                        <li><a href="/#about-us">About Us</a></li>
                         <li><a href='/contact-us'>Contact Us</a></li>
                         <li><a href='/privacypolicy'>Privacy Policy</a></li>
                     </ul>
@@ -58,12 +68,14 @@ const Footer = () => {
 
                     <ul>
                         <li><a href='/'>Web Development</a></li>
-                        <li><a href='/'>Mobile Development</a></li>
-                        <li><a href='/'>UI/UX Design</a></li>
-                        <li><a href='/'>Digital Marketing</a></li>
+                        <li><a href='/MobileServices'>Mobile Development</a></li>
+                        <li><a href='/UiUx'>UI/UX Design</a></li>
+                        <li><a href='/CloudServices'>Cloud Services</a></li>
+                        <li><a href='/FullStackServices'>Full Stack Services</a></li>
+                        {/* <li><a href='/'>Digital Marketing</a></li>
                         <li><a href='/'>IT Consultant</a></li>
                         <li><a href='/'>IT Training</a></li>
-                        <li><a href='/'>IOT</a></li>
+                        <li><a href='/'>IOT</a></li> */}
                     </ul>
                 </div>
             </div>
@@ -74,7 +86,7 @@ const Footer = () => {
                 </p>
 
                 <p>
-                    Designed by Lumosys | <a href='/'>Privacy Policy</a>
+                    Designed by Lumosys | <a href='/privacypolicy'>Privacy Policy</a>
                 </p>
             </div>
         </div>
