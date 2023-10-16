@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import "./style.scss";
 import img6 from "../Assets/6.png";
 import img7 from "../Assets/7.png";
@@ -40,26 +40,45 @@ const details = [
 ]
 
 function ServicesMobile() {
+  const scrollToElement = () => {
+    const target = document.querySelector("#methodology");
+    const padding = 60;
+    window.scrollTo({
+        top: target.offsetTop - padding,
+        behavior: "smooth"
+    });
+  }
+
+  useEffect(() => {
+    const activeTab = document.querySelector(".activenav");
+    if (activeTab) {
+        activeTab.classList.remove("activenav");
+    }
+    const currentTab = document.getElementById("navservice");
+    if (currentTab) {
+        currentTab.classList.add("activenav");
+    }
+  }, []);
+
   return (
     <div className='servicesmobile'>
     <div className='pallet1'>
       <h4 className='title-top'>Empowering Your business for Success</h4>
       <h1 className='mainHeading'>Mobile Application<br></br>Development</h1>
-      <br></br>
-      <p>At LumoSys, we specialize in creating exceptional mobile applications that
+      <p className='para'>At LumoSys, we specialize in creating exceptional mobile applications that
          empower businesses and individuals to succeed in the digital era.
          Our experienced team of developers combines cutting-edge technologies with 
          innovative design to deliver high-quality, user-friendly mobile apps tailored to 
          your unique requirements.
       </p>
 
-      <div className='services-btn' data-aos="fade-up">
-          <a href='/'> Read More </a>
+      <div onClick={scrollToElement} className='services-btn'>
+          <button> Read More </button>
       </div>
 
     </div>
 
-    <div className='pallet2'>
+    <div className='pallet2' id='methodology'>
       <div className='pallet2_container'>
         <h2 className='title-top'>Our Methodology</h2>
         <h2 className='title'>Crafting Mobile Applications with <br></br>Precision and Care</h2>
@@ -76,7 +95,7 @@ function ServicesMobile() {
         <div className='container1'>
           <div className='infoText'>
           <h2  className='title-top'>iOS Development</h2>
-          <p>Our team excels in creating feature-rich, intuitive iOS apps that 
+          <p className='para'>Our team excels in creating feature-rich, intuitive iOS apps that 
           leverage the latest capabilities of Apple devices. From iPhone to
           iPad and Apple Watch, we can bring your ideas to life on the
           iOS platform.</p>
@@ -94,7 +113,7 @@ function ServicesMobile() {
           </div>
           <div className='infoText'>
           <h2  className='title-top'>Android Development</h2>
-          <p>We specialize in building high-performance, scalable Android
+          <p className='para'>We specialize in building high-performance, scalable Android
             applications that run seamlessly on a wide range of devices.
             Whether it's for smartphones, tablets, or wearables,
             our Android apps are tailored to deliver exceptional user experiences.</p>
@@ -105,7 +124,7 @@ function ServicesMobile() {
         <div className='container3'>
           <div className='infoText'>
           <h2  className='title-top'>Cross-Platform Development</h2>
-          <p>We leverage cross-platform frameworks like React Native
+          <p className='para'>We leverage cross-platform frameworks like React Native
             and Flutter to develop apps that can run on both iOS and Android platforms.
             This approach saves time and resources while ensuring a consistent
             user experience across devices.</p>

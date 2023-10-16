@@ -22,9 +22,13 @@ function GetStarted() {
                             Let's Create an Amazing Project Together!
                         </h3>
                         <p>
-                            Web design app development for Android & iOS. We have over 5 years of experience in helping companies.
+                            Web design app development for Android & iOS. We have over 2 years of experience in helping companies.
                         </p>
-                        <button>
+                        <button
+                            onClick={() => {
+                                window.location.href = '/contact-us'
+                            }}
+                        >
                             <span>
                                 Get Started
                             </span>
@@ -41,7 +45,7 @@ function GetStarted() {
                         />
                     </data>
                 </div>
-            </div>
+        </div>
 
     )
 }

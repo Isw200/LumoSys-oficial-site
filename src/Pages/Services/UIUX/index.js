@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import "./style.scss";
 import img1 from "../Assets/1.png";
 import img2 from "../Assets/2.png";
@@ -49,25 +49,44 @@ const details = [
 ]
 
 function ServicesUiUx() {
+  const scrollToElement = () => {
+    const target = document.querySelector("#methodology");
+    const padding = 60;
+    window.scrollTo({
+        top: target.offsetTop - padding,
+        behavior: "smooth"
+    });
+  }
+
+  useEffect(() => {
+    const activeTab = document.querySelector(".activenav");
+    if (activeTab) {
+        activeTab.classList.remove("activenav");
+    }
+    const currentTab = document.getElementById("navservice");
+    if (currentTab) {
+        currentTab.classList.add("activenav");
+    }
+  }, []);
+  
   return (
     <div className='ServicesUiUx'>
       <div className='pallet1'>
         <h4 className='title-top'>Empowering Your business for Success</h4>
         <h1 className='mainHeading'>UI/UX<br></br>Engineering</h1>
-        <br></br>
-        <p>At LumoSys, we believe that user experience (UX) and user interface (UI) 
+        <p className='para'>At LumoSys, we believe that user experience (UX) and user interface (UI) 
           design are essential elements of creating successful digital products. Our 
           team of experienced designers is dedicated to crafting intuitive and visually 
           appealing user interfaces that elevate your brand and delight your users.
         </p>
 
-        <div className='services-btn' data-aos="fade-up">
-          <a href='/'> Read More </a>
+        <div onClick={scrollToElement} className='services-btn'>
+          <button> Read More </button>
         </div>
 
       </div>
 
-      <div className='pallet2'>
+      <div className='pallet2' id='methodology'>
         <div className='pallet2_container'>
           <h2 className='title-top'>Our Methodology</h2>
           <h2 className='title'>Crafting UX/UI Designs with<br></br>Precision and Care</h2>
@@ -84,7 +103,7 @@ function ServicesUiUx() {
         <div className='container1'>
           <div className='infoText'>
             <h2>User-Centricity</h2>
-            <p>We put your users at the forefront of our design process. By
+            <p className='para'>We put your users at the forefront of our design process. By
               understanding their needs, behaviors, and goals, we create 
               designs that cater to their preferences and provide intuitive 
               interactions.</p>
@@ -101,7 +120,7 @@ function ServicesUiUx() {
           </div>
           <div className='infoText'>
             <h2> Simplicity and Clarity</h2>
-            <p>We strive for simplicity and clarity in our designs. We believe 
+            <p className='para'>We strive for simplicity and clarity in our designs. We believe 
               that clean and uncluttered interfaces enable users to focus on
               what matters most, resulting in a more enjoyable and efficient 
               user experience.</p>
@@ -112,7 +131,7 @@ function ServicesUiUx() {
         <div className='container3'>
           <div className='infoText'>
             <h2>Consistency</h2>
-            <p>Consistency is key to building a strong brand identity and 
+            <p className='para'>Consistency is key to building a strong brand identity and 
               fostering user trust. We ensure that your design elements, such
               as colors, typography, and interactions, remain consistent 
               throughout your digital product, creating a cohesive and
@@ -129,7 +148,7 @@ function ServicesUiUx() {
           </div>
           <div className='infoText'>
             <h2>Accessibility</h2>
-            <p>We design with inclusivity in mind. Our designs adhere to 
+            <p className='para'>We design with inclusivity in mind. Our designs adhere to 
               accessibility standards, making your digital product usable and 
               as colors, typography, and interactions, remain consistent 
               tenjoyable for people of all abilities, including those with disabilities.</p>
@@ -139,7 +158,7 @@ function ServicesUiUx() {
         <div className='container5'>
           <div className='infoText'>
             <h2>Emotional Connection</h2>
-            <p>We understand the power of emotional connection in design. 
+            <p className='para'>We understand the power of emotional connection in design. 
               By incorporating elements that evoke positive emotions, we 
               create experiences that resonate with your users on a deeper
               level, forging a lasting connection between them and your
