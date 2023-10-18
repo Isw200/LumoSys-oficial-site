@@ -20,29 +20,22 @@
 }
 
 .servicescloud .pallet1 >h4{
-    margin:auto;
+    margin:auto auto 1rem auto;
 }
 
 .servicescloud .pallet1 .mainHeading{
-    margin:auto auto -1rem auto;
+    margin:auto;
     color: #E70F77;
     font-size: 3rem;
-}
-
-.servicescloud .pallet1 >p{
-    color: #000000;
-    padding-bottom: 1.5rem;
-    font-size: 1.2rem;
-    line-height: 2rem;
 }
 
 .servicescloud .pallet1 .services-btn {
     display: inline-flex;
     justify-content: left;
     align-items: left;
-    margin: 0 auto;
+    margin: 1rem auto;
 
-    a {
+    button {
         text-decoration: none;
         color: #fff;
         padding: 15px 30px;
@@ -55,7 +48,7 @@
         margin: 0 auto;
     }
 
-    a:hover {
+    button:hover {
         background-color: #E70F77;
         border: 1px solid #E70F77;
         color: #fff;

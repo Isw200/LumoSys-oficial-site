@@ -61,12 +61,12 @@ const Services = () => {
                         <p>
                             We offer full stack development services to build web applications that are robust, scalable, and extensible. Our full stack developers are adept at both front-end and back-end technologies and can build a complete web application from scratch.
                         </p>
-                        <a href='/services/full-stack-development'>
+                        <a href='/FullStackServices'>
                             Learn More →
                         </a>
                     </div>
 
-                    <div className='card' >
+                    {/* <div className='card' >
                         <h1>
                             Web Development
                         </h1>
@@ -76,7 +76,7 @@ const Services = () => {
                         <a href='/services/full-stack-development'>
                             Learn More →
                         </a>
-                    </div>
+                    </div> */}
 
                     <div className='card' >
                         <h1>
@@ -85,7 +85,7 @@ const Services = () => {
                         <p>
                             Transform your vision into reality with Lumosy Technologies' Mobile App Development service. Our team crafts intuitive, feature-rich apps for iOS and Android, delivering exceptional user experiences and driving your brand's success.
                         </p>
-                        <a href='/services/full-stack-development'>
+                        <a href='/MobileServices'>
                             Learn More →
                         </a>
                     </div>
@@ -99,7 +99,7 @@ const Services = () => {
                         <p>
                             Empower your business with Lumosy Technologies' Cloud Solutions. We specialize in cloud migration, optimization, and management on top platforms like AWS, Azure, and Google Cloud. Secure, scalable, and cost-effective solutions for your digital infrastructure.
                         </p>
-                        <a href='/services/full-stack-development'>
+                        <a href='/CloudServices'>
                             Learn More →
                         </a>
                     </div>
@@ -111,12 +111,12 @@ const Services = () => {
                         <p>
                             Enhance digital experiences with Lumosy Technologies' UX/UI Engineering. We design captivating, user-friendly interfaces that optimize satisfaction and boost conversions. Our data-driven approach ensures seamless designs for your brand's success.
                         </p>
-                        <a href='/services/full-stack-development'>
+                        <a href='/UiUx'>
                             Learn More →
                         </a>
                     </div>
 
-                    <div className='card' >
+                    {/* <div className='card' >
                         <h1>
                             WordPress Development
                         </h1>
@@ -126,7 +126,7 @@ const Services = () => {
                         <a href='/services/full-stack-development'>
                             Learn More →
                         </a>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
