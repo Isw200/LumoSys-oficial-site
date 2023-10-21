@@ -89,7 +89,7 @@ function ServicesUiUx() {
       <div className='pallet2' id='methodology'>
         <div className='pallet2_container'>
           <h2 className='title-top'>Our Methodology</h2>
-          <h2 className='title'>Crafting UX/UI Designs with<br></br>Precision and Care</h2>
+          <h2 className='title'>Crafting UI/UX Designs with<br></br>Precision and Care</h2>
 
           <ServiceCard details={details} />
 

@@ -108,7 +108,8 @@
 
 .ServicesUiUx .pallet3 .container1 .image{
     width: 25%;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background-attachment: fixed;
 }
 
@@ -137,7 +138,8 @@
 
 .ServicesUiUx .pallet3 .container2 .image{
     width: 25%;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background-attachment: fixed;
     margin-right: 2rem;
 }
@@ -168,7 +170,8 @@
 
 .ServicesUiUx .pallet3 .container3 .image{
     width: 25%;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background-attachment: fixed;
 }
 
@@ -197,7 +200,8 @@
 
 .ServicesUiUx .pallet3 .container4 .image {
     width: 25%;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background-attachment: fixed;
     margin-right: 2rem;
 }
@@ -229,7 +233,8 @@
 
 .ServicesUiUx .pallet3 .container5 .image {
     width: 25%;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background-attachment: fixed;
 }
 
@@ -252,9 +257,19 @@
         line-height: 2rem;
     }
 
+    .ServicesUiUx .pallet3 .container1 .image{
+        width: 250px;
+        height: 200px;
+    }
+
     .ServicesUiUx .pallet3 .container2 .infoText{
         font-size: 1.2rem;
         line-height: 2rem;
+    }
+
+    .ServicesUiUx .pallet3 .container2 .image{
+        width: 250px;
+        height: 200px;
     }
 
     .ServicesUiUx .pallet3 .container3 .infoText{
@@ -262,15 +277,30 @@
         line-height: 2rem;
     }
 
+    .ServicesUiUx .pallet3 .container3 .image{
+        width: 250px;
+        height: 200px;
+    }
+
     .ServicesUiUx .pallet3 .container4 .infoText{
         font-size: 1.2rem;
         line-height: 2rem;
+    }
+
+    .ServicesUiUx .pallet3 .container4 .image{
+        width: 250px;
+        height: 200px;
     }
 
     .ServicesUiUx .pallet3 .container5 .infoText{
         font-size: 1.2rem;
         line-height: 2rem;
     }   
+
+    .ServicesUiUx .pallet3 .container5 .image{
+        width: 250px;
+        height: 200px;
+    }
 }
 
 @media (max-width: 979px) {
@@ -296,6 +326,7 @@
 
     .ServicesUiUx .pallet3 .container1 .image{
         width: 100%;
+        height: auto;
     }
 
     .ServicesUiUx .pallet3 .container2{
@@ -309,6 +340,7 @@
 
     .ServicesUiUx .pallet3 .container2 .image{
         width: 100%;
+        height: auto;
     }
 
     .ServicesUiUx .pallet3 .container3{
@@ -322,6 +354,7 @@
 
     .ServicesUiUx .pallet3 .container3 .image{
         width: 100%;
+        height: auto;
     }
 
     .ServicesUiUx .pallet3 .container4{
@@ -335,6 +368,7 @@
 
     .ServicesUiUx .pallet3 .container4 .image{
         width: 100%;
+        height: auto;
     }
 
     .ServicesUiUx .pallet3 .container5{
@@ -348,6 +382,7 @@
 
     .ServicesUiUx .pallet3 .container5 .image{
         width: 100%;
+        height: auto;
     }
 
 }

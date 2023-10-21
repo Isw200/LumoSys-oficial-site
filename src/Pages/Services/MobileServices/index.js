@@ -94,7 +94,7 @@ function ServicesMobile() {
 
         <div className='container1'>
           <div className='infoText'>
-          <h2  className='title-top'>iOS Development</h2>
+          <h2>iOS Development</h2>
           <p className='para'>Our team excels in creating feature-rich, intuitive iOS apps that 
           leverage the latest capabilities of Apple devices. From iPhone to
           iPad and Apple Watch, we can bring your ideas to life on the
@@ -112,7 +112,7 @@ function ServicesMobile() {
             <img src={img7} alt='img7' />
           </div>
           <div className='infoText'>
-          <h2  className='title-top'>Android Development</h2>
+          <h2>Android Development</h2>
           <p className='para'>We specialize in building high-performance, scalable Android
             applications that run seamlessly on a wide range of devices.
             Whether it's for smartphones, tablets, or wearables,
@@ -123,7 +123,7 @@ function ServicesMobile() {
 
         <div className='container3'>
           <div className='infoText'>
-          <h2  className='title-top'>Cross-Platform Development</h2>
+          <h2 >Cross-Platform Development</h2>
           <p className='para'>We leverage cross-platform frameworks like React Native
             and Flutter to develop apps that can run on both iOS and Android platforms.
             This approach saves time and resources while ensuring a consistent
