@@ -1,0 +1,397 @@
+@import url("https://fonts.cdnfonts.com/css/share-tech");
+.servicesfs .pallet1 {
+  width: 40%;
+  padding: 150px 200px 40px 200px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1280px) {
+    padding: 50px 100px;
+  }
+
+  @media (max-width: 979px) {
+    padding: 50px 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px;
+    flex-direction: column;
+  }
+}
+
+.servicesfs .pallet1 > h4 {
+  margin: auto auto 1rem auto;
+}
+
+.servicesfs .pallet1 .mainHeading {
+  margin: auto;
+  color: #e70f77;
+  font-size: 3rem;
+}
+
+.servicesfs .pallet1 .services-btn {
+  display: inline-flex;
+  justify-content: left;
+  align-items: left;
+  margin: 1rem auto;
+
+  button {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid #e70f77;
+    background-color: #fff;
+    color: #e70f77;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
+
+  button:hover {
+    background-color: #e70f77;
+    border: 1px solid #e70f77;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+}
+
+/* Methodology CSS start*/
+.servicesfs .pallet2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0rem auto;
+  background-color: #fcf8ff;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.servicesfs .pallet2 .pallet2_container > p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e70f77;
+}
+
+.servicesfs .pallet2 .pallet2_container {
+  width: 80%;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.CodingIcon {
+  height: 3rem;
+  width: 3rem;
+  margin-left: 16.3rem;
+  position: relative;
+  top: 1rem;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box1,
+.box2,
+.box3 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: RGB(255, 255, 255);
+  height: 19rem;
+  width: 20rem;
+  padding: 1rem;
+  margin: 1.5rem;
+  box-shadow: 0 3px 10px RGB(0 0 0 / 0.2);
+  line-height: 1.3rem;
+  padding-top: 2rem;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box1 h2,
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box2 h2,
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box3 h2 {
+  margin-top: 2rem;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box1 h1,
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box2 h1,
+.servicesfs .pallet2 .pallet2_container .card_pallet1 .box3 h1 {
+  color: #e70f77;
+  font-family: "Share Tech", sans-serif;
+  font-size: 3rem;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet2 .box1,
+.box2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: RGB(255, 255, 255);
+  height: 19rem;
+  width: 20rem;
+  padding: 1rem;
+  margin: 1.5rem;
+  box-shadow: 0 3px 10px RGB(0 0 0 / 0.2);
+  line-height: 1.3rem;
+  padding-top: 2rem;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet2 .box1 h2,
+.servicesfs .pallet2 .pallet2_container .card_pallet2 .box2 h2 {
+  margin-top: 2rem;
+}
+
+.servicesfs .pallet2 .pallet2_container .card_pallet2 .box1 h1,
+.servicesfs .pallet2 .pallet2_container .card_pallet2 .box2 h1 {
+  color: #e70f77;
+  font-family: "Share Tech", sans-serif;
+  font-size: 3rem;
+}
+/* Methodology CSS end*/
+
+.servicesfs .pallet3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0rem auto;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.servicesfs .pallet3 > p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e70f77;
+}
+
+.servicesfs .pallet3 .container1 > img {
+  flex-direction: row;
+  display: inline-block;
+  margin: 3rem;
+  height: 8rem;
+  width: 8rem;
+}
+
+.servicesfs .pallet3 .container2 > img {
+  flex-direction: row;
+  display: inline-block;
+  margin: 3rem;
+  height: 8rem;
+  width: 8rem;
+}
+
+.servicesfs .pallet3 .container3 > img {
+  flex-direction: row;
+  display: inline-block;
+  margin: 3rem;
+  height: 8rem;
+  width: 8rem;
+}
+
+.servicesfs .pallet3 .container1 .icon {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.servicesfs .pallet3 .container1 .icon:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.servicesfs .pallet3 .container2 .icon {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.servicesfs .pallet3 .container2 .icon:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.servicesfs .pallet3 .container3 .icon {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.servicesfs .pallet3 .container3 .icon:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1399px) {
+  .servicesfs .pallet3 .container1 > img {
+    flex-direction: row;
+    display: inline-block;
+    margin: 2rem;
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .servicesfs .pallet3 .container2 > img {
+    flex-direction: row;
+    display: inline-block;
+    margin: 2rem;
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .servicesfs .pallet3 .container3 > img {
+    flex-direction: row;
+    display: inline-block;
+    margin: 2rem;
+    height: 8rem;
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .servicesfs .pallet1 {
+    width: 50%;
+  }
+  .servicesfs .pallet1 > h4 {
+    padding-top: 5rem;
+  }
+
+  .servicesfs .pallet3 .container1 .infoText {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .servicesfs .pallet3 .container2 .infoText {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .servicesfs .pallet3 .container3 .infoText {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 1198px) {
+  .servicesfs .pallet3 .container1 > img {
+    margin: 2rem;
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .servicesfs .pallet3 .container2 > img {
+    margin: 2rem;
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .servicesfs .pallet3 .container3 > img {
+    margin: 2rem;
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .servicesfs .pallet3 .container1 > img {
+    margin: 1rem;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .servicesfs .pallet3 .container2 > img {
+    margin: 1rem;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .servicesfs .pallet3 .container3 > img {
+    margin: 1rem;
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@media (max-width: 979px) {
+  .servicesfs .pallet1 {
+    width: 60%;
+  }
+  .servicesfs .pallet1 > h4 {
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesfs .pallet1 {
+    width: 80%;
+  }
+  .servicesfs .pallet1 > h4 {
+    padding-top: 5rem;
+  }
+
+  .servicesfs .pallet3 .container1 > img {
+    margin: 1rem;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .servicesfs .pallet3 .container2 > img {
+    margin: 1rem;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .servicesfs .pallet3 .container3 > img {
+    margin: 1rem;
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .servicesfs .pallet3 .container1 > img {
+    margin: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .servicesfs .pallet3 .container2 > img {
+    margin: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .servicesfs .pallet3 .container3 > img {
+    margin: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+.wordpress-section {
+  margin: 2rem auto 6rem auto;
+  background-color: #fcf8ff;
+  padding: 3rem 5rem;
+  width: 70%;
+  text-align: center;
+  border-radius: 30px;
+
+  @media (max-width: 500px) {
+    width: 50%;
+    padding: 3rem 4rem;
+  }
+}
