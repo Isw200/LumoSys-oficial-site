@@ -67,7 +67,7 @@ const Footer = () => {
                     </h3>
 
                     <ul>
-                        <li><a href='/'>Web Development</a></li>
+                        <li><a href='/WebServices'>Web Development</a></li>
                         <li><a href='/MobileServices'>Mobile Development</a></li>
                         <li><a href='/UiUx'>UI/UX Design</a></li>
                         <li><a href='/CloudServices'>Cloud Services</a></li>
