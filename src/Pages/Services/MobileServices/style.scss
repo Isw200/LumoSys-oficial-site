@@ -106,7 +106,8 @@
 
 .servicesmobile .pallet3 .container1 .image{
     width: 25%;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background-attachment: fixed;
 }
 
@@ -134,7 +135,8 @@
 
 .servicesmobile .pallet3 .container2 .image{
     width: 25%;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background-attachment: fixed;
     margin-right: 2rem;
 }
@@ -165,7 +167,8 @@
 
 .servicesmobile .pallet3 .container3 .image{
     width: 25%;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background-attachment: fixed;
 }
 
@@ -187,15 +190,30 @@
         line-height: 2rem;
     }
 
+    .servicesmobile .pallet3 .container1 .image{
+        width: 250px;
+        height: 200px;
+    }
+
     .servicesmobile .pallet3 .container2 .infoText{
         font-size: 1.2rem;
         line-height: 2rem;
     }
 
+    .servicesmobile .pallet3 .container2 .image{
+        width: 250px;
+        height: 200px;
+    }
+
     .servicesmobile .pallet3 .container3 .infoText{
         font-size: 1.2rem;
         line-height: 2rem;
-    } 
+    }
+
+    .servicesmobile .pallet3 .container3 .image{
+        width: 250px;
+        height: 200px;
+    }
 }
 
 @media (max-width: 979px) {
@@ -221,6 +239,7 @@
 
     .servicesmobile .pallet3 .container1 .image{
         width: 100%;
+        height: auto;
     }
 
     .servicesmobile .pallet3 .container2{
@@ -234,6 +253,7 @@
 
     .servicesmobile .pallet3 .container2 .image{
         width: 100%;
+        height: auto;
     }
 
     .servicesmobile .pallet3 .container3{
@@ -247,6 +267,7 @@
 
     .servicesmobile .pallet3 .container3 .image{
         width: 100%;
+        height: auto;
     }
 }
 

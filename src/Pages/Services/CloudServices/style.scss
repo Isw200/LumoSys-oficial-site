@@ -108,7 +108,8 @@
 
 .servicescloud  .pallet3 .container1 .image{
     width: 25%;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background-attachment: fixed;
 }
 
@@ -137,7 +138,8 @@
 
 .servicescloud  .pallet3 .container2 .image{
     width: 25%;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background-attachment: fixed;
     margin-right: 2rem;
 }
@@ -168,7 +170,8 @@
 
 .servicescloud  .pallet3 .container3 .image{
     width: 25%;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background-attachment: fixed;
 }
 
@@ -197,7 +200,8 @@
 
 .servicescloud  .pallet3 .container4 .image {
     width: 25%;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background-attachment: fixed;
     margin-right: 2rem;
 }
@@ -229,7 +233,8 @@
 
 .servicescloud  .pallet3 .container5 .image {
     width: 25%;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     background-attachment: fixed;
 }
 
@@ -276,9 +281,19 @@
         line-height: 2rem;
     }
 
+    .servicescloud .pallet3 .container1 .image{
+        width: 250px;
+        height: 200px;
+    }
+
     .servicescloud .pallet3 .container2 .infoText{
         font-size: 1.2rem;
         line-height: 2rem;
+    }
+
+    .servicescloud .pallet3 .container2 .image{
+        width: 250px;
+        height: 200px;
     }
 
     .servicescloud .pallet3 .container3 .infoText{
@@ -286,9 +301,19 @@
         line-height: 2rem;
     }
 
+    .servicescloud .pallet3 .container3 .image{
+        width: 250px;
+        height: 200px;
+    }
+
     .servicescloud .pallet3 .container4 .infoText{
         font-size: 1.2rem;
         line-height: 2rem;
+    }
+
+    .servicescloud .pallet3 .container4 .image{
+        width: 250px;
+        height: 200px;
     }
 
     .servicescloud .pallet3 .container5 .infoText{
@@ -296,9 +321,9 @@
         line-height: 2rem;
     }   
 
-    .servicescloud .pallet4 .container > img {
-        padding: 1rem;
-        width: 50%;
+    .servicescloud .pallet3 .container5 .image{
+        width: 250px;
+        height: 200px;
     }
 
 }
@@ -326,6 +351,7 @@
 
     .servicescloud .pallet3 .container1 .image{
         width: 100%;
+        height: auto;
     }
 
     .servicescloud .pallet3 .container2{
@@ -339,6 +365,7 @@
 
     .servicescloud .pallet3 .container2 .image{
         width: 100%;
+        height: auto;
     }
 
     .servicescloud .pallet3 .container3{
@@ -352,6 +379,7 @@
 
     .servicescloud .pallet3 .container3 .image{
         width: 100%;
+        height: auto;
     }
 
     .servicescloud .pallet3 .container4{
@@ -365,6 +393,7 @@
 
     .servicescloud .pallet3 .container4 .image{
         width: 100%;
+        height: auto;
     }
 
     .servicescloud .pallet3 .container5{
@@ -378,6 +407,7 @@
 
     .servicescloud .pallet3 .container5 .image{
         width: 100%;
+        height: auto;
     }
 
     .servicescloud .pallet4 .container  {
